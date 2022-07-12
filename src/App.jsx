@@ -1,44 +1,29 @@
-import { useState } from 'react'
-import logo from './public/logo.svg'
-import './styles/App.css'
+import { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { Header, Footer, Layout } from './components/common'
+import { Register, Sponsors, Speakers, Prizes, Rules, Timeline, Competition, Landing } from './components'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    Aos.init({ offset: 0, duration: 1500 })
+    window.addEventListener('load', Aos.refresh)
+  }, [])
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
+    <Layout>
+      <Header />
+      <Landing />
+      <Timeline />
+      <Competition />
+      <Rules />
+      <Prizes />
+      <Speakers />
+      <Sponsors />
+      <Register />
+      <Footer />
+    </Layout>
   )
 }
 
