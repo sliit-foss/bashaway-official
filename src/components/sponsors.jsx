@@ -7,7 +7,7 @@ const Sponsors = () => {
         </div></div>)
     }
     return <>
-        <div className="flex flex-col justify-center items-center bg-black p-4 md:p-8 lg:pt-[80px]" id="sponsors">
+        <div className="flex flex-col justify-center items-center bg-black p-4 pt-[80px]" id="sponsors">
             <Title title="Sponsors" className="mt-4" aos="fade-right" />
             <span className="text-xl text-white font-semibold my-12">Platinum</span>
             <Sponsor logo="Vercel" aos="fade-left" />

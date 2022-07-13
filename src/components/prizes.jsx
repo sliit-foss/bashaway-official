@@ -47,7 +47,7 @@ const Prizes = () => {
         </div></div>)
     }
     return <>
-        <div className="flex flex-col justify-center items-center bg-black md:p-8 lg:pt-[80px]" id="prizes">
+        <div className="flex flex-col justify-center items-center bg-black pt-[80px] " id="prizes">
             <Title title="Prizes" className="mt-4 mb-12" aos="fade-right"/>
             <div className="flex flex-wrap justify-center items-center">
                 {
