@@ -33,7 +33,7 @@ const Competition = () => {
             </p>
           </div>
         </div>
-        <div className="w-2"/>
+        <div className="w-2" />
         <div className="flex flex-row mt-12 md:mt-[20rem] xl:mt-[15rem] w-full md:w-1/2" data-aos="fade-left">
           <div className="text-left mx-2">
             <h1 className="text-white mb-[18px]">What?</h1>

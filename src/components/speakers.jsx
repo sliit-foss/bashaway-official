@@ -27,7 +27,7 @@ const Speakers = () => {
 
     return <>
         <div className="flex flex-col justify-center items-center bg-black pt-[80px]" id="speakers">
-            <Title title="Speakers" className="mt-4 mb-20" aos='fade-down'/>
+            <Title title="Speakers" className="mt-4 mb-20" aos='fade-down' />
             <div className="flex flex-wrap justify-center items-center">
                 {
                     speakerList.map((speaker, index) => {

@@ -48,11 +48,11 @@ const Prizes = () => {
     }
     return <>
         <div className="flex flex-col justify-center items-center bg-black pt-[80px] " id="prizes">
-            <Title title="Prizes" className="mt-4 mb-12" aos="fade-right"/>
+            <Title title="Prizes" className="mt-4 mb-12" aos="fade-right" />
             <div className="flex flex-wrap justify-center items-center">
                 {
                     prizeList.map((prize, index) => {
-                        return <Prize key={prize} name={prize.name} details={prize.details} image={prize.image} aos={index === 1 ? "fade" : (index ===0 ? 'fade-right': 'fade-left')} />
+                        return <Prize key={prize} name={prize.name} details={prize.details} image={prize.image} aos={index === 1 ? "fade" : (index === 0 ? 'fade-right' : 'fade-left')} />
                     })
                 }
             </div>

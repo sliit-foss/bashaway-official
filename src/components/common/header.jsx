@@ -4,19 +4,18 @@ import { useState } from "react";
 
 const Header = () => {
     const [burgerNav, setBurgerNav] = useState(false);
-    const [ioIosClose, setoIosClose] = useState(false);
 
     const burgerNavController = () => {
         document.querySelector('html').style.overflowY = !burgerNav ? "hidden" : "auto";
         setBurgerNav(!burgerNav);
     }
 
-    const handleNavItemClick = (path) =>{
-        document.getElementById(path).scrollIntoView({behavior:"smooth"}) 
+    const handleNavItemClick = (path) => {
+        document.getElementById(path).scrollIntoView({ behavior: "smooth" })
     }
 
-    const handleBergerNavItemClick = (path) =>{
-        document.getElementById(path).scrollIntoView({behavior:"smooth"})
+    const handleBergerNavItemClick = (path) => {
+        document.getElementById(path).scrollIntoView({ behavior: "smooth" })
         burgerNavController();
     }
 
@@ -62,7 +61,7 @@ const Header = () => {
                     {
                         navItems.map((item) => {
                             return <div className="md:pt-3">
-                                <span className="px-2 text-nav-links-unselected hover:text-primary mb-3 transition duration-300" onClick={()=>handleNavItemClick(item.path)}>{item.name}</span>
+                                <span className="px-2 text-nav-links-unselected hover:text-primary mb-3 transition duration-300" onClick={() => handleNavItemClick(item.path)}>{item.name}</span>
                             </div>
                         })
                     }
@@ -94,7 +93,7 @@ const Header = () => {
                             {
                                 navItems.map((item) => {
                                     return <div className="w-full flex flex-col justify-center items-center">
-                                        <a className="w-full text-white hover:text-primary text-center transition duration-300" onClick={()=>handleBergerNavItemClick(item.path)}>{item.name}</a>
+                                        <a className="w-full text-white hover:text-primary text-center transition duration-300" onClick={() => handleBergerNavItemClick(item.path)}>{item.name}</a>
                                     </div>
                                 })
                             }
