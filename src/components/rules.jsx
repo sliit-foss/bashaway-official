@@ -2,7 +2,7 @@ import Title from "./common/title";
 
 const Rules = () => {
   return (
-    <div class="bg-black w-full flex flex-col justify-center items-center text-white">
+    <div class="bg-black w-full flex flex-col justify-center items-center text-white pt-[80px]" id="rules">
       <Title title="Rules & Regulations" aos="fade-right"/>
       <div className="col-span-12 grid grid-cols-12 gap-3 border mt-16 m-10 mx-8 md:mx-20 p-2 2xl:mx-32 rounded" data-aos="fade">
         <div className="col-span-12 m-3 lg:col-span-6">
@@ -28,7 +28,7 @@ const Rules = () => {
         <span>Get the rules and regulations booklet.</span>
       </div>
       <div data-aos="fade-left"><a href="">
-        <div className="flex w-[165px] h-[42px] bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal mt-4 mb-[80px] text-black hover:text-white hover:bg-primary transition duration-300">
+        <div className="flex w-[165px] h-[42px] bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal mt-4 text-black hover:text-white hover:bg-primary transition duration-300">
           Download
         </div>
       </a></div>

@@ -46,7 +46,7 @@ const Footer = () => {
 
     return (
         <>
-            <div className="flex flex-col md:flex-row justify-between bg-black p-10 md:p-12">
+            <div className="flex flex-col md:flex-row justify-between bg-black p-10 md:p-12" id="footer">
                 <div className="w-full pl-0 md:pl-24 flex justify-center md:justify-start">
                     <a href="https://sliitfoss.org" target="_blank"><img src='/assets/foss-logo.svg' className="w-28 h-28" /></a>
                 </div>

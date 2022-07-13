@@ -2,7 +2,7 @@ import Title from "./common/title";
 
 const Competition = () => {
   return (
-    <div className="flex flex-col items-center px-7">
+    <div className="flex flex-col items-center px-7 pt-[80px]" id="competition">
       <Title title="Competition" aos="fade-left" />
       <div className="flex flex-col md:flex-row justify-between px-3 md:px-12 xl:px-20">
         <div className="flex flex-row mt-[60px] w-full md:w-1/2" data-aos="fade-right">
@@ -57,7 +57,7 @@ const Competition = () => {
         Find the attachment here.
       </span>
       <a data-aos="fade-right" href="">
-        <div className="flex w-[165px] h-[42px] bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal mb-[80px] hover:text-white hover:bg-primary transition duration-300">
+        <div className="flex w-[165px] h-[42px] bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal hover:text-white hover:bg-primary transition duration-300">
           Download
         </div>
       </a>

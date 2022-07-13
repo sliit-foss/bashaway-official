@@ -13,33 +13,37 @@ const Header = () => {
     const navItems = [
         {
             name: 'Timeline',
-            path: 'timeline-section',
+            path: 'timeline',
         },
         {
             name: 'Competition',
-            path: 'competition-section',
+            path: 'competition',
         },
         {
             name: 'Rules',
-            path: 'rules-section',
+            path: 'rules',
         },
         {
             name: 'Prizes',
-            path: 'prizes-section',
+            path: 'prizes',
         },
         {
             name: 'Sponsors',
-            path: 'sponsors-section',
+            path: 'sponsors',
         },
         {
             name: 'Speakers',
-            path: 'speakers-section',
+            path: 'speakers',
         },
         {
             name: 'Contact',
-            path: 'contact-section',
+            path: 'footer',
         },
     ]
+
+    const handleNavItemClick = (path) =>{
+        document.getElementById(path).scrollIntoView() 
+    }
 
     return (
         <div>
@@ -52,7 +56,7 @@ const Header = () => {
                     {
                         navItems.map((item) => {
                             return <div className="md:pt-3">
-                                <a className="px-2 text-nav-links-unselected hover:text-primary mb-3 transition duration-300" href="" target="_blank">{item.name}</a>
+                                <span className="px-2 text-nav-links-unselected hover:text-primary mb-3 transition duration-300" onClick={()=>handleNavItemClick(item.path)}>{item.name}</span>
                             </div>
                         })
                     }
@@ -84,7 +88,7 @@ const Header = () => {
                             {
                                 navItems.map((item) => {
                                     return <div className="w-full flex flex-col justify-center items-center">
-                                        <a className="w-full text-white hover:text-primary text-center transition duration-300" href="" target="_blank">{item.name}</a>
+                                        <a className="w-full text-white hover:text-primary text-center transition duration-300" onClick={()=>handleNavItemClick(item.path)}>{item.name}</a>
                                     </div>
                                 })
                             }
