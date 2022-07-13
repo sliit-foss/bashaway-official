@@ -17,8 +17,6 @@ const Header = () => {
 
     const handleBergerNavItemClick = (path) =>{
         document.getElementById(path).scrollIntoView({behavior:"smooth"})
-        // document.querySelector('html').style.overflowY = !ioIosClose ? "hidden" : "auto";
-         // setoIosClose(!ioIosClose);
         burgerNavController();
     }
 
