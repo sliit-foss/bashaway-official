@@ -6,7 +6,7 @@ const Competition = () => {
       <Title title="Competition" aos="fade-left" />
       <div className="flex flex-col md:flex-row justify-between px-3 md:px-12 xl:px-20">
         <div className="flex flex-row mt-[60px] w-full md:w-1/2" data-aos="fade-right">
-          <div className="text-right mx-2">
+          <div className="lg:text-right mx-2 md:text-left">
             <h1 className="text-white mb-[18px]">Why?</h1>
             <p className="text-[#888888]">
               <span className="text-[#0070F3]">./bashaway</span> 2022 aims to
