@@ -37,12 +37,12 @@ const Header = () => {
             path: 'prizes',
         },
         {
-            name: 'Sponsors',
-            path: 'sponsors',
-        },
-        {
             name: 'Speakers',
             path: 'speakers',
+        },
+        {
+            name: 'Sponsors',
+            path: 'sponsors',
         },
         {
             name: 'Contact',
@@ -61,7 +61,7 @@ const Header = () => {
                     {
                         navItems.map((item) => {
                             return <div className="md:pt-3">
-                                <span className="px-2 text-nav-links-unselected hover:text-primary mb-3 transition duration-300" onClick={() => handleNavItemClick(item.path)}>{item.name}</span>
+                                <span className="px-2 text-nav-links-unselected hover:text-primary mb-3 transition duration-300 cursor-pointer" onClick={() => handleNavItemClick(item.path)}>{item.name}</span>
                             </div>
                         })
                     }
