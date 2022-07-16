@@ -71,7 +71,7 @@ const Timeline = () => {
         <div className="bg-[#7928CA]" />
         <Title title="Timeline" aos="fade-down"/>
         {
-            timelineList.map((list, index) => {
+            timelineList.map((list) => {
                 return (
                     <div className="flex flex-col justify-center items-center">
                         <span className={`${list.isSmallText ? "text-[20px]" : "text-[32px]"} mt-[30px] text-white text-center font-semibold leading-6"`} data-aos="fade-down">{list.title}</span>
