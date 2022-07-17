@@ -32,7 +32,7 @@ const Timeline = () => {
             gradientColor2: "#4700DE"
         },
         {
-            title: "./bashway Opneing Ceremony",
+            title: "./bashway Opening Ceremony",
             dateTime: "02 Aug 2022 12:00 IST",
             isSmallText: false,
             gradientColor1: "#7928CA",
