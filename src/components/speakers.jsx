@@ -4,13 +4,13 @@ const Speakers = () => {
 
     const speakerList = [
         {
-            name: "Eka Yakek",
-            position: "Software Engineer at Nowhere",
+            name: "John Doe",
+            position: "Software Engineer at Lorem",
             image: "speaker.jpg"
         },
         {
-            name: "Thawa Yakek",
-            position: "Tech lead at Nowhere",
+            name: "Shehan Placeholder",
+            position: "Tech lead at Ipsum",
             image: "speaker.jpg"
         }
     ]

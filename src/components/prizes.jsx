@@ -4,33 +4,40 @@ const Prizes = () => {
 
     const prizeList = [
         {
-            name: "Index: 0",
-            image: "prize1.svg",
-            details: [
-                'LKR 100,000.00',
-                '4 M2 Macbooks',
-                '4 JBL Headsets',
-                'Bash Guidelines'
-            ]
-        },
-        {
-            name: "Index: 1",
+            name: "Winner",
             image: "prize2.svg",
             details: [
-                'LKR 100,000.00',
-                '4 M2 Macbooks',
-                '4 JBL Headsets',
-                'Bash Guidelines'
+                'LKR 30,000.00',
+                '4 tickets to ABC Event',
+                'Computer Accessory Set',
+                'Bash Guidbook'
             ]
         },
         {
-            name: "Index: -1",
+            name: "1st Runner's Up",
+            image: "prize1.svg",
+            details: [
+                'LKR 15,000.00',
+                'Computer Accessory Set',
+                'Bash Guidebook'
+            ]
+        },
+        {
+            name: "2nd Runner's Up",
             image: "prize3.svg",
             details: [
-                'LKR 100,000.00',
-                '4 M2 Macbooks',
+                'LKR 10,000.00',
+                'Computer Accessory Set',
+                'Bash Guidebook'
+            ]
+        },
+        {
+            name: "Most Creative Solution",
+            image: "prize2.svg",
+            details: [
+                'Computer Accessory Set',
                 '4 JBL Headsets',
-                'Bash Guidelines'
+                'Bash Guidebook'
             ]
         }
     ]
