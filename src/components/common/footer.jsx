@@ -27,21 +27,21 @@ const Footer = () => {
 
     const usefulLinks = [
         {
-            name: 'GitHub',
-            url: 'https://github.com/sliit-foss/bashaway-landing'
-        },
-        {
-            name: 'Code of Conduct',
-            url: 'https://sliitfoss.org'
-        },
-        {
             name: 'Register',
             url: 'https://sliitfoss.org'
         },
         {
             name: 'Competition',
             url: 'https://sliitfoss.org'
-        }
+        },
+        {
+            name: 'Code of Conduct',
+            url: 'https://sliitfoss.org/code-conduct'
+        },
+        {
+            name: 'Source Code',
+            url: 'https://github.com/sliit-foss/bashaway-landing'
+        },
     ]
 
     return (
