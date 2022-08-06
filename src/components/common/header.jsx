@@ -66,7 +66,7 @@ const Header = () => {
                         })
                     }
                     <div className="col col-span-20 md:pt-2 pr-7 pl-2">
-                        <button class="py-1 px-3 bg-white hover:text-primary mb-3 transition duration-300 font-semibold rounded-md" href="" target="_blank">
+                        <button class="flex py-1 px-3 bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal hover:text-white hover:bg-primary transition duration-300" href="" target="_blank">
                             Register
                         </button>
                     </div>
