@@ -52,7 +52,7 @@ const Competition = () => {
         </div>
       </div>
 
-      <h1 className="text-xl text-white font-bold mt-16" data-aos="fade-right">How it works?</h1>
+      <h1 className="text-xl text-white font-bold mt-16" data-aos="fade-right">How does it work?</h1>
       <span className="text-sm text-[#888888] font-normal my-[10px]" data-aos="fade-left">
         Find the attachment here.
       </span>
