@@ -50,7 +50,7 @@ const Footer = () => {
                 <div className="w-full pl-0 md:pl-24 flex justify-center md:justify-start">
                     <a href="https://sliitfoss.org" target="_blank"><img src='/assets/foss-logo.svg' className="w-28 h-28" /></a>
                 </div>
-                <div className="w-full flex flex-col justify-center items-center md:justify-start md:items-start mt-6">
+                <div className="w-full flex flex-col justify-center items-center md:justify-start md:items-center mt-6">
                     <h1 className="text-white text-2xl font-semibold mb-8">Contact</h1>
                     <a className="text-nav-links-unselected hover:text-primary mb-4 transition duration-300" href="mailto:sllitfoss@gmail.com" target="_blank">sllitfoss@gmail.com</a>
                     <div className="flex justify-start mb-8">
@@ -61,7 +61,7 @@ const Footer = () => {
                     <h1 className="text-white text-2xl font-semibold mb-4">Visit Us On</h1>
                     <a className="text-nav-links-unselected hover:text-primary mb-2 transition duration-300" href="https://sliitfoss.org" target="_blank">sllitfoss.org</a>
                 </div>
-                <div className="w-full flex flex-col justify-center items-center md:justify-start md:items-start mt-6">
+                <div className="w-full flex flex-col justify-end items-start md:justify-start md:items-end mt-6 md:pr-24">
                     <h1 className="text-white text-2xl font-semibold mb-6">Useful Links</h1>
                     {usefulLinks.map(link => (
                         <a className="text-nav-links-unselected hover:text-primary mb-3 transition duration-300" href={link.url} target="_blank">{link.name}</a>
