@@ -11,35 +11,35 @@ const Timeline = () => {
             gradientColor2: "#00DFD8"
         },
         {
-            title: "Start awareness session series",
+            title: "Start of Awareness Session Series",
             dateTime: "02 Aug 2022 12:00 IST",
             isSmallText: false,
             gradientColor1: "#007CF0",
             gradientColor2: "#00DFD8"
         },
         {
-            title: "End of awareness session series",
+            title: "End of Awareness Session Series",
             dateTime: "02 Aug 2022 12:00 IST",
             isSmallText: false,
             gradientColor1: "#7928CA",
             gradientColor2: "#4700DE"
         },
         {
-            title: "Close Registration",
+            title: "Registration Closes",
             dateTime: "02 Aug 2022 12:00 IST",
             isSmallText: true,
             gradientColor1: "#7928CA",
             gradientColor2: "#4700DE"
         },
         {
-            title: "./bashway Opening Ceremony",
+            title: "Opening Ceremony",
             dateTime: "02 Aug 2022 12:00 IST",
             isSmallText: false,
             gradientColor1: "#7928CA",
             gradientColor2: "#FF0080"
         },
         {
-            title: "./bashway contest begin",
+            title: "./bashaway Contest Start",
             dateTime: "02 Aug 2022 12:00 IST",
             isSmallText: false,
             gradientColor1: "#7928CA",
@@ -53,14 +53,14 @@ const Timeline = () => {
             gradientColor2: "#F9CB28"
         },
         {
-            title: "Announce winner and award ceremony",
+            title: "Announce Winners and Award Ceremony",
             dateTime: "02 Aug 2022 12:00 IST",
             isSmallText: false,
             gradientColor1: "#FF4D4D",
             gradientColor2: "#F9CB28"
         },
         {
-            title: "Conclude the event",
+            title: "Event Conclusion",
             dateTime: "02 Aug 2022 12:00 IST",
             isSmallText: true,
             show: false
