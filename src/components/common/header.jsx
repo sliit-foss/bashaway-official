@@ -80,7 +80,7 @@ const Header = () => {
           <div className="col col-span-20 md:pt-2 pr-7 pl-2">
             {registration ? (
               <button
-                class="flex py-1 px-3 bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal hover:text-white hover:bg-primary transition duration-300"
+                class="flex py-1 px-3 bg-[#D9D9D9] rounded-md justify-center items-center text-sm font-normal hover:text-white hover:bg-primary transition duration-300"
                 href=""
                 target="_blank"
               >
@@ -88,12 +88,18 @@ const Header = () => {
               </button>
             ) : (
               <button
-                class="flex py-1 px-3  rounded-sm justify-center items-center text-sm font-normal text-white bg-nav-links-unselected "
+                class="flex py-1 px-3 rounded-md justify-center items-center text-sm font-normal  bg-primary "
                 target="_blank"
                 disabled
               >
-                {/*lock icon is a placeholder*/}
-                <span className="p-1">🔒</span> Register
+                <span className="flex items-center px-px">
+                  <img
+                    src="/assets/lock.svg"
+                    alt=""
+                    className="p-1 rounded-md text-xs"
+                  />
+                  <p className="p-1">Register</p>
+                </span>
               </button>
             )}
           </div>
