@@ -88,7 +88,7 @@ const Header = () => {
               </button>
             ) : (
               <button
-                class="flex py-1 px-3 rounded-md justify-center items-center text-sm font-normal  bg-primary "
+                class="flex py-px px-2 rounded-md justify-center items-center text-sm font-normal  bg-primary "
                 target="_blank"
                 disabled
               >
