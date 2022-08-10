@@ -1,7 +1,11 @@
 import { Divider } from "./common";
 import Countdown from "react-countdown";
+import { registrationOpenContext } from "../App";
+import { useContext } from "react";
 
 const Register = ({ showDivider = true }) => {
+  const { registration, setRegistration } = useContext(registrationOpenContext);
+
   const Completionist = () => {
     return (
       <>
@@ -21,10 +25,11 @@ const Register = ({ showDivider = true }) => {
 
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
+      setRegistration(true);
       return <Completionist />;
     } else {
       return (
-        <div className="flex justify-center">
+        <div className="flex justify-center pb-10">
           <div className="flex flex-col p-1  md:p-4 ">
             <span className="light-sweep font-bold font-poppins text-center text-transparent text-5xl md:text-7xl bg-clip-text bg-gradient-to-r from-primary to-secondary p-4 transform">
               {days.toString().length == 1 ? "0" + days : days}
@@ -72,7 +77,13 @@ const Register = ({ showDivider = true }) => {
 
   return (
     <header>
-      <Countdown date={Date.now() + 3628800000} renderer={renderer} />
+      <Countdown
+        date={Date.now() + 3542400000}
+        renderer={renderer}
+        // onComplete={() => {
+        //   setRegistration(true);
+        // }}
+      />
     </header>
   );
 };
