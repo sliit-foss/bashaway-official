@@ -13,7 +13,7 @@ import {
   Landing,
 } from "./components";
 
-export const registrationOpenContext = createContext({});
+export const RegistrationOpenContext = createContext({});
 
 function App() {
   const [registration, setRegistration] = useState(false);
@@ -25,7 +25,7 @@ function App() {
 
   return (
     <Layout>
-      <registrationOpenContext.Provider
+      <RegistrationOpenContext.Provider
         value={{ registration, setRegistration }}
       >
         <Header />
@@ -38,7 +38,7 @@ function App() {
         <Sponsors />
         <Register />
         <Footer />
-      </registrationOpenContext.Provider>
+      </RegistrationOpenContext.Provider>
     </Layout>
   );
 }

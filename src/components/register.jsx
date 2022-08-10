@@ -1,21 +1,21 @@
-import { Divider } from "./common";
-import Countdown from "react-countdown";
-import { registrationOpenContext } from "../App";
 import { useContext } from "react";
+import Countdown from "react-countdown";
+import { Divider } from "./common";
+import { RegistrationOpenContext } from "../App";
 
 const Register = ({ showDivider = true, comingSoon }) => {
-  const { registration, setRegistration } = useContext(registrationOpenContext);
+  const { registration, setRegistration } = useContext(RegistrationOpenContext);
 
-  const Completionist = () => {
+  const Completionist = ({ text }) => {
     return (
       <>
         {showDivider && <Divider />}
         <div className="flex justify-center bg-gradient-to-r from-transparent via-bg-black/40 to-bg-black/40  backdrop-blur-sm p-4 md:p-7 cursor-pointer hover:bg-[#01050a83] transition duration-300">
           <span
-            data-heading="Register Now"
+            data-heading={text}
             className="light-sweep font-extrabold font-poppins text-center text-transparent text-5xl md:text-7xl bg-clip-text bg-gradient-to-r from-primary to-secondary p-4 transform"
           >
-            Register Now
+            {text}
           </span>
         </div>
         <Divider />
@@ -23,10 +23,9 @@ const Register = ({ showDivider = true, comingSoon }) => {
     );
   };
 
-  const renderer = ({ days, hours, minutes, seconds, completed }) => {
-    if (completed) {
-      setRegistration(true);
-      return <Completionist />;
+  const renderer = ({ days, hours, minutes, seconds }) => {
+    if (registration) {
+      return <Completionist text="Register Now" />;
     } else {
       return (
         <>
@@ -73,17 +72,13 @@ const Register = ({ showDivider = true, comingSoon }) => {
                 </div>
               </div>
             </div>
-          ) : (
+          ) :
             <>
               <Divider />
-              <div className="flex justify-center bg-gradient-to-r from-transparent via-bg-black/40 to-bg-black/40  backdrop-blur-sm p-4 md:p-7 cursor-pointer hover:bg-[#01050a83] transition duration-300">
-                <span className=" font-extrabold font-poppins text-center text-transparent text-5xl md:text-7xl bg-clip-text bg-gradient-to-r from-primary to-secondary p-4 transform">
-                  Coming Soon
-                </span>
-              </div>
+              <Completionist text="Coming Soon" />
               <Divider />
             </>
-          )}
+          }
         </>
       );
     }
@@ -94,9 +89,9 @@ const Register = ({ showDivider = true, comingSoon }) => {
       <Countdown
         date={Date.now() + 3542400000}
         renderer={renderer}
-        // onComplete={() => {
-        //   setRegistration(true);
-        // }}
+        onComplete={() => {
+          setRegistration(true);
+        }}
       />
     </header>
   );

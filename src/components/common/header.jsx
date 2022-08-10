@@ -1,11 +1,10 @@
 import { TiThMenu } from "react-icons/ti";
 import { IoIosClose } from "react-icons/io";
-import { useState } from "react";
-import { useContext } from "react";
-import { registrationOpenContext } from "../../App";
+import { useState, useContext } from "react";
+import { RegistrationOpenContext } from "../../App";
 
 const Header = () => {
-  const { registration, setRegistration } = useContext(registrationOpenContext);
+  const { registration } = useContext(RegistrationOpenContext);
 
   const [burgerNav, setBurgerNav] = useState(false);
 
@@ -20,7 +19,7 @@ const Header = () => {
     document.getElementById(path).scrollIntoView({ behavior: "smooth" });
   };
 
-  const handleBergerNavItemClick = (path) => {
+  const handleBurgerNavItemClick = (path) => {
     document.getElementById(path).scrollIntoView({ behavior: "smooth" });
     burgerNavController();
   };
@@ -77,10 +76,10 @@ const Header = () => {
               </div>
             );
           })}
-          <div className="col col-span-20 md:pt-2 pr-7 pl-2">
+          <div className="col col-span-20 md:pt-[0.450rem] pr-7 pl-2">
             {registration ? (
               <button
-                class="flex py-1 px-3 bg-[#D9D9D9] rounded-md justify-center items-center text-sm font-normal hover:text-white hover:bg-primary transition duration-300"
+                class="flex py-1 px-3 bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal hover:text-white hover:bg-primary transition duration-300"
                 href=""
                 target="_blank"
               >
@@ -88,7 +87,7 @@ const Header = () => {
               </button>
             ) : (
               <button
-                class="flex py-px px-2 rounded-md justify-center items-center text-sm font-normal  bg-primary "
+                class="flex py-px px-2 rounded-sm justify-center items-center text-sm font-normal bg-primary "
                 target="_blank"
                 disabled
               >
@@ -98,7 +97,7 @@ const Header = () => {
                     alt=""
                     className="p-1 rounded-md text-xs"
                   />
-                  <p className="p-1">Register</p>
+                  <p className="p-1 mt-0.5">Register</p>
                 </span>
               </button>
             )}
@@ -129,7 +128,7 @@ const Header = () => {
                   <div className="w-full flex flex-col justify-center items-center">
                     <a
                       className="w-full text-white hover:text-primary text-center transition duration-300"
-                      onClick={() => handleBergerNavItemClick(item.path)}
+                      onClick={() => handleBurgerNavItemClick(item.path)}
                     >
                       {item.name}
                     </a>

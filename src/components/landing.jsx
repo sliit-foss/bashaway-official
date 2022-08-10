@@ -1,8 +1,10 @@
 import Register from "./register";
 import NET from "vanta/dist/vanta.net.min";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useContext } from "react";
+import { RegistrationOpenContext } from "../App";
 
 const Landing = () => {
+  const { registration } = useContext(RegistrationOpenContext);
   const [vantaEffect, setVantaEffect] = useState(0);
   const myRef = useRef(null);
 
@@ -44,7 +46,7 @@ const Landing = () => {
           <img src="/assets/logo/2022.svg" className="w-30 h-30 mt-4 md:mt-0" />
         </div>
       </div>
-      <div className="w-full flex justify-center absolute bottom-48 z-40">
+      <div className="w-full flex justify-center absolute bottom-56 z-40">
         <a href="https://sliitfoss.org" target="_blank">
           <img src="/assets/foss-logo.svg" className="w-28 h-28" />
         </a>
@@ -55,7 +57,7 @@ const Landing = () => {
         className="w-full h-full bg-black absolute top-0 right-0"
       />
       <div
-        className="w-full absolute bottom-0 z-40 transition duration-300"
+        className={`w-full absolute bottom-0 z-40 transition duration-300 ${!registration ? 'mb-8' : ''}`}
         id="register"
       >
         <Register showDivider={false} comingSoon={true} />
