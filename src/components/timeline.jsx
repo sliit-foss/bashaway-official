@@ -39,14 +39,14 @@ const Timeline = () => {
             gradientColor2: "#FF0080"
         },
         {
-            title: "./bashaway Contest Start",
+            title: "Start of ./bashaway Contest",
             dateTime: "02 Aug 2022 12:00 IST",
             isSmallText: false,
             gradientColor1: "#7928CA",
             gradientColor2: "#FF0080"
         },
         {
-            title: "Contest End",
+            title: "End of Contest",
             dateTime: "02 Aug 2022 12:00 IST",
             isSmallText: true,
             gradientColor1: "#FF4D4D",
