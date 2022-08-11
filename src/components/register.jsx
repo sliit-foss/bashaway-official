@@ -87,7 +87,7 @@ const Register = ({ showDivider = true, comingSoon }) => {
   return (
     <header>
       <Countdown
-        date={Date.now() + 3542400000}
+        date={(new Date(2022, 9, 1, 9, 0, 0).getTime())}
         renderer={renderer}
         onComplete={() => {
           setRegistration(true);
