@@ -29,7 +29,7 @@ const Competition = () => {
               methods that are coupled with
               <span className="text-[#0070F3]"> process automation.</span> Winner
               or not, We hope that each of you {" "}
-              <span className="text-[#0070F3]">leaves with more than you brought!</span>
+              <span className="text-[#0070F3]">leave with more than you brought!</span>
             </p>
           </div>
         </div>
@@ -43,10 +43,10 @@ const Competition = () => {
               challenge-driven competition, where you have to{" "}
               <span className="text-[#0070F3]"> develop automation scripts </span>
               in Bash, Python, or Java for a specific scenario
-              within a given duration. You can navigate into our competition
-              portal, within that you can register your team and manage them as
+              within a given duration. You can navigate to our competition
+              portal where you can register your team and manage it as
               you need. When the competition begins, problems will appear in your
-              portal and then you can start your attempt.
+              portal which is the signal for you to start bashing.
             </p>
           </div>
         </div>
