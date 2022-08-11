@@ -79,7 +79,7 @@ const Header = () => {
           <div className="col col-span-20 md:pt-[0.450rem] pr-7 pl-2">
             {registration ? (
               <button
-                class="flex py-1 px-3 bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal hover:text-white hover:bg-primary transition duration-300"
+                class="flex py-1 px-3 bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal hover:text-white hover:bg-primary transition duration-300 cursor-pointer"
                 href=""
                 target="_blank"
               >
@@ -87,7 +87,7 @@ const Header = () => {
               </button>
             ) : (
               <button
-                class="flex py-px px-2 rounded-sm justify-center items-center text-sm font-normal bg-primary "
+                class="flex py-px px-2 rounded-sm justify-center items-center text-sm font-normal bg-primary cursor-pointer"
                 target="_blank"
                 disabled
               >
