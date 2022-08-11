@@ -10,26 +10,26 @@ const Competition = () => {
             <h1 className="text-white mb-[18px]">Why?</h1>
             <p className="text-[#888888]">
               <span className="text-[#0070F3]">./bashaway</span> 2022 aims to
-              sharpen a participant's
+              sharpen a participant's&nbsp; 
               <span className="text-[#0070F3]">
                 analytical thinking, problem-solving,
               </span>{" "}
               and <span className="text-[#0070F3]">scripting skills </span>
-              through its challenges. Also, participants get to test their skills
-              against other skilled participants and improve their own timing in a
+              through its challenges. Participants also get to test their skills
+              against other skilled competitors and improve their own timing in a
               competitive environment.
               <br></br>You will{" "}
-              <span className="text-[#0070F3]">gain massive knowledge </span>that
+              <span className="text-[#0070F3]">gain massive knowledge </span>that's
               related to
               <span className="text-[#0070F3]">
                 {" "}
                 computer process automation.
               </span>{" "}
-              Same time you will get broad idea about tools, technologies and
-              methods that coupling with
+              Additionally, you will get a broad idea about tools, technologies, and
+              methods that are coupled with
               <span className="text-[#0070F3]"> process automation.</span> Winner
-              or not , We hope you all{" "}
-              <span className="text-[#0070F3]"> leave without empty hands.</span>
+              or not, We hope that each of you {" "}
+              <span className="text-[#0070F3]">leaves with more than you brought!</span>
             </p>
           </div>
         </div>
@@ -40,13 +40,13 @@ const Competition = () => {
             <p className="text-[#888888]">
               {" "}
               <span className="text-[#0070F3]">./bashaway</span> 2022 is a
-              challenge driven competition, where you have to{" "}
+              challenge-driven competition, where you have to{" "}
               <span className="text-[#0070F3]"> develop automation scripts </span>
-              in bash, Python or any suitable language for a specific scenario
+              in Bash, Python, or Java for a specific scenario
               within a given duration. You can navigate into our competition
               portal, within that you can register your team and manage them as
-              you need. When competition begin, problems will appear in your
-              portal then you can start attempt.
+              you need. When the competition begins, problems will appear in your
+              portal and then you can start your attempt.
             </p>
           </div>
         </div>
