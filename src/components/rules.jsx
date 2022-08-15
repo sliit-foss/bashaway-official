@@ -29,7 +29,7 @@ const Rules = () => {
         <span>Get the rules and regulations booklet.</span>
       </div>
       <div data-aos="fade-left"><a href="">
-        <div className="flex w-[165px] h-[42px] bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal mt-4 text-black hover:text-white hover:bg-primary transition duration-300">
+        <div className="flex w-[165px] h-[42px] mb-10 bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal mt-4 text-black hover:text-white hover:bg-primary transition duration-300">
           Download
         </div>
       </a></div>

@@ -8,38 +8,22 @@ const Prizes = () => {
             image: "prize2.svg",
             details: [
                 'LKR 30,000.00',
-                '4 tickets to ABC Event',
-                'Computer Accessory Set',
-                'Bash Guidbook'
             ]
         },
         {
             name: "1st Runner's Up",
             image: "prize1.svg",
             details: [
-                'LKR 15,000.00',
-                'Computer Accessory Set',
-                'Bash Guidebook'
+                'LKR 25,000.00',
             ]
         },
         {
             name: "2nd Runner's Up",
             image: "prize3.svg",
             details: [
-                'LKR 10,000.00',
-                'Computer Accessory Set',
-                'Bash Guidebook'
+                'LKR 20,000.00',
             ]
         },
-        {
-            name: "Most Creative Solution",
-            image: "prize2.svg",
-            details: [
-                'Computer Accessory Set',
-                '4 JBL Headsets',
-                'Bash Guidebook'
-            ]
-        }
     ]
 
     const Prize = ({ name, details, image, aos }) => {
@@ -63,7 +47,7 @@ const Prizes = () => {
                     })
                 }
             </div>
-            <span className="text-nav-links-unselected text-center mb-12" data-aos="fade-up">* Conditions apply *</span>
+            <span className="text-nav-links-unselected text-center mb-2" data-aos="fade-up">* Conditions apply *</span>
         </div>
     </>
 }
