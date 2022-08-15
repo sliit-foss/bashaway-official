@@ -63,7 +63,7 @@ const Prizes = () => {
                     })
                 }
             </div>
-            <span className="text-nav-links-unselected text-center mb-2" data-aos="fade-up">* Conditions apply *</span>
+            <span className="text-nav-links-unselected text-center mb-12" data-aos="fade-up">* Conditions apply *</span>
         </div>
     </>
 }

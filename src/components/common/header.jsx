@@ -41,14 +41,14 @@ const Header = () => {
       name: "Prizes",
       path: "prizes",
     },
-    {
-      name: "Speakers",
-      path: "speakers",
-    },
-    {
-      name: "Sponsors",
-      path: "sponsors",
-    },
+    // {
+    //   name: "Speakers",
+    //   path: "speakers",
+    // },
+    // {
+    //   name: "Sponsors",
+    //   path: "sponsors",
+    // },
     {
       name: "Contact",
       path: "footer",
