@@ -75,7 +75,7 @@ const Timeline = () => {
                 return (
                     <div className="flex flex-col justify-center items-center">
                         <span className={`${list.isSmallText ? "text-[20px]" : "text-[32px]"} mt-[30px] text-white text-center font-semibold leading-6"`} data-aos="fade-down">{list.title}</span>
-                        <span className="text-gray-500 font-normal text-center text-sm mt-2" data-aos="fade-down">{list.dateTime}</span>
+                        {/* <span className="text-gray-500 font-normal text-center text-sm mt-2" data-aos="fade-down">{list.dateTime}</span> */}
                         {list.show !== false && <div className="mt-5" data-aos="fade-down">
                             <div className={`relative flex justify-center h-[80px] w-0.5`}
                                 style={{ backgroundImage: `linear-gradient(to top, ${list.gradientColor1}, #ffffff00)` }}>
