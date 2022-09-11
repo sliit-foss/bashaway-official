@@ -54,13 +54,16 @@ const Competition = () => {
 
       <h1 className="text-xl text-white font-bold mt-16" data-aos="fade-right">How does it work?</h1>
       <span className="text-sm text-[#888888] font-normal my-[10px]" data-aos="fade-left">
-        Find the attachment here.
+        Get the competition booklet here.
       </span>
-      <a data-aos="fade-right" href="">
+      <a data-aos="fade-right" href="/booklet/Competition booklet Bashaway 2022.pdf" download>
         <div className="flex w-[165px] h-[42px] bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal hover:text-white hover:bg-primary transition duration-300">
           Download
         </div>
       </a>
+      <span className="text-sm text-red-500 font-normal my-[10px]" data-aos="fade-left">
+        *The content in the booklet may be updated in the future.
+      </span>
     </div>
   );
 };
