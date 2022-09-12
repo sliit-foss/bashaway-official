@@ -38,13 +38,9 @@ const Header = () => {
       path: "rules",
     },
     {
-      name: "Prizes",
-      path: "prizes",
+      name: "Speakers",
+      path: "speakers",
     },
-    // {
-    //   name: "Speakers",
-    //   path: "speakers",
-    // },
     // {
     //   name: "Sponsors",
     //   path: "sponsors",

@@ -33,9 +33,9 @@ function App() {
         <Timeline />
         <Competition />
         <Rules />
-        {/* <Prizes />
+        {/* <Prizes /> */}
         <Speakers />
-        <Sponsors /> */}
+        {/* <Sponsors /> */}
         <Register />
         <Footer />
       </RegistrationOpenContext.Provider>
