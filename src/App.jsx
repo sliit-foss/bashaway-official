@@ -21,6 +21,9 @@ function App() {
   useEffect(() => {
     Aos.init({ offset: 0, duration: 1500 });
     window.addEventListener("load", Aos.refresh);
+    if (window.location.href.includes("#rules")) {
+      document.getElementById('rules').scrollIntoView({ behavior: "smooth" });
+    }
   }, []);
 
   return (
