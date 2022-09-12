@@ -10,6 +10,7 @@ module.exports = {
         'primary': "#0070F3",
         'secondary': "#00DFD8",
         'nav-links-unselected': "#888888",
+        'logo-container': "rgb(255 255 255 / 0.02)",
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],

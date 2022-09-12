@@ -32,7 +32,7 @@ const Landing = () => {
 
   return (
     <div className="w-full flex flex-col justify-center items-center h-screen relative content">
-      <div className="w-full flex flex-col md:flex-row justify-center items-center gap-x-6 mb-36 px-6 relative z-40">
+      <div className="w-full flex flex-col md:flex-row justify-center items-center gap-x-6 mb-56 sm:mb-36 px-6 relative z-40">
         <div className="w-full md:w-auto flex justify-start md:justify-end">
           <img src="/assets/logo/SLIIT.svg" className="w-30 h-30 mr-5 mt-8" />
           <img src="/assets/logo/Circle.svg" className="w-30 h-30 mr-5 mt-8" />
@@ -46,9 +46,18 @@ const Landing = () => {
           <img src="/assets/logo/2022.svg" className="w-30 h-30 mt-4 md:mt-0" />
         </div>
       </div>
-      <div className="w-full flex justify-center absolute bottom-56 z-40">
+      <div className="w-auto bg-logo-container backdrop-blur-md rounded-lg p-2 flex justify-center items-center flex-wrap absolute bottom-32 sm:bottom-36 md:bottom-56 z-40 transform scale-75">
         <a href="https://sliitfoss.org" target="_blank">
-          <img src="/assets/foss-logo.svg" className="w-28 h-28" />
+          <img src="/assets/foss-logo.svg" className="w-28 h-28 mx-5" />
+        </a>
+        <a href="https://sliitieee.org" target="_blank">
+          <img src="/assets/fcsc-logo.png" className="w-32 h-32 mx-5 mr-3 filter brightness-125" />
+        </a>
+        <a href="https://community.mozilla.org/en/groups/mozilla-campus-club-of-sliit/" target="_blank">
+          <img src="/assets/mozilla-logo.png" className="w-32 h-32 mx-3 filter brightness-115" />
+        </a>
+        <a href="https://wif-web.web.app" target="_blank">
+          <img src="/assets/wif-logo.png" className="w-28 h-[4.2rem] mb-0.5 mx-5" />
         </a>
       </div>
       <div
