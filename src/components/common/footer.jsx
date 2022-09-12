@@ -64,7 +64,7 @@ const Footer = () => {
                     <h1 className="mb-4 text-2xl font-semibold text-white">Visit Us On</h1>
                     <a className="mb-2 text-nav-links-unselected hover:text-primary transition duration-300" href="https://sliitfoss.org" target="_blank">sllitfoss.org</a>
                 </div>
-                <div className="flex flex-col items-start justify-end w-full mt-6 md:justify-start md:items-end md:pr-24">
+                <div className="flex flex-col items-center justify-end w-full mt-6 md:justify-start md:items-end md:pr-24">
                     <h1 className="mb-6 text-2xl font-semibold text-white">Useful Links</h1>
                     {usefulLinks.map(link => (
                         <a className="mb-3 text-nav-links-unselected hover:text-primary transition duration-300" href={link.url} target="_blank">{link.name}</a>
