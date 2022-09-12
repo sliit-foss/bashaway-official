@@ -30,8 +30,8 @@ const Register = ({ showDivider = true, comingSoon }) => {
       return (
         <>
           {comingSoon ? (
-            <div className="flex justify-center">
-              <div className="flex flex-col p-1  md:p-4 ">
+            <div className="flex justify-center transform scale-75 sm:scale-100">
+              <div className="flex flex-col p-1 md:p-4 ">
                 <span className="light-sweep font-bold font-poppins text-center text-transparent text-5xl md:text-7xl bg-clip-text bg-gradient-to-r from-primary to-secondary p-4 transform">
                   {days.toString().length == 1 ? "0" + days : days}
                 </span>

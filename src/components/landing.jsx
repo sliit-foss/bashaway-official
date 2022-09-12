@@ -50,7 +50,7 @@ const Landing = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center h-screen relative content">
       <div className="flex flex-col min-h-[50vh] justify-between items-center" style={{ paddingTop: logoPaddingTop }}>
-        <div className="w-full flex flex-col md:flex-row justify-center items-center gap-x-6 px-6 relative z-40">
+        <div className="w-full flex flex-col md:flex-row justify-center items-center gap-x-6 px-6 relative z-40  transform scale-75 sm:scale-100">
           <div className="w-full md:w-auto flex justify-start md:justify-end">
             <img src="/assets/logo/SLIIT.svg" className="w-30 h-30 mr-5 mt-8" />
             <img src="/assets/logo/Circle.svg" className="w-30 h-30 mr-5 mt-8" />
