@@ -41,6 +41,7 @@ const Header = () => {
       name: "Speakers",
       path: "speakers",
     },
+    // make avialable after sponsors are finalized
     // {
     //   name: "Sponsors",
     //   path: "sponsors",
