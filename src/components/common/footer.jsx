@@ -13,7 +13,7 @@ const Footer = () => {
         },
         {
             icon: 'linkedin',
-            url: 'https://twitter.com/fosssliit?lang=en',
+            url: 'https://www.linkedin.com/company/sliit-foss-community/',
         },
         {
             icon: 'twitter',
@@ -26,22 +26,25 @@ const Footer = () => {
     ]
 
     const usefulLinks = [
-        {
-            name: 'Register',
-            url: 'https://sliitfoss.org'
-        },
-        {
-            name: 'Competition',
-            url: 'https://sliitfoss.org'
-        },
+        // make available after registration opens
+        // {
+        //     name: 'Register',
+        //     url: 'https://sliitfoss.org'
+        // },
+        // make available after registration opens
+        // {
+        //     name: 'Competition',
+        //     url: 'https://sliitfoss.org'
+        // },
         {
             name: 'Code of Conduct',
             url: 'https://sliitfoss.org/code-conduct'
         },
-        {
-            name: 'Source Code',
-            url: 'https://github.com/sliit-foss/bashaway-landing'
-        },
+        // will be made public after the repository is made public
+        // {
+        //     name: 'Source Code',
+        //     url: 'https://github.com/sliit-foss/bashaway-landing'
+        // },
     ]
 
     return (

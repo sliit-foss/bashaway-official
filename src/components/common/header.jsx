@@ -38,13 +38,10 @@ const Header = () => {
       path: "rules",
     },
     {
-      name: "Prizes",
-      path: "prizes",
+      name: "Speakers",
+      path: "speakers",
     },
-    // {
-    //   name: "Speakers",
-    //   path: "speakers",
-    // },
+    // make avialable after sponsors are finalized
     // {
     //   name: "Sponsors",
     //   path: "sponsors",
