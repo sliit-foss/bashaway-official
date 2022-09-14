@@ -68,14 +68,14 @@ const Landing = () => {
           <a href="https://sliitfoss.org" target="_blank">
             <img src="/assets/foss-logo.svg" className="w-28 h-28 mx-5" />
           </a>
-          <a href="https://sliitieee.org" target="_blank">
-            <img src="/assets/fcsc-logo.png" className="w-32 h-32 mx-5 mr-3 filter brightness-125" />
+          <a href="https://www.facebook.com/sliit.fcsc/" target="_blank">
+            <img src="/assets/fcsc-logo.png" className="w-36 h-36 mx-5 mr-3 filter brightness-125" />
           </a>
           <a href="https://community.mozilla.org/en/groups/mozilla-campus-club-of-sliit/" target="_blank">
-            <img src="/assets/mozilla-logo.png" className="w-32 h-32 mx-3 filter brightness-115" />
+            <img src="/assets/mozilla-logo.png" className="w-24 h-24 mx-3 filter brightness-115" />
           </a>
           <a href="https://wif-web.web.app" target="_blank">
-            <img src="/assets/wif-logo.png" className="w-28 h-[4.2rem] mb-0.5 mx-5" />
+            <img src="/assets/wif-logo.png" className="w-[7.3rem] h-[7.4rem] mx-5" />
           </a>
         </div>
       </div>
