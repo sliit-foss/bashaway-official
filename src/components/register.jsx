@@ -2,22 +2,33 @@ import { useContext } from "react";
 import Countdown from "react-countdown";
 import { Divider } from "./common";
 import { RegistrationOpenContext } from "../App";
+import { useEffect } from "react";
+
+const openingDate = new Date(2022, 8, 15, 19, 0, 0).getTime()
 
 const Register = ({ showDivider = true, comingSoon }) => {
   const { registration, setRegistration } = useContext(RegistrationOpenContext);
+
+  useEffect(() => {
+    if (Date.now() >= openingDate) {
+      setRegistration(true);
+    }
+  }, [registration]);
 
   const Completionist = ({ text }) => {
     return (
       <>
         {showDivider && <Divider />}
-        <div className="flex justify-center bg-gradient-to-r from-transparent via-bg-black/40 to-bg-black/40  backdrop-blur-sm p-4 md:p-7 cursor-pointer hover:bg-[#01050a83] transition duration-300">
-          <span
-            data-heading={text}
-            className="light-sweep font-extrabold font-poppins text-center text-transparent text-5xl md:text-7xl bg-clip-text bg-gradient-to-r from-primary to-secondary p-4 transform"
-          >
-            {text}
-          </span>
-        </div>
+        <a href="https://portal.bashaway.sliitfoss.org/register" target="_blank">
+          <div className="flex justify-center bg-gradient-to-r from-transparent via-bg-black/40 to-bg-black/40  backdrop-blur-sm p-4 md:p-7 cursor-pointer hover:bg-[#01050a83] transition duration-300">
+            <span
+              data-heading={text}
+              className="light-sweep font-extrabold font-poppins text-center text-transparent text-5xl md:text-7xl bg-clip-text bg-gradient-to-r from-primary to-secondary p-4 transform"
+            >
+              {text}
+            </span>
+          </div>
+        </a>
         <Divider />
       </>
     );
@@ -87,7 +98,7 @@ const Register = ({ showDivider = true, comingSoon }) => {
   return (
     <header>
       <Countdown
-        date={(new Date(2022, 8, 15, 19, 0, 0).getTime())}
+        date={openingDate}
         renderer={renderer}
         onComplete={() => {
           setRegistration(true);

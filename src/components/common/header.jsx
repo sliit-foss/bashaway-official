@@ -75,13 +75,13 @@ const Header = () => {
           })}
           <div className="col col-span-20 md:pt-[0.450rem] pr-7 pl-2">
             {registration ? (
-              <button
+              <a
                 class="flex py-1 px-3 bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal hover:text-white hover:bg-primary transition duration-300 cursor-pointer"
-                href=""
+                href="https://portal.bashaway.sliitfoss.org/register"
                 target="_blank"
               >
                 Register
-              </button>
+              </a>
             ) : (
               <button
                 class="flex py-px px-2 rounded-sm justify-center items-center text-sm font-normal bg-primary cursor-pointer"

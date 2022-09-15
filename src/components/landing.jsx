@@ -34,7 +34,6 @@ const Landing = () => {
 
   const handleZoom = () => {
     const zoom = Math.round(window.devicePixelRatio * 100)
-    console.log(zoom)
     if (zoom > 125) {
       setLogoPaddingTop('0rem')
     } else {

@@ -25,16 +25,14 @@ const Footer = () => {
   ];
 
   const usefulLinks = [
-    // make available after registration opens
-    // {
-    //     name: 'Register',
-    //     url: 'https://sliitfoss.org'
-    // },
-    // make available after registration opens
-    // {
-    //     name: 'Competition',
-    //     url: 'https://sliitfoss.org'
-    // },
+    {
+        name: 'Register',
+        url: 'https://portal.bashaway.sliitfoss.org/register'
+    },
+    {
+        name: 'Competition',
+        url: 'https://portal.bashaway.sliitfoss.org'
+    },
     {
       name: "Code of Conduct",
       url: "https://sliitfoss.org/code-conduct",
@@ -72,13 +70,13 @@ const Footer = () => {
             >
               <img
                 src="/assets/mozilla-logo.png"
-                className="w-28 h-28 mx-6 filter brightness-115"
+                className="w-[6.5rem] h-[6.5rem] mx-6 mr-8 filter brightness-115"
               />
             </a>
             <a href="https://wif-web.web.app" target="_blank">
               <img
                 src="/assets/wif-logo.png"
-                className="w-28 h-28 mx-6"
+                className="w-28 h-28 ml-4 mx-6"
               />
             </a>
             </div>
