@@ -70,7 +70,7 @@ const Footer = () => {
             >
               <img
                 src="/assets/mozilla-logo.png"
-                className="w-[6.5rem] h-[6.5rem] mx-6 mr-8 filter brightness-115"
+                className="w-[6.1rem] h-[6.1rem] mx-6 mr-8 mb-3 filter brightness-115"
               />
             </a>
             <a href="https://wif-web.web.app" target="_blank">
