@@ -26,12 +26,12 @@ const Footer = () => {
 
   const usefulLinks = [
     {
-        name: 'Register',
-        url: 'https://portal.bashaway.sliitfoss.org/register'
+      name: "Register",
+      url: "https://portal.bashaway.sliitfoss.org/register",
     },
     {
-        name: 'Competition',
-        url: 'https://portal.bashaway.sliitfoss.org'
+      name: "Competition",
+      url: "https://portal.bashaway.sliitfoss.org",
     },
     {
       name: "Code of Conduct",
@@ -54,7 +54,10 @@ const Footer = () => {
           <div className="flex flex-col justify-center items-center w-full xl:w-10/12 md:pl-24 md:items-center md:justify-start scale-75 relative md:bottom-8">
             <div className="flex justify-start items-center">
               <a href="https://sliitfoss.org" target="_blank">
-                <img src="/assets/foss-logo.svg" className="w-[6.6rem] h-[6.6rem] mx-6" />
+                <img
+                  src="/assets/foss-logo.svg"
+                  className="w-[6.6rem] h-[6.6rem] mx-6"
+                />
               </a>
               <a href="https://www.facebook.com/sliit.fcsc/" target="_blank">
                 <img
@@ -64,21 +67,38 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex justify-start items-center">
-            <a
-              href="https://community.mozilla.org/en/groups/mozilla-campus-club-of-sliit/"
-              target="_blank"
-            >
-              <img
-                src="/assets/mozilla-logo.png"
-                className="w-[6.1rem] h-[6.1rem] mx-6 mr-8 mb-3 filter brightness-115"
-              />
-            </a>
-            <a href="https://wif-web.web.app" target="_blank">
-              <img
-                src="/assets/wif-logo.png"
-                className="w-28 h-28 ml-4 mx-6"
-              />
-            </a>
+              <a
+                href="https://community.mozilla.org/en/groups/mozilla-campus-club-of-sliit/"
+                target="_blank"
+              >
+                <img
+                  src="/assets/mozilla-logo.png"
+                  className="w-[6.1rem] h-[6.1rem] mx-6 mr-8 mb-3 filter brightness-115"
+                />
+              </a>
+              <a href="https://wif-web.web.app" target="_blank">
+                <img
+                  src="/assets/wif-logo.png"
+                  className="w-28 h-28 ml-4 mx-6"
+                />
+              </a>
+            </div>
+            <div className="flex justify-start items-center">
+              <a
+                href="https://www.facebook.com/csnesc/"
+                target="_blank"
+              >
+                <img
+                  src="/assets/csne-logo.png"
+                  className="w-[7.2rem] h-[7.2rem] mx-6 mr-8 mb-3 filter brightness-115"
+                />
+              </a>
+              <a href="https://www.facebook.com/sliit.cscs/" target="_blank">
+                <img
+                  src="/assets/cs-logo.png"
+                  className="w-20 h-22 ml-4 mx-6"
+                />
+              </a>
             </div>
           </div>
         </div>
