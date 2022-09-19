@@ -55,13 +55,13 @@ const Footer = () => {
             <div className="flex justify-start items-center">
               <a href="https://sliitfoss.org" target="_blank">
                 <img
-                  src="/assets/foss-logo.svg"
+                  src="/assets/club-logos/foss-logo.svg"
                   className="w-[6.6rem] h-[6.6rem] mx-6"
                 />
               </a>
               <a href="https://www.facebook.com/sliit.fcsc/" target="_blank">
                 <img
-                  src="/assets/fcsc-logo.png"
+                  src="/assets/club-logos/fcsc-logo.png"
                   className="w-32 h-32 mx-6 filter brightness-125"
                 />
               </a>
@@ -72,13 +72,13 @@ const Footer = () => {
                 target="_blank"
               >
                 <img
-                  src="/assets/mozilla-logo.png"
+                  src="/assets/club-logos/mozilla-logo.png"
                   className="w-[6.1rem] h-[6.1rem] mx-6 mr-8 mb-3 filter brightness-115"
                 />
               </a>
               <a href="https://wif-web.web.app" target="_blank">
                 <img
-                  src="/assets/wif-logo.png"
+                  src="/assets/club-logos/wif-logo.png"
                   className="w-28 h-28 ml-4 mx-6"
                 />
               </a>
@@ -89,13 +89,13 @@ const Footer = () => {
                 target="_blank"
               >
                 <img
-                  src="/assets/csne-logo.png"
+                  src="/assets/club-logos/csne-logo.png"
                   className="w-[7.2rem] h-[7.2rem] mx-0 mr-8 mb-3 filter brightness-115"
                 />
               </a>
               <a href="https://www.facebook.com/sliit.cscs/" target="_blank">
                 <img
-                  src="/assets/cs-logo.png"
+                  src="/assets/club-logos/cs-logo.png"
                   className="w-20 h-22 ml-4 mx-6"
                 />
               </a>
