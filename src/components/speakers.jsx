@@ -8,6 +8,11 @@ const Speakers = () => {
             position: "System/DevOps Engineer",
             image: "speaker1.jpg"
         },
+        {
+            name: "Heshan Dharmasena",
+            position: "Red Hat Certified Architect & Trainer",
+            image: "speaker2.jpg"
+        },
     ]
 
     const Speaker = ({ name, position, image, aos }) => {
