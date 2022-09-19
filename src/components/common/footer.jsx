@@ -47,11 +47,11 @@ const Footer = () => {
   return (
     <>
       <div
-        className="flex flex-col justify-between p-3 md:p-12 bg-black grayscale md:flex-row"
+        className="flex flex-col justify-between p-3 md:p-12 md:pb-0 bg-black grayscale md:flex-row"
         id="footer"
       >
         <div className="w-full">
-          <div className="flex flex-col justify-center items-center w-full xl:w-10/12 md:pl-24 md:items-center md:justify-start scale-75 relative md:bottom-8">
+          <div className="flex flex-col justify-center items-center w-full xl:w-10/12 md:pl-24 md:items-center md:justify-start scale-[0.7] relative md:bottom-14">
             <div className="flex justify-start items-center">
               <a href="https://sliitfoss.org" target="_blank">
                 <img
@@ -73,13 +73,13 @@ const Footer = () => {
               >
                 <img
                   src="/assets/club-logos/mozilla-logo.png"
-                  className="w-[6.1rem] h-[6.1rem] mx-6 mr-8 mb-3 filter brightness-115"
+                  className="w-[6.1rem] h-[6.1rem] mx-6 mr-10 mb-3 filter brightness-115"
                 />
               </a>
               <a href="https://wif-web.web.app" target="_blank">
                 <img
                   src="/assets/club-logos/wif-logo.png"
-                  className="w-28 h-28 ml-4 mx-6"
+                  className="w-28 h-28 ml-4 mx-6 relative sm:mb-4"
                 />
               </a>
             </div>
@@ -90,13 +90,13 @@ const Footer = () => {
               >
                 <img
                   src="/assets/club-logos/csne-logo.png"
-                  className="w-[7.2rem] h-[7.2rem] mx-0 mr-8 mb-3 filter brightness-115"
+                  className="w-[7.2rem] h-[7.2rem] mx-0 ml-4 sm:ml-0 mr-12 mb-3 filter brightness-115"
                 />
               </a>
               <a href="https://www.facebook.com/sliit.cscs/" target="_blank">
                 <img
                   src="/assets/club-logos/cs-logo.png"
-                  className="w-20 h-22 ml-4 mx-6"
+                  className="w-20 h-22 ml-4 mx-6 relative mb-8"
                 />
               </a>
             </div>
