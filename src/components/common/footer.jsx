@@ -90,7 +90,7 @@ const Footer = () => {
               >
                 <img
                   src="/assets/csne-logo.png"
-                  className="w-[7.2rem] h-[7.2rem] mx-6 mr-8 mb-3 filter brightness-115"
+                  className="w-[7.2rem] h-[7.2rem] mx-0 mr-8 mb-3 filter brightness-115"
                 />
               </a>
               <a href="https://www.facebook.com/sliit.cscs/" target="_blank">
