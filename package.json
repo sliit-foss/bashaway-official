@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.2",
     "aos": "^2.3.4",
     "react": "^18.0.0",
     "react-countdown": "^2.3.2",

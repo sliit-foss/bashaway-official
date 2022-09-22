@@ -79,7 +79,7 @@ const Header = () => {
           <div className="flex col col-span-20 md:pt-[0.450rem] pr-7 pl-2">
             {registration ? (
               <a
-                class="py-1 px-3 mr-12 bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal hover:text-white hover:bg-primary transition duration-300 cursor-pointer"
+                class="py-1 px-3 mr-4 bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal hover:text-white hover:bg-primary transition duration-300 cursor-pointer"
                 href="https://portal.bashaway.sliitfoss.org/register"
                 target="_blank"
               >
@@ -103,10 +103,10 @@ const Header = () => {
             )}
 
             <button
-              class="flex justify-center items-center py-1 px-3 bg-[#D9D9D9] rounded-sm text-sm font-normal hover:text-white hover:bg-primary transition duration-300 cursor-pointer"
+              class="flex justify-center items-center py-1 px-2 bg-[#D9D9D9] rounded-sm text-sm font-normal hover:text-white hover:bg-primary transition duration-300 cursor-pointer"
               onClick={() => setShowSocial(true)}
             > 
-              Join the WhatsApp Group <BsWhatsapp className="ml-2"/>
+              <span className="line-clamp-1">Join the WhatsApp Group</span> <BsWhatsapp className="ml-2"/>
             </button>
             { showSocial ? <WhatsappModal onClose={() => setShowSocial(false)}/> : "" }
           </div>
