@@ -12,6 +12,7 @@ import {
   Competition,
   Landing,
 } from "./components";
+import { Social } from "./components/social";
 
 export const RegistrationOpenContext = createContext({});
 
@@ -27,22 +28,25 @@ function App() {
   }, []);
 
   return (
-    <Layout>
-      <RegistrationOpenContext.Provider
-        value={{ registration, setRegistration }}
-      >
-        <Header />
-        <Landing />
-        <Timeline />
-        <Competition />
-        <Rules />
-        {/* <Prizes /> */}
-        <Speakers />
-        {/* <Sponsors /> */}
-        <Register />
-        <Footer />
-      </RegistrationOpenContext.Provider>
-    </Layout>
+    <>
+      <Layout>
+        <RegistrationOpenContext.Provider
+          value={{ registration, setRegistration }}
+        >
+          <Header />
+          <Landing />
+          <Timeline />
+          <Competition />
+          <Rules />
+          {/* <Prizes /> */}
+          <Speakers />
+          {/* <Sponsors /> */}
+          <Register />
+          <Footer />
+        </RegistrationOpenContext.Provider>
+      </Layout>
+      <Social />
+    </>
   );
 }
 
