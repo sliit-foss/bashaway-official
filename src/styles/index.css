@@ -4,6 +4,7 @@
 
 html {
   overflow-x: hidden !important;
+  background-color: #000;
 }
 
 body {
@@ -14,6 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden !important;
+  background-color: #000;
 }
 
 html::-webkit-scrollbar {

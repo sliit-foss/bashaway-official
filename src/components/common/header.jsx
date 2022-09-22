@@ -1,4 +1,4 @@
-import { TiThMenu } from "react-icons/ti";
+import { HiOutlineMenu } from "react-icons/hi";
 import { IoIosClose } from "react-icons/io";
 import { useState, useContext } from "react";
 import { RegistrationOpenContext } from "../../App";
@@ -58,17 +58,17 @@ const Header = () => {
   return (
     <div>
       <div
-        className={`w-full flex flex-col md:flex-row justify-between bg-black/70 p-5 lg:p-1 fixed top-0 z-50 backdrop-blur-[5px]`}
+        className={`w-full flex flex-col md:flex-row justify-between items-center bg-black/70 p-5 py-4 fixed top-0 z-50 backdrop-blur-[5px] border-b border-white/10`}
       >
-        <div className=" w-full md:w-5/12 pl-2 md:pl-12 mt-1.5 lg:pt-[0.8rem]">
+        <div className="w-full md:w-5/12 pl-2 md:pl-12">
           <img src="/assets/bashaway-logo.svg" className="w-30 h-30" />
         </div>
-        <div className="hidden lg:flex justify-between w-full xl:w-10/12 mt-2">
+        <div className="hidden lg:flex justify-between items-center w-full max-w-4xl">
           {navItems.map((item) => {
             return (
-              <div className="md:pt-3">
+              <div>
                 <span
-                  className="px-2 text-nav-links-unselected hover:text-primary mb-3 transition duration-300 cursor-pointer"
+                  className="px-2 text-nav-links-unselected hover:text-primary transition duration-300 cursor-pointer"
                   onClick={() => handleNavItemClick(item.path)}
                 >
                   {item.name}
@@ -76,7 +76,7 @@ const Header = () => {
               </div>
             );
           })}
-          <div className="flex col col-span-20 md:pt-[0.450rem] pr-7 pl-2">
+          <div className="flex col col-span-20 pr-7 pl-2">
             {registration ? (
               <a
                 class="py-1 px-3 mr-4 bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal hover:text-white hover:bg-primary transition duration-300 cursor-pointer"
@@ -87,11 +87,11 @@ const Header = () => {
               </a>
             ) : (
               <button
-                class="flex py-px px-2 rounded-sm justify-center items-center text-sm font-normal bg-primary cursor-pointer"
+                class="flex px-2 rounded-sm justify-center items-center text-sm font-normal bg-primary cursor-pointer"
                 target="_blank"
                 disabled
               >
-                <span className="flex items-center px-px">
+                <span className="flex items-center">
                   <img
                     src="/assets/lock.svg"
                     alt=""
@@ -111,8 +111,8 @@ const Header = () => {
             { showSocial ? <WhatsappModal onClose={() => setShowSocial(false)}/> : "" }
           </div>
         </div>
-        <TiThMenu
-          className="fixed top-0 h-8 w-8 text-white right-1 lg:hidden mt-5 lg:mt-4 mr-4 lg:mr-2 cursor-pointer"
+        <HiOutlineMenu
+          className="fixed top-0 h-8 w-8 text-white right-1 lg:hidden mt-[0.8rem] lg:mt-4 mr-4 lg:mr-2 cursor-pointer"
           onClick={burgerNavController}
         />
       </div>
