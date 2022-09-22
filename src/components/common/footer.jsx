@@ -148,8 +148,8 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <Divider />
-      <div className="flex flex-col justify-start px-10 pt-5 pb-6 bg-black md:flex-row md:justify-between text-nav-links-unselected md:px-24">
+      <Divider id="copyright-divider"/>
+      <div id="copyright-section" className="flex flex-col justify-start px-10 pt-5 pb-6 bg-black md:flex-row md:justify-between text-nav-links-unselected md:px-24">
         <span className="text-center md:text-left">
           Copyright © 2022 SLIIT FOSS Community
         </span>

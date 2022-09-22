@@ -7,40 +7,48 @@ import { Portal } from "react-portal";
 
 export function Social() {
     const [showModal, setShowModal] = useState(false);
+
+    const [pushBottom, setPushBottom] = useState(false)
+
+    const onScroll = () => {
+        const copyrightSection = document.getElementById("copyright-divider");
+        const diff = window.innerHeight - document.getElementById("copyright-divider").getBoundingClientRect().top
+        if ( window.scrollY > window.innerHeight && diff > copyrightSection.offsetHeight - 35) {
+            setPushBottom(true)
+        } else {
+            setPushBottom(false)
+        }
+    }
+
+    useEffect(() => {
+        document.removeEventListener("scroll", onScroll)
+        document.addEventListener("scroll", onScroll)
+    });
+
     return (
-        <div className="fixed right-[1.5em] bottom-[7em] md:bottom-[6em] text-white z-[49]">
-            <button onClick={() => setShowModal(true)} className="group flex justify-center items-center rounded-full overflow-hidden bg-green-500 transition-all">
+        <div className={`fixed right-[2em] bottom-[6em] text-white z-[49]`} style={{bottom: !pushBottom ? '2.9rem' : '6em'}}>
+            <button onClick={() => {
+                document.querySelector("html").style.overflowY = "hidden";
+                setShowModal(true)
+            }} className="group flex justify-center items-center rounded-full p-1 overflow-hidden bg-primary transition-all">
                 <div className="w-0 h-0 overflow-hidden whitespace-nowrap group-hover:ml-5 group-hover:h-auto group-hover:w-auto transition-all">Join on Whatsapp</div>
-                <BsWhatsapp className="p-4" size={64}/>
+                <BsWhatsapp className="p-4" size={64} />
             </button>
-            {showModal ? <WhatsappModal onClose={() => setShowModal(false)} /> : ""}
+            <WhatsappModal showModal={showModal} toggleShow={setShowModal} />
         </div>
     )
 }
 
 
-export function WhatsappModal({ onClose }) {
-    const [transparency, setTransparency] = useState(true);
-
-    useEffect(() => {
-        setTimeout(() => {
-            document.querySelector("html").style.overflowY = "hidden";
-            setTransparency(false)
-
-            return () => {
-                document.querySelector("html").style.overflowY = "auto";
-            }
-        }, 50);
-    }, []);
-
+export function WhatsappModal({ showModal, toggleShow }) {
     const _onClose = () => {
         document.querySelector("html").style.overflowY = "auto";
-        onClose();
+        toggleShow(false)
     }
 
     return (
         <Portal>
-            <div className={`fixed w-screen h-screen top-0 left-0 backdrop-blur-2xl z-[99999] transition-all duration-300 ${transparency ? "opacity-0" : "opacity-100"}`}>
+            <div className={`fixed w-screen h-screen top-0 left-0 backdrop-blur-2xl z-[99999] font-inter transition-all duration-300 ${showModal ? "opacity-100" : "opacity-0 pointer-events-none"}`}>
                 <button onClick={_onClose} className="text-white absolute top-0 p-2 right-0">
                     <IoIosClose
                         className="h-14 w-14 text-white cursor-pointer"
