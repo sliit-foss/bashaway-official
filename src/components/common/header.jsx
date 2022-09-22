@@ -2,11 +2,14 @@ import { HiOutlineMenu } from "react-icons/hi";
 import { IoIosClose } from "react-icons/io";
 import { useState, useContext } from "react";
 import { RegistrationOpenContext } from "../../App";
+import { BsWhatsapp } from "react-icons/bs";
+import { WhatsappModal } from "../social";
 
 const Header = () => {
   const { registration } = useContext(RegistrationOpenContext);
 
   const [burgerNav, setBurgerNav] = useState(false);
+  const [showSocial, setShowSocial] = useState(false);
 
   const burgerNavController = () => {
     document.querySelector("html").style.overflowY = !burgerNav
@@ -73,10 +76,10 @@ const Header = () => {
               </div>
             );
           })}
-          <div className="col col-span-20 md:pt-[0.450rem] pr-7 pl-2">
+          <div className="flex col col-span-20 md:pt-[0.450rem] pr-7 pl-2">
             {registration ? (
               <a
-                class="flex py-1 px-3 bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal hover:text-white hover:bg-primary transition duration-300 cursor-pointer"
+                class="py-1 px-3 mr-12 bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal hover:text-white hover:bg-primary transition duration-300 cursor-pointer"
                 href="https://portal.bashaway.sliitfoss.org/register"
                 target="_blank"
               >
@@ -98,6 +101,14 @@ const Header = () => {
                 </span>
               </button>
             )}
+
+            <button
+              class="flex justify-center items-center py-1 px-3 bg-[#D9D9D9] rounded-sm text-sm font-normal hover:text-white hover:bg-primary transition duration-300 cursor-pointer"
+              onClick={() => setShowSocial(true)}
+            > 
+              Join the WhatsApp Group <BsWhatsapp className="ml-2"/>
+            </button>
+            { showSocial ? <WhatsappModal onClose={() => setShowSocial(false)}/> : "" }
           </div>
         </div>
         <HiOutlineMenu
@@ -107,9 +118,8 @@ const Header = () => {
       </div>
       <div>
         <nav
-          className={`h-full w-full flex items-center fixed top-0 left-0 z-50 ${
-            burgerNav ? "pointer-events-auto" : "pointer-events-none opacity-0"
-          } bg-black/50 backdrop-blur-2xl transition duration-300`}
+          className={`h-full w-full flex items-center fixed top-0 left-0 z-50 ${burgerNav ? "pointer-events-auto" : "pointer-events-none opacity-0"
+            } bg-black/50 backdrop-blur-2xl transition duration-300`}
         >
           <IoIosClose
             className="fixed top-0 right-0 z-[60] h-14 w-14 text-white mt-2 mr-2 lg:hidden cursor-pointer"
