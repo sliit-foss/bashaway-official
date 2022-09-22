@@ -1,4 +1,4 @@
-import { TiThMenu } from "react-icons/ti";
+import { HiOutlineMenu } from "react-icons/hi";
 import { IoIosClose } from "react-icons/io";
 import { useState, useContext } from "react";
 import { RegistrationOpenContext } from "../../App";
@@ -57,7 +57,7 @@ const Header = () => {
       <div
         className={`w-full flex flex-col md:flex-row justify-between bg-black/70 p-5 lg:p-1 fixed top-0 z-50 backdrop-blur-[5px]`}
       >
-        <div className=" w-full md:w-5/12 pl-2 md:pl-12 mt-1.5 lg:pt-[0.8rem]">
+        <div className="w-full md:w-5/12 pl-2 md:pl-12 mt-1 lg:pt-[0.8rem]">
           <img src="/assets/bashaway-logo.svg" className="w-30 h-30" />
         </div>
         <div className="hidden lg:flex justify-between w-full xl:w-10/12 mt-2">
@@ -100,8 +100,8 @@ const Header = () => {
             )}
           </div>
         </div>
-        <TiThMenu
-          className="fixed top-0 h-8 w-8 text-white right-1 lg:hidden mt-5 lg:mt-4 mr-4 lg:mr-2 cursor-pointer"
+        <HiOutlineMenu
+          className="fixed top-0 h-8 w-8 text-white right-1 lg:hidden mt-[1.4rem] lg:mt-4 mr-4 lg:mr-2 cursor-pointer"
           onClick={burgerNavController}
         />
       </div>
