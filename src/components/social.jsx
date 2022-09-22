@@ -40,14 +40,12 @@ export function WhatsappModal({ onClose }) {
 
     return (
         <Portal>
-            <div className={`fixed w-screen h-screen top-0 right-0 backdrop-blur-2xl z-[99999] transition-all duration-300 ${transparency ? "opacity-0" : "opacity-100"}`}>
-                <div className="w-full flex justify-end">
-                    <button onClick={_onClose} className="text-white bg-black p-3">
-                        <IoIosClose
-                            className="fixed top-0 right-0 h-14 w-14 text-white mt-2 mr-2 lg:hidden cursor-pointer"
-                        />
-                    </button>
-                </div>
+            <div className={`fixed w-screen h-screen top-0 left-0 backdrop-blur-2xl z-[99999] transition-all duration-300 ${transparency ? "opacity-0" : "opacity-100"}`}>
+                <button onClick={_onClose} className="text-white absolute top-0 p-2 right-0">
+                    <IoIosClose
+                        className="h-14 w-14 text-white cursor-pointer"
+                    />
+                </button>
                 <div className="flex flex-col justify-center items-center w-full h-full text-white">
                     <div className="bold text-xl mb-10 font-semibold text-center">Join the WhatsApp group <br></br> To be up-to-date on the competition</div>
                     <div className="w-[18em] border-[10px] border-white">
