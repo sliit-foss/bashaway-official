@@ -8,9 +8,9 @@ import { Portal } from "react-portal";
 export function Social() {
     const [showModal, setShowModal] = useState(false);
     return (
-        <div className="fixed right-3 bottom-6 text-white z-[9999]">
+        <div className="fixed right-6 bottom-[6em] text-white z-[49]">
             <button onClick={() => setShowModal(true)} className="px-5 py-3 bg-[#00000027] border-[2px] rounded-md flex justify-center items-center backdrop-blur-md font-bold hover:bg-[#3db5dd57] transition-all">
-                Join the WhatsApp Group
+                Join on WhatsApp
                 <BsWhatsapp className="ml-2" />
             </button>
             {showModal ? <WhatsappModal onClose={() => setShowModal(false)} /> : ""}
