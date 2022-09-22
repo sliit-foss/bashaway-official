@@ -40,7 +40,7 @@ export function WhatsappModal({ onClose }) {
 
     return (
         <Portal>
-            <div className={`fixed w-screen h-screen top-0 right-0 bg-black z-[99999] transition-all duration-300 ${transparency ? "opacity-0" : "opacity-100"}`}>
+            <div className={`fixed w-screen h-screen top-0 right-0 backdrop-blur-2xl z-[99999] transition-all duration-300 ${transparency ? "opacity-0" : "opacity-100"}`}>
                 <div className="w-full flex justify-end">
                     <button onClick={_onClose} className="text-white bg-black p-3">
                         <IoIosClose
@@ -49,7 +49,7 @@ export function WhatsappModal({ onClose }) {
                     </button>
                 </div>
                 <div className="flex flex-col justify-center items-center w-full h-full text-white">
-                    <div className="bold text-xl mb-10 font-semibold text-center">Join the WhatsApp group <br></br> To be updated on the competition</div>
+                    <div className="bold text-xl mb-10 font-semibold text-center">Join the WhatsApp group <br></br> To be up-to-date on the competition</div>
                     <div className="w-[18em] border-[10px] border-white">
                         <img src="/assets/whatsapp-qr.png" alt="Whatsapp QR"></img>
                     </div>
