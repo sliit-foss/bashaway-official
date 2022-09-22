@@ -30,7 +30,7 @@ export function Social() {
             <button onClick={() => {
                 document.querySelector("html").style.overflowY = "hidden";
                 setShowModal(true)
-            }} className="group flex justify-center items-center rounded-full p-1 overflow-hidden bg-primary transition-all">
+            }} className="group flex justify-center items-center rounded-full p-1 overflow-hidden bg-[#25D366] transition-all">
                 <div className="w-0 h-0 overflow-hidden whitespace-nowrap group-hover:ml-5 group-hover:h-auto group-hover:w-auto transition-all">Join on Whatsapp</div>
                 <BsWhatsapp className="p-4" size={64} />
             </button>
