@@ -38,7 +38,7 @@ function App() {
           <Timeline />
           <Competition />
           <Rules />
-          {/* <Prizes /> */}
+          <Prizes />
           <Speakers />
           {/* <Sponsors /> */}
           <Register />
