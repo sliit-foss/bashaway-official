@@ -7,14 +7,14 @@ const Prizes = () => {
             name: "Winner",
             image: "prize2.svg",
             details: [
-                'LKR 30,000.00',
+                'LKR 40,000.00',
             ]
         },
         {
             name: "1st Runner's Up",
             image: "prize1.svg",
             details: [
-                'LKR 25,000.00',
+                'LKR 30,000.00',
             ]
         },
         {
