@@ -17,6 +17,13 @@ const Speakers = () => {
             linkedin: "https://www.linkedin.com/in/heshandharmasena/",
             sessionLink: "https://youtu.be/tOJ5TlHoAiM"
         },
+        {
+            name: "Kusal Hettiarachchi",
+            position: "Software/Data Engineer",
+            image: "speaker3.jpg",
+            linkedin: "https://www.linkedin.com/in/kusalhettiarachchi/",
+            sessionLink: "https://youtu.be/_lzpNZRcc2E"
+        },
     ]
 
     const Speaker = ({ name, position, image, linkedin, sessionLink, aos }) => {
