@@ -59,7 +59,7 @@ export function WhatsappModal({ showModal, toggleShow }) {
                     <div className="w-[18em] border-[10px] border-white">
                         <img src="/assets/whatsapp-qr.png" alt="Whatsapp QR"></img>
                     </div>
-                    <div className="mt-4">Scan the QR or click <a href="https://bit.ly/3BATIQB" className="hover:font-bold underline">here</a></div>
+                    <div className="mt-4">Scan the QR or click <a href="https://chat.whatsapp.com/LYR1sVncCWX5ABRvwM8ilu" className="hover:font-bold underline" target="_blank">here</a></div>
                     <div className="mt-10">
                         <img src="/assets/bashaway-logo.svg" className="w-30" />
                     </div>
