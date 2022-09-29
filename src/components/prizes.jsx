@@ -5,14 +5,14 @@ const Prizes = () => {
     const prizeList = [
         {
             name: "Winner",
-            image: "prize2.svg",
+            image: "prize1.svg",
             details: [
                 'LKR 40,000.00',
             ]
         },
         {
             name: "1st Runner's Up",
-            image: "prize1.svg",
+            image: "prize2.svg",
             details: [
                 'LKR 30,000.00',
             ]
