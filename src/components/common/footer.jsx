@@ -25,10 +25,10 @@ const Footer = () => {
   ];
 
   const usefulLinks = [
-    {
-      name: "Register",
-      url: "https://portal.bashaway.sliitfoss.org/register",
-    },
+    // {
+    //   name: "Register",
+    //   url: "https://portal.bashaway.sliitfoss.org/register",
+    // },
     {
       name: "Competition",
       url: "https://portal.bashaway.sliitfoss.org",

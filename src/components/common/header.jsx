@@ -83,7 +83,7 @@ const Header = () => {
           <div className="flex col col-span-20 pr-7 pl-2">
             {registration ? (
               <a
-                class="py-1 px-3 mr-10 bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal hover:text-white hover:bg-primary transition duration-300 cursor-pointer"
+                class="py-1 px-3 mr-[1.6rem] bg-[#D9D9D9] rounded-sm justify-center items-center text-sm font-normal hover:text-white hover:bg-primary transition duration-300 cursor-pointer"
                 href="https://portal.bashaway.sliitfoss.org/register"
                 target="_blank"
               >
@@ -91,7 +91,7 @@ const Header = () => {
               </a>
             ) : (
               <button
-                class="flex px-2 mr-10 rounded-sm justify-center items-center text-sm font-normal bg-primary cursor-pointer"
+                class="flex px-2 mr-6 rounded-sm justify-center items-center text-sm font-normal bg-primary cursor-pointer"
                 target="_blank"
                 disabled
               >

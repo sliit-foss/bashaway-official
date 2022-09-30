@@ -4,26 +4,27 @@ import { Divider } from "./common";
 import { RegistrationOpenContext } from "../App";
 import { useEffect } from "react";
 
-const openingDate = new Date(2024, 8, 15, 19, 0, 0).getTime()
+const openingDate = new Date(2022, 8, 15, 19, 0, 0).getTime()
+const closingDate = new Date(2022, 8, 30, 8, 0, 0).getTime()
 
 const Register = ({ showDivider = true, comingSoon }) => {
   const { registration, setRegistration } = useContext(RegistrationOpenContext);
 
   useEffect(() => {
-    if (Date.now() >= openingDate) {
+    if (Date.now() >= openingDate && Date.now() <= closingDate) {
       setRegistration(true);
     }
   }, [registration]);
 
-  const Completionist = ({ text }) => {
+  const Completionist = ({ text, disabled }) => {
     return (
       <>
         {showDivider && <Divider />}
-        <a href="https://portal.bashaway.sliitfoss.org/register" target="_blank">
+        <a href="https://portal.bashaway.sliitfoss.org/register" target="_blank" className={disabled ? "pointer-events-none" : ""}>
           <div className="flex justify-center bg-gradient-to-r from-transparent via-bg-black/40 to-bg-black/40  backdrop-blur-sm p-4 md:p-7 cursor-pointer hover:bg-[#01050a83] transition duration-300">
             <span
               data-heading={text}
-              className="light-sweep font-extrabold font-poppins text-center text-transparent text-5xl md:text-7xl bg-clip-text bg-gradient-to-r from-primary to-secondary px-2 p-4 transform"
+              className={`light-sweep font-extrabold font-poppins text-center text-transparent text-5xl md:text-7xl bg-clip-text bg-gradient-to-r ${disabled ? 'from-gray-400 via-gray-200 to-gray-400' : "from-primary to-secondary"} px-2 p-4 transform`}
             >
               {text}
             </span>
@@ -35,7 +36,9 @@ const Register = ({ showDivider = true, comingSoon }) => {
   };
 
   const renderer = ({ days, hours, minutes, seconds }) => {
-    if (registration) {
+    if (Date.now() >= closingDate) {
+      return <Completionist text="Registration Closed" disabled={true} />;
+    } else if (registration) {
       return <Completionist text="Register Now" />;
     } else {
       return (
@@ -99,8 +102,7 @@ const Register = ({ showDivider = true, comingSoon }) => {
     <header>
       <Countdown
         date={openingDate}
-        // removed the countdown render
-        // renderer={renderer}
+        renderer={renderer}
         onComplete={() => {
           setRegistration(true);
         }}
