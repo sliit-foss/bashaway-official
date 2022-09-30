@@ -91,7 +91,7 @@ const Header = () => {
               </a>
             ) : (
               <button
-                class="flex px-2 rounded-sm justify-center items-center text-sm font-normal bg-primary cursor-pointer"
+                class="flex px-2 mr-10 rounded-sm justify-center items-center text-sm font-normal bg-primary cursor-pointer"
                 target="_blank"
                 disabled
               >

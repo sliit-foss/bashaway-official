@@ -4,7 +4,7 @@ import { Divider } from "./common";
 import { RegistrationOpenContext } from "../App";
 import { useEffect } from "react";
 
-const openingDate = new Date(2022, 8, 15, 19, 0, 0).getTime()
+const openingDate = new Date(2024, 8, 15, 19, 0, 0).getTime()
 
 const Register = ({ showDivider = true, comingSoon }) => {
   const { registration, setRegistration } = useContext(RegistrationOpenContext);
@@ -99,7 +99,8 @@ const Register = ({ showDivider = true, comingSoon }) => {
     <header>
       <Countdown
         date={openingDate}
-        renderer={renderer}
+        // removed the countdown render
+        // renderer={renderer}
         onComplete={() => {
           setRegistration(true);
         }}
