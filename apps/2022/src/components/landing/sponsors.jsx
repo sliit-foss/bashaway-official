@@ -6,7 +6,7 @@ const Sponsors = () => {
       <div data-aos={aos}>
         <div
           className={`relative w-32 h-32 md:w-44 md:h-44 p-3 bg-black outline outline-2 outline-nav-links-unselected ring-4 rounded-full flex justify-center cursor-pointer items-center transform hover:scale-105 hover:outline-primary transition duration-300 ${classes}`}>
-          <img src={`/assets/sponsors/${logo}.svg`} className="w-3/4 h-3/4" />
+          <img src={`./assets/sponsors/${logo}.svg`} className="w-3/4 h-3/4" />
         </div>
       </div>
     );

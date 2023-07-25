@@ -62,7 +62,7 @@ const Header = () => {
       <div
         className={`w-full flex flex-col md:flex-row justify-between items-center bg-black/70 p-5 py-4 fixed top-0 z-50 backdrop-blur-[5px] border-b border-white/10`}>
         <div className="w-full md:w-5/12 pl-2 md:pl-12">
-          <img src="/assets/bashaway-logo.svg" className="w-30 h-30" />
+          <img src="./assets/bashaway-logo.svg" className="w-30 h-30" />
         </div>
         <div className="hidden lg:flex justify-between items-center w-full max-w-4xl">
           {navItems.map((item) => {
@@ -91,7 +91,7 @@ const Header = () => {
                 target="_blank"
                 disabled>
                 <span className="flex items-center">
-                  <img src="/assets/lock.svg" alt="" className="p-1 rounded-md text-xs" />
+                  <img src="./assets/lock.svg" alt="" className="p-1 rounded-md text-xs" />
                   <p className="p-1 mt-0.5">Register</p>
                 </span>
               </button>
@@ -125,7 +125,7 @@ const Header = () => {
           <ul className=" mr-auto w-full h-full flex-col flex items-center uppercase justify-center p-8 lg:hidden">
             <li className="h-full flex flex-col justify-between py-20">
               <div className="w-full">
-                <img src="/assets/bashaway-logo.svg" className="w-56 h-20" />
+                <img src="./assets/bashaway-logo.svg" className="w-56 h-20" />
               </div>
               {navItems.map((item) => {
                 return (

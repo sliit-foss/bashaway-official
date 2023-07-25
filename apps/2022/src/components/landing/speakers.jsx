@@ -33,12 +33,12 @@ const Speakers = () => {
           href={`${linkedin}`}
           target="_blank"
           rel="noreferrer">
-          <img src={`/assets/speakers/${image}`} className="w-full h-full rounded-full bg-cover grayscale" />
+          <img src={`./assets/speakers/${image}`} className="w-full h-full rounded-full bg-cover grayscale" />
         </a>
         <span className="text-white text-xl font-semibold text-center mt-8 mb-2">{name}</span>
         <span className="text-nav-links-unselected text-center mb-2">{position}</span>
         <a href={`${sessionLink}`}>
-          <img src={'/assets/social/youtube.svg'} className="w-14 h-14 hover:brightness-200 duration-300" />
+          <img src={'./assets/social/youtube.svg'} className="w-14 h-14 hover:brightness-200 duration-300" />
         </a>
       </div>
     );

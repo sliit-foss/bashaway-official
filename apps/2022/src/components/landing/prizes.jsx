@@ -24,7 +24,7 @@ const Prizes = () => {
       <div data-aos={aos}>
         <div className="h-96 group flex flex-col justify-center items-center my-12 border cursor-default border-nav-links-unselected mx-6 md:mx-12 p-8 hover:border-primary transition duration-300 ">
           <img
-            src={`/assets/prizes/${image}`}
+            src={`./assets/prizes/${image}`}
             className="w-32 h-32 md:w-32 md:h-32 mx-16 p-2 bg-black flex justify-center items-center transform hover:scale-105 transition duration-300"
           />
           <span className="text-white text-xl font-semibold text-center mt-8 mb-6">{name}</span>

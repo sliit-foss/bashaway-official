@@ -9,7 +9,7 @@ const Rules = () => {
         data-aos="fade">
         <div className="col-span-12 m-3 lg:col-span-6">
           <img
-            src={'/assets/RulesNRegulations/RulesRegImg.jpg'}
+            src={'./assets/RulesNRegulations/RulesRegImg.jpg'}
             className="h-full bg-cover object-cover w-full filter grayscale rounded"
           />
         </div>

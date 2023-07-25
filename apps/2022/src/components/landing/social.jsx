@@ -63,7 +63,7 @@ export function WhatsappModal({ showModal, toggleShow }) {
             Join the WhatsApp group <br></br> To be up-to-date on the competition
           </div>
           <div className="w-[18em] border-[10px] border-white">
-            <img src="/assets/whatsapp-qr.png" alt="Whatsapp QR"></img>
+            <img src="./assets/whatsapp-qr.png" alt="Whatsapp QR"></img>
           </div>
           <div className="mt-4">
             Scan the QR or click{' '}
@@ -76,7 +76,7 @@ export function WhatsappModal({ showModal, toggleShow }) {
             </a>
           </div>
           <div className="mt-10">
-            <img src="/assets/bashaway-logo.svg" className="w-30" />
+            <img src="./assets/bashaway-logo.svg" className="w-30" />
           </div>
         </div>
       </div>
