@@ -37,11 +37,10 @@ const Footer = () => {
       name: "Code of Conduct",
       url: "https://sliitfoss.org/code-conduct",
     },
-    // will be made public after the repository is made public
-    // {
-    //     name: 'Source Code',
-    //     url: 'https://github.com/sliit-foss/bashaway-landing'
-    // },
+    {
+      name: 'Source Code',
+      url: 'https://github.com/sliit-foss/bashaway-2022'
+    },
   ];
 
   return (
@@ -148,7 +147,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <Divider id="copyright-divider"/>
+      <Divider id="copyright-divider" />
       <div id="copyright-section" className="flex flex-col justify-start px-10 pt-5 pb-6 bg-black md:flex-row md:justify-between text-nav-links-unselected md:px-24">
         <span className="text-center md:text-left">
           Copyright © 2022 SLIIT FOSS Community
