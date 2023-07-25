@@ -13,7 +13,7 @@ find "apps" -maxdepth 1 -mindepth 1 -type d | while read -r year; do
     cp ./apps/$year/dist -rf ./dist/$year
     if [ "$year" -eq "$currentYear" ]; then
         cp ./dist/$year/** -rf ./dist
-        rm ./dist/$year -rf
+        #rm ./dist/$year -rf
     fi
 done
 
@@ -21,5 +21,5 @@ done
 if [ ! -d "./apps/$currentYear" ]; then
     previousYear=$(($currentYear - 1))
     cp ./dist/$previousYear/** -rf ./dist
-    rm ./dist/$previousYear -rf
+    #rm ./dist/$previousYear -rf
 fi
