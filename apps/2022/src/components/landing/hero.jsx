@@ -53,7 +53,7 @@ const Hero = () => {
             <img src="./assets/logo/Circle.svg" className="w-30 h-30 mr-5 mt-8" />
             <img src="./assets/logo/Line.svg" className="w-30 h-30" />
           </div>
-          <img src="/assets/logo/bashaway.svg" className="w-30 h-30 mt-3 md:mt-0" />
+          <img src="./assets/logo/bashaway.svg" className="w-30 h-30 mt-3 md:mt-0" />
           <div className="w-full md:w-auto flex md:inline justify-end md:justify-start">
             <img src="./assets/logo/2022.svg" className="w-30 h-30 mt-4 md:mt-0" />
           </div>
