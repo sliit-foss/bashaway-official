@@ -1,11 +1,11 @@
 name: deploy
 on:
-  push:
+  pull_request:
     branches:
       - main
 
 jobs:
-  deploy-to-gh-pages:
+  deploy-preview-to-gh-pages:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository 🛎️
