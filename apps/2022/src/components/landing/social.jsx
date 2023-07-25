@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
 import { IoIosClose } from 'react-icons/io';
 import { Portal } from 'react-portal';

@@ -1,9 +1,9 @@
+import { WhatsappModal } from '@/components/landing/social';
+import { RegistrationOpenContext } from '@/pages/landing';
 import { useContext, useState } from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
 import { HiOutlineMenu } from 'react-icons/hi';
 import { IoIosClose } from 'react-icons/io';
-import { RegistrationOpenContext } from '../../App';
-import { WhatsappModal } from '../social';
 
 const Header = () => {
   const { registration } = useContext(RegistrationOpenContext);

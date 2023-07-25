@@ -1,0 +1,11 @@
+@import 'colors.css';
+@import 'animations/index.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+svg,
+svg *:focus {
+  outline: none !important;
+}

@@ -1,4 +1,4 @@
-import Title from './common/title';
+import Title from '@/components/common/title';
 
 const Competition = () => {
   return (

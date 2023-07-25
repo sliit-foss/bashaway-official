@@ -1,14 +1,18 @@
 {
   "name": "bashaway-official",
   "description": "Curates the annual Bashaway website repositories",
+  "workspaces": [
+    "apps/*"
+],
   "scripts": {
     "build": "turbo run build",
+    "postbuild": "bash scripts/postbuild.sh",
     "dev": "turbo run dev",
     "lint": "eslint apps --ext js,jsx,mdx --ignore-path .gitignore --fix --cache --report-unused-disable-directives",
     "format": "prettier --write --cache \"**/*.{js,jsx,md}\"",
     "prepare": "lefthook install"
   },
-  "devDependencies": {
+  "dependencies": {
     "@commitlint/cli": "17.6.5",
     "@commitlint/config-conventional": "17.6.5",
     "@trivago/prettier-plugin-sort-imports": "4.1.1",

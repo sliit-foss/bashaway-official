@@ -1,16 +1,16 @@
 import App from '@/app';
+import '@/styles/index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import './styles/index.css';
 
 const Root = () => {
   let basename = '/';
 
-  const matchPreviewDeployment = window.location.pathname.startsWith('/2022');
+  const matchPreviewDeployment = window.location.pathname.startsWith('/2023');
 
   if (matchPreviewDeployment) {
-    basename += '/2022';
+    basename += '/2023';
   }
 
   return (
