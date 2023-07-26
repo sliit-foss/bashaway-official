@@ -76,4 +76,4 @@ jobs:
           action: deploy
           pr-number: ${{ env.pr-number }}
           umbrella-dir: preview
-          custom-url: timekeeper.sliitfoss.org
+          custom-url: bashaway.sliitfoss.org
