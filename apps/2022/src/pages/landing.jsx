@@ -1,5 +1,5 @@
-import { Competition, Hero, Prizes, Register, Rules, Speakers, Timeline } from '@/components';
 import { createContext, useState } from 'react';
+import { Competition, Hero, Prizes, Register, Rules, Speakers, Timeline } from '@/components';
 import { Footer, Header, Layout } from '@/components/common';
 
 export const RegistrationOpenContext = createContext({});

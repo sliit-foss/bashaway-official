@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { generateRouterBasePath } from '@app/utils';
-import './styles/index.css';
 import { default as App } from './app';
+import './styles/index.css';
 
 const Root = () => {
   return (

@@ -1,5 +1,5 @@
-import NET from 'vanta/dist/vanta.net.min';
 import { useEffect, useRef, useState } from 'react';
+import NET from 'vanta/dist/vanta.net.min';
 import Register from './register';
 
 const Hero = () => {

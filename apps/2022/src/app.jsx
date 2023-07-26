@@ -1,8 +1,8 @@
-import { Landing } from '@/pages';
-import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { default as Aos } from 'aos';
+import { Landing } from '@/pages';
+import 'aos/dist/aos.css';
 
 const App = () => {
   const location = useLocation();

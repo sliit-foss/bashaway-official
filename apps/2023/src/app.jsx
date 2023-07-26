@@ -1,6 +1,6 @@
-import { Landing } from '@/pages';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { Footer, Header } from '@/components/common';
+import { Landing } from '@/pages';
 
 const App = () => {
   const location = useLocation();

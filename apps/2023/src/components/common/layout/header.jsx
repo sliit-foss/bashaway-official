@@ -1,7 +1,7 @@
-import { eventPortalLink } from '@/constants';
-import { Bashaway, FossLogoDark, Times } from '@/icons';
 import { Link } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
+import { eventPortalLink } from '@/constants';
+import { Bashaway, FossLogoDark, Times } from '@/icons';
 import { Button } from '..';
 
 const sections = ['Competition', 'Timeline', 'Rules', 'Prizes', 'Sponsors'];
