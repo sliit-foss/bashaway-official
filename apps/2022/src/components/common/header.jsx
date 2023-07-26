@@ -83,7 +83,7 @@ const Header = () => {
                 href="https://portal.bashaway.sliitfoss.org/register"
                 target="_blank"
                 rel="noreferrer">
-                Register
+                Register123
               </a>
             ) : (
               <button
