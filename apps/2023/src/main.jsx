@@ -7,11 +7,11 @@ import { BrowserRouter } from 'react-router-dom';
 const Root = () => {
   let basename = '/';
 
-  const matchPreviewDeployment = window.location.pathname.startsWith('/2023');
+  const matchPreviewDeployment = window.location.pathname.match(/preview\/pr-\d+/);
 
-  if (matchPreviewDeployment) {
-    basename += '/2023';
-  }
+  if (matchPreviewDeployment) basename += matchPreviewDeployment[0];
+
+  if (window.location.pathname.startsWith('/2023')) basename += '/2023';
 
   return (
     <React.StrictMode>

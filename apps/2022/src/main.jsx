@@ -7,11 +7,11 @@ import './styles/index.css';
 const Root = () => {
   let basename = '/';
 
-  const matchPreviewDeployment = window.location.pathname.startsWith('/2022');
+  const matchPreviewDeployment = window.location.pathname.match(/preview\/pr-\d+/);
 
-  if (matchPreviewDeployment) {
-    basename += '/2022';
-  }
+  if (matchPreviewDeployment) basename += matchPreviewDeployment[0];
+
+  if (window.location.pathname.startsWith('/2022')) basename += '/2022';
 
   return (
     <React.StrictMode>

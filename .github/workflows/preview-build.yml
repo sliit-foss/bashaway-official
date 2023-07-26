@@ -1,0 +1,44 @@
+name: Build PR preview
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+
+concurrency:
+  group: preview-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository 🛎️
+        uses: actions/checkout@v3
+
+      - name: Build 🏗️
+        uses: ./.github/actions/build
+        env:
+          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+          TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+
+      - name: Save PR number to file 📝
+        run: |
+          mkdir -p ./pr
+          echo ${{ github.event.number }} > ./pr/NB
+          
+      - uses: actions/upload-artifact@v2
+        with:
+          name: pr
+          path: pr/
+
+      - name: Save build directory 📝
+        run: |
+          mkdir -p ./pr_site
+          mv dist ./pr_site/.
+      - uses: actions/upload-artifact@v2
+        with:
+          name: pr_site
+          path: pr_site/

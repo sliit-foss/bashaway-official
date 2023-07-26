@@ -1,11 +1,11 @@
-name: deploy
+name: CI deploy
+
 on:
-  pull_request:
+  push:
     branches:
       - main
-
 jobs:
-  deploy-preview-to-gh-pages:
+  deploy-production:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository 🛎️
@@ -13,8 +13,13 @@ jobs:
 
       - name: Build 🏗️
         uses: ./.github/actions/build
+        env:
+          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+          TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist
+          folder: ./dist/
+          branch: gh-pages
+          clean-exclude: preview
