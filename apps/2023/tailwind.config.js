@@ -4,7 +4,18 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
-      colors: {}
+      colors: {
+        background: 'var(--background)'
+      },
+      fontFamily: {
+        cabinet: ['Cabinet Grotesk Variable', 'sans'],
+        consolas: ['Consolas', 'monospace'],
+        inter: ['Inter', 'sans']
+      },
+      transitionDuration: {
+        medium: '300ms',
+        long: '500ms'
+      }
     }
   },
   plugins: []

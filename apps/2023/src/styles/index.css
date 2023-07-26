@@ -5,6 +5,36 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: "Cabinet Grotesk Variable";
+    src: url("../../public/assets/fonts/cabinet-grotesk-variable.ttf");
+  }
+  @font-face {
+    font-family: "Consolas";
+    src: url("../../public/assets/fonts/consolas.ttf");
+  }
+  @font-face {
+    font-family: "Consolas";
+    src: url("../../public/assets/fonts/consolas-bold.ttf");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "Consolas";
+    src: url("../../public/assets/fonts/consolas-italic.ttf");
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Consolas";
+    src: url("../../public/assets/fonts/consolas-bold-italic.ttf");
+    font-weight: 700;
+    font-style: italic;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 svg,
 svg *:focus {
   outline: none !important;

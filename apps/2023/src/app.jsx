@@ -5,15 +5,13 @@ import { Footer, Header } from '@/components/common';
 const App = () => {
   const location = useLocation();
   return (
-    <>
+    <main className="min-h-screen mx-auto bg-background">
       <Header />
-      <main className="min-h-screen mx-auto bg-white">
-        <Routes location={location}>
-          <Route path="/" element={<Landing />} />
-        </Routes>
-      </main>
+      <Routes location={location}>
+        <Route path="/" element={<Landing />} />
+      </Routes>
       <Footer />
-    </>
+    </main>
   );
 };
 
