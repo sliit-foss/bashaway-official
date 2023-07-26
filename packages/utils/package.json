@@ -1,0 +1,5 @@
+{
+  "name": "@app/utils",
+  "description": "Just a couple of utility functions common to all apps",
+  "main": "src/index.js"
+}
