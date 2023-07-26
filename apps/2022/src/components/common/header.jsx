@@ -1,7 +1,7 @@
-import { RegistrationOpenContext } from '@/pages/landing';
 import { useContext, useState } from 'react';
 import { HiOutlineMenu } from 'react-icons/hi';
 import { IoIosClose } from 'react-icons/io';
+import { RegistrationOpenContext } from '@/pages/landing';
 
 const Header = () => {
   const { registration } = useContext(RegistrationOpenContext);

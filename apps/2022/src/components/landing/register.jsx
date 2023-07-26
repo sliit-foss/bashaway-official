@@ -1,7 +1,7 @@
-import { Divider } from '@/components/common';
-import { RegistrationOpenContext } from '@/pages/landing';
 import { useContext, useEffect } from 'react';
 import { default as Countdown } from 'react-countdown';
+import { Divider } from '@/components/common';
+import { RegistrationOpenContext } from '@/pages/landing';
 
 const openingDate = new Date(2022, 8, 15, 19, 0, 0).getTime();
 const closingDate = new Date(2022, 8, 30, 8, 0, 0).getTime();

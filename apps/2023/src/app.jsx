@@ -1,6 +1,6 @@
-import { Footer, Header } from '@/components/common';
 import { Landing } from '@/pages';
 import { Route, Routes, useLocation } from 'react-router-dom';
+import { Footer, Header } from '@/components/common';
 
 const App = () => {
   const location = useLocation();
