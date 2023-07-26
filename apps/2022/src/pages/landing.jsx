@@ -1,4 +1,4 @@
-import { Competition, Hero, Prizes, Register, Rules, Social, Speakers, Timeline } from '@/components';
+import { Competition, Hero, Prizes, Register, Rules, Speakers, Timeline } from '@/components';
 import { Footer, Header, Layout } from '@/components/common';
 import { createContext, useState } from 'react';
 
@@ -22,7 +22,6 @@ const Landing = () => {
           <Footer />
         </RegistrationOpenContext.Provider>
       </Layout>
-      <Social />
     </>
   );
 };

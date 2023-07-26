@@ -1,7 +1,5 @@
-import { WhatsappModal } from '@/components/landing/social';
 import { RegistrationOpenContext } from '@/pages/landing';
 import { useContext, useState } from 'react';
-import { BsWhatsapp } from 'react-icons/bs';
 import { HiOutlineMenu } from 'react-icons/hi';
 import { IoIosClose } from 'react-icons/io';
 
@@ -9,7 +7,6 @@ const Header = () => {
   const { registration } = useContext(RegistrationOpenContext);
 
   const [burgerNav, setBurgerNav] = useState(false);
-  const [showSocial, setShowSocial] = useState(false);
 
   const burgerNavController = () => {
     document.querySelector('html').style.overflowY = !burgerNav ? 'hidden' : 'auto';
@@ -83,11 +80,11 @@ const Header = () => {
                 href="https://portal.bashaway.sliitfoss.org/register"
                 target="_blank"
                 rel="noreferrer">
-                Register123
+                Register
               </a>
             ) : (
               <button
-                className="flex px-2 mr-6 rounded-sm justify-center items-center text-sm font-normal bg-primary cursor-pointer"
+                className="flex px-3 py-0.5 mr-6 rounded-sm justify-center items-center text-sm font-normal bg-primary cursor-default"
                 target="_blank"
                 disabled>
                 <span className="flex items-center">
@@ -96,16 +93,6 @@ const Header = () => {
                 </span>
               </button>
             )}
-
-            <button
-              className="flex justify-center items-center py-1 px-3 bg-[#D9D9D9] rounded-sm text-sm font-normal hover:text-white hover:bg-primary transition duration-300 cursor-pointer"
-              onClick={() => {
-                document.querySelector('html').style.overflowY = 'hidden';
-                setShowSocial(true);
-              }}>
-              <span className="line-clamp-1">Join the WhatsApp Group</span> <BsWhatsapp className="ml-2" />
-            </button>
-            <WhatsappModal showModal={showSocial} toggleShow={setShowSocial} />
           </div>
         </div>
         <HiOutlineMenu
