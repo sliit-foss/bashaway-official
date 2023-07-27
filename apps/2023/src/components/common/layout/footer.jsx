@@ -36,7 +36,7 @@ const Footer = ({ className }) => {
         </div>
       </div>
       <div className="flex flex-col items-center -translate-y-1.5 mb-5">
-        <Bashaway height={46} />
+        <Bashaway />
       </div>
     </footer>
   );

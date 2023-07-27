@@ -12,11 +12,10 @@ const Header = ({ className }) => {
   };
 
   return (
-    <header className={twMerge(`bg-white flex justify-between py-6 px-8 lg:px-24`, className)}>
-      <div className="grid place-content-start grid-flow-col items-center space-x-[20px] sm:space-x-[30px]">
+    <header className={twMerge(`min-h-[90px] bg-white flex justify-between py-6 px-8 lg:px-24`, className)}>
+      <div className="hidden xs:grid place-content-start grid-flow-col items-center space-x-[20px] sm:space-x-[30px]">
         <Link to="/">
-          <Bashaway width={160} className="block sm:hidden" />
-          <Bashaway className="hidden sm:block" />
+          <Bashaway width={160} className="w-[160px] sm:w-[185px]" />
         </Link>
         <Times height="15px" width="15px" className="opacity-20" />
         <FossLogoDark width={54} />

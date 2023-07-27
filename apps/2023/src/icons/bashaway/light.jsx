@@ -1,6 +1,13 @@
-const Bashaway = ({ width = 185, height = 30, ...props }) => {
+import { twMerge } from 'tailwind-merge';
+
+const BashawayLight = ({ className, ...props }) => {
   return (
-    <svg width={width} height={height} viewBox="0 0 185 30" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <svg
+      viewBox="0 0 185 30"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={twMerge('w-[185px] h-[30px]', className)}
+      {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -47,4 +54,4 @@ const Bashaway = ({ width = 185, height = 30, ...props }) => {
   );
 };
 
-export default Bashaway;
+export default BashawayLight;

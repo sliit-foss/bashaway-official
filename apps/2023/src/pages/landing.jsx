@@ -1,5 +1,12 @@
+import { Hero, Marquee } from '@/components/landing';
+
 const Landing = () => {
-  return <div>Landing</div>;
+  return (
+    <>
+      <Hero />
+      <Marquee />
+    </>
+  );
 };
 
 export default Landing;

@@ -16,6 +16,9 @@ export default {
       transitionDuration: {
         medium: '300ms',
         long: '500ms'
+      },
+      screens: {
+        xs: '400px'
       }
     }
   },
