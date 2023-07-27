@@ -35,6 +35,12 @@
   }
 }
 
+@layer utilities {
+  .icon-hover {
+    @apply transition-colors duration-medium hover:text-black/70;
+  }
+}
+
 svg,
 svg *:focus {
   outline: none !important;

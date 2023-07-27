@@ -26,7 +26,7 @@ const Header = ({ className }) => {
           <span
             key={index}
             onClick={() => onNavItemClick(section.toLowerCase())}
-            className="hover:text-black/80  transition-all duration-medium">
+            className="hover:text-black/70  transition-all duration-medium">
             {section}
           </span>
         ))}
