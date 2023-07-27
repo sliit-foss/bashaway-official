@@ -1,10 +1,11 @@
-import { Hero, Marquee } from '@/components/landing';
+import { Hero, Marquee, Mission } from '@/components/landing';
 
 const Landing = () => {
   return (
     <>
       <Hero />
       <Marquee />
+      <Mission />
     </>
   );
 };
