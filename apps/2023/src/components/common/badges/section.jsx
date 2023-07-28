@@ -4,8 +4,8 @@ const SectionBadge = ({ children, className, ...props }) => {
   return (
     <div
       className={twMerge(
-        `group flex self-start justify-center items-center rounded-3xl px-4 py-[0.4rem] cursor-default
-                bg-white text-black text-[22px] tracking-[3.08px] font-bold uppercase transition-all duration-medium`,
+        `group flex self-center lg:self-start justify-center items-center rounded-3xl px-5 py-[0.4rem] cursor-default
+         bg-white text-black text-[22px] text-center tracking-[3.08px] font-bold uppercase transition-all duration-medium`,
         className
       )}
       {...props}>

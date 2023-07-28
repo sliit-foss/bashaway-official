@@ -5,7 +5,7 @@ const Button = ({ children, className, ...props }) => {
   return (
     <button
       className={twMerge(
-        'group flex justify-center items-center cursor-pointer rounded-3xl px-4 py-[0.4rem] bg-black text-white font-semibold outline-none transition-all duration-medium splash',
+        'group flex justify-center items-center cursor-pointer rounded-3xl px-[1.15rem] py-[0.4rem] bg-black text-white font-semibold outline-none transition-all duration-medium splash',
         className
       )}
       {...props}>
@@ -14,10 +14,10 @@ const Button = ({ children, className, ...props }) => {
   );
 };
 
-const ButtonWrapper = ({ to, target = '_self', ...props }) => {
+const ButtonWrapper = ({ to, wrapperClassName, target = '_self', ...props }) => {
   if (to) {
     return (
-      <Link to={to} target={target}>
+      <Link to={to} target={target} className={wrapperClassName}>
         <Button {...props} />
       </Link>
     );

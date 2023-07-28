@@ -1,3 +1,4 @@
+import { eventPortalLink } from '@/constants';
 import { Bashaway } from '@/icons';
 import { Button } from '../common';
 
@@ -9,7 +10,9 @@ const Hero = () => {
         A unique competition that keeps the coders around the island on their toes. Welcome to ./bashaway 2023, the
         second edition of the first-ever scripting and automation competition!
       </span>
-      <Button className="mt-2">Register Now</Button>
+      <Button to={eventPortalLink} target="_blank" className="mt-2">
+        Register Now
+      </Button>
     </div>
   );
 };

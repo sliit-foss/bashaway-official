@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
 import { eventPortalLink } from '@/constants';
-import { Bashaway, FossLogoDark, Times } from '@/icons';
+import { Bashaway, FOSS, Times } from '@/icons';
 import { Button } from '..';
 
 const sections = ['Competition', 'Timeline', 'Rules', 'Prizes', 'Sponsors'];
@@ -18,7 +18,7 @@ const Header = ({ className }) => {
           <Bashaway width={160} className="w-[160px] sm:w-[185px]" />
         </Link>
         <Times height="15px" width="15px" className="opacity-20" />
-        <FossLogoDark width={54} />
+        <FOSS className="transform scale-[0.85] -translate-x-1" />
       </div>
       <div className="hidden xl:flex justify-center items-center gap-x-[1.375rem] cursor-pointer font-semibold">
         {sections.map((section, index) => (
@@ -29,7 +29,9 @@ const Header = ({ className }) => {
             {section}
           </span>
         ))}
-        <Button to={eventPortalLink}>Register</Button>
+        <Button to={eventPortalLink} target="_blank">
+          Register
+        </Button>
       </div>
     </header>
   );

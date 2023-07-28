@@ -1,4 +1,4 @@
-import { Hero, Marquee, Mission } from '@/components/landing';
+import { Competion, ContributionBanner, Hero, Marquee, Mission, Partners } from '@/components/landing';
 
 const Landing = () => {
   return (
@@ -6,6 +6,9 @@ const Landing = () => {
       <Hero />
       <Marquee />
       <Mission />
+      <Competion />
+      <ContributionBanner />
+      <Partners />
     </>
   );
 };

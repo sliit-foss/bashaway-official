@@ -10,7 +10,8 @@
     "dev": "turbo run dev",
     "lint": "eslint apps --ext js,jsx,mdx --ignore-path .gitignore --fix --cache --report-unused-disable-directives",
     "format": "prettier --write --cache \"**/*.{js,jsx,md}\"",
-    "prepare": "lefthook install"
+    "prepare": "lefthook install",
+    "preview": "turbo run preview"
   },
   "dependencies": {
     "@commitlint/cli": "17.6.5",

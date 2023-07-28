@@ -1,17 +1,17 @@
 import { AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillYoutube, AiOutlineTwitter } from 'react-icons/ai';
 import { twMerge } from 'tailwind-merge';
 import { facebook, instagram, linkedIn, twitter, youTube } from '@/constants';
-import { Bashaway, FossLogoDark } from '@/icons';
+import { Bashaway, FOSS } from '@/icons';
 
 const Footer = ({ className }) => {
   return (
     <footer
       className={twMerge(
-        `bg-white flex flex-col-reverse md:flex-row items-center sm:items-start justify-between pt-16 pb-24 px-8 lg:px-24`,
+        `bg-white flex flex-col-reverse md:flex-row items-center sm:items-start justify-between mt-24 pt-16 pb-24 px-8 lg:px-24`,
         className
       )}>
       <div className="flex flex-col items-center md:items-start gap-y-5 col-start-1">
-        <FossLogoDark />
+        <FOSS />
         <p className="md:w-[320px] px-2 sm:px-0 text-sm text-center md:text-left text-gray-500 opacity-80 font-consolas">
           Welcome to SLIIT FOSS community. We&apos;re a group of volunteers who believe in the usage of Free/Open Source
           Software (FOSS)
