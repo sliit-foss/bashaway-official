@@ -5,15 +5,17 @@ import { Landing } from '@/pages';
 const App = () => {
   const location = useLocation();
   return (
-    <main className="flex flex-col min-h-screen mx-auto bg-background">
-      <Header />
-      <div className="grow">
-        <Routes location={location}>
-          <Route path="/" element={<Landing />} />
-        </Routes>
-      </div>
-      <Footer />
-    </main>
+    <div className="w-full bg-background">
+      <main className="w-full flex flex-col items-center min-h-screen mx-auto">
+        <Header />
+        <div className="w-full max-w-body grow mt-[70px] xs:mt-[90px]">
+          <Routes location={location}>
+            <Route path="/" element={<Landing />} />
+          </Routes>
+        </div>
+        <Footer />
+      </main>
+    </div>
   );
 };
 

@@ -4,6 +4,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
+      boxShadow: {
+        'section-badge': '0px 0px 20px 0px rgba(0, 0, 0, 0.04)'
+      },
       colors: {
         primary: 'var(--primary)',
         background: 'var(--background)'
@@ -12,6 +15,9 @@ export default {
         cabinet: ['Cabinet Grotesk Variable', 'sans'],
         consolas: ['Consolas', 'monospace'],
         inter: ['Inter', 'sans']
+      },
+      maxWidth: {
+        body: '1680px'
       },
       transitionDuration: {
         medium: '300ms',

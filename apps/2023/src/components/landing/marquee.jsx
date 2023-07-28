@@ -3,7 +3,7 @@ import { Bashaway } from '@/icons';
 
 const Marquee = () => {
   return (
-    <FastMarquee className="bg-black h-[46px] text-xl sm:text-[22px] text-white font-consolas">
+    <FastMarquee className="bg-black h-[46px] text-xl sm:text-[22px] text-white font-consolas absolute bottom-0 left-0">
       <div className="flex gap-x-12 items-center">
         {Array(3)
           .fill(0)

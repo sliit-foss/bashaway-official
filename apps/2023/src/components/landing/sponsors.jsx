@@ -16,22 +16,14 @@ const sponsors = [
   {
     name: 'Sponsor 4',
     logo: 'https://via.placeholder.com/150'
-  },
-  {
-    name: 'Sponsor 5',
-    logo: 'https://via.placeholder.com/150'
-  },
-  {
-    name: 'Sponsor 6',
-    logo: 'https://via.placeholder.com/150'
   }
 ];
 
 const Sponsors = () => {
   return (
-    <div className="w-full flex flex-col mt-12 py-6 px-10 lg:px-24 gap-y-10">
+    <div className="w-full flex flex-col py-6 px-10 lg:px-24 gap-y-10">
       <SectionBadge>Sponsors</SectionBadge>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
         {sponsors.map((sponsor) => {
           return (
             <div
