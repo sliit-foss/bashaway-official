@@ -9,7 +9,7 @@
     "postbuild": "bash scripts/postbuild.sh",
     "dev": "turbo run dev",
     "lint": "eslint apps --ext js,jsx,mdx --ignore-path .gitignore --fix --cache --report-unused-disable-directives",
-    "format": "prettier --write --cache \"**/*.{js,jsx,md}\"",
+    "format": "prettier --write --cache \"**/*.{js,jsx,md,svg,yml}\"",
     "prepare": "lefthook install",
     "preview": "turbo run preview"
   },

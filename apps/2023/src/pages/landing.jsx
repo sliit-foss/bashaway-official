@@ -6,6 +6,7 @@ import {
   Mission,
   Partners,
   PastEvents,
+  Prizes,
   Sponsors
 } from '@/components/landing';
 
@@ -17,6 +18,7 @@ const Landing = () => {
       <Mission />
       <Competion />
       <ContributionBanner />
+      <Prizes />
       <Sponsors />
       <PastEvents />
       <Partners />
