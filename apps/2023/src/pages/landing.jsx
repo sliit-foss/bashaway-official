@@ -1,4 +1,13 @@
-import { Competion, ContributionBanner, Hero, Marquee, Mission, Partners, Sponsors } from '@/components/landing';
+import {
+  Competion,
+  ContributionBanner,
+  Hero,
+  Marquee,
+  Mission,
+  Partners,
+  PastEvents,
+  Sponsors
+} from '@/components/landing';
 
 const Landing = () => {
   return (
@@ -9,6 +18,7 @@ const Landing = () => {
       <Competion />
       <ContributionBanner />
       <Sponsors />
+      <PastEvents />
       <Partners />
     </>
   );

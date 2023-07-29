@@ -5,3 +5,4 @@ export { default as Marquee } from './marquee';
 export { default as Mission } from './mission';
 export { default as Partners } from './partners';
 export { default as Sponsors } from './sponsors';
+export { default as PastEvents } from './past-events';
