@@ -7,26 +7,26 @@
 
 @layer base {
   @font-face {
-    font-family: "Cabinet Grotesk Variable";
-    src: url("../../public/assets/fonts/cabinet-grotesk-variable.ttf");
+    font-family: 'Cabinet Grotesk Variable';
+    src: url('../../public/assets/fonts/cabinet-grotesk-variable.ttf');
   }
   @font-face {
-    font-family: "Consolas";
-    src: url("../../public/assets/fonts/consolas.ttf");
+    font-family: 'Consolas';
+    src: url('../../public/assets/fonts/consolas.ttf');
   }
   @font-face {
-    font-family: "Consolas";
-    src: url("../../public/assets/fonts/consolas-bold.ttf");
+    font-family: 'Consolas';
+    src: url('../../public/assets/fonts/consolas-bold.ttf');
     font-weight: 700;
   }
   @font-face {
-    font-family: "Consolas";
-    src: url("../../public/assets/fonts/consolas-italic.ttf");
+    font-family: 'Consolas';
+    src: url('../../public/assets/fonts/consolas-italic.ttf');
     font-style: italic;
   }
   @font-face {
-    font-family: "Consolas";
-    src: url("../../public/assets/fonts/consolas-bold-italic.ttf");
+    font-family: 'Consolas';
+    src: url('../../public/assets/fonts/consolas-bold-italic.ttf');
     font-weight: 700;
     font-style: italic;
   }
@@ -44,4 +44,22 @@
 svg,
 svg *:focus {
   outline: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+html {
+  scrollbar-color: black var(--background);
+  scrollbar-width: thin;
 }

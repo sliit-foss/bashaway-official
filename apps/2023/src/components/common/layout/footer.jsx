@@ -5,7 +5,11 @@ import { Bashaway, FOSS } from '@/icons';
 
 const Footer = ({ className }) => {
   return (
-    <footer className={twMerge(`flex w-full justify-center bg-white mt-24`, className)}>
+    <footer
+      className={twMerge(`flex w-full justify-center bg-white mt-24 z-50`, className)}
+      style={{
+        boxShadow: '0px -40px 100px var(--background)'
+      }}>
       <div className="w-full max-w-body mx-0 flex flex-col-reverse md:flex-row items-center sm:items-start justify-between pt-16 pb-24 px-8 lg:px-24">
         <div className="flex flex-col items-center md:items-start gap-y-5 col-start-1">
           <FOSS />
