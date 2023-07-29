@@ -5,6 +5,7 @@ import {
   Marquee,
   Mission,
   Partners,
+  PastEvents,
   Prizes,
   Sponsors
 } from '@/components/landing';
@@ -19,6 +20,7 @@ const Landing = () => {
       <ContributionBanner />
       <Prizes />
       <Sponsors />
+      <PastEvents />
       <Partners />
     </>
   );
