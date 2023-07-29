@@ -22,7 +22,7 @@ const Prizes = () => {
       <div className="flex flex-col gap-5">
         {prizes.map((prize, index) => {
           return (
-            <>
+            <div key={index}>
               <div className="flex gap-5 sm:gap-7">
                 <div className="min-w-[70px] sm:min-w-[100px] h-fit flex justify-center items-center py-3 bg-black rounded-full">
                   <span className="uppercase text-white text-xl sm:text-4xl">{prize.place}</span>
@@ -30,7 +30,7 @@ const Prizes = () => {
                 <span className="uppercase text-3xl sm:text-6xl font-medium">{prize.text}</span>
               </div>
               {prizes.length !== index + 1 && <hr className="border-black" />}
-            </>
+            </div>
           );
         })}
       </div>

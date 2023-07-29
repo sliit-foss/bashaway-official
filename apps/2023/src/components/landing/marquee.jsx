@@ -7,11 +7,11 @@ const Marquee = () => {
       <div className="flex gap-x-12 items-center">
         {Array(3)
           .fill(0)
-          .map(() => (
-            <>
+          .map((_, index) => (
+            <div key={index}>
               <span>Inter University Scripting and Automation Competition</span>
               <Bashaway className="translate-y-0.5" dark />
-            </>
+            </div>
           ))}
       </div>
     </FastMarquee>
