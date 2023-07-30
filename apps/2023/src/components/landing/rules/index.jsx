@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { twMerge } from 'tailwind-merge';
-import { HighlightText, SectionBadge } from '@/components/common';
+import { BodyText, SectionBadge } from '@/components/common';
 import rules from './data.json';
 
 const Rules = () => {
@@ -11,13 +11,13 @@ const Rules = () => {
         {rules.map((rule, index) => {
           return (
             <Fragment key={index}>
-              <HighlightText
+              <BodyText
                 className={twMerge(
                   'tracking-[0.32px] leading-[103%] font-medium font-cabinet',
                   index === rules.length - 1 ? 'text-black' : 'text-black/60'
                 )}>
                 {rule}
-              </HighlightText>
+              </BodyText>
               {index === rules.length - 1 ? null : <hr className="w-full border-black/10 my-5" />}
             </Fragment>
           );
