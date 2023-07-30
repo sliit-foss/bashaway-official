@@ -13,6 +13,7 @@ concurrency:
 
 jobs:
   build-preview:
+    name: Build preview 🏗️
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository 🛎️
