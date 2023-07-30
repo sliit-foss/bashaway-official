@@ -5,7 +5,7 @@ const ComponentStack = ({ className, itemStyle, children }) => {
   const [itemHovered, setItemHovered] = useState(false);
 
   return (
-    <div className={twMerge('w-full flex flex-row h-[450px]', className)}>
+    <div className={twMerge('w-full flex flex-row', className)}>
       {children.map((child, index) => (
         <div
           key={index}
