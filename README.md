@@ -30,11 +30,11 @@ Curates the annual Bashaway website repositories.
 
 ## Development Flexibility
 
-The project has been bootstraped with [Turborepo](https://turbo.build) which makes the maintaince of the project a whole lot easier out of the box. The folder `apps` houses the websites for each year. It's very much possible to develop the next iteration of the web using any development framework as needed. The current 2 webs are built with [React](https://react.dev/) + [Vite](https://vitejs.dev/).
+The project has been bootstraped with [Turborepo](https://turbo.build) which makes the maintaince of the project a whole lot easier out of the box. The directory `apps` houses the websites for each year. It's possible to develop the next iteration of it using any development framework as needed. The current 2 are built with [React](https://react.dev/) + [Vite](https://vitejs.dev/).
 
 ## Deployment
 
-- The current years website will be avaialble under the domain https://bashaway.sliitfoss.org
+- The current years' website will be avaialble under the domain https://bashaway.sliitfoss.org
 
 - Previous years will be available under https://bashaway.sliitfoss.org/{{year}}
 
