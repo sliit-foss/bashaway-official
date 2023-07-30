@@ -9,7 +9,8 @@ import {
   PastEvents,
   Prizes,
   Rules,
-  Sponsors
+  Sponsors,
+  Timeline
 } from '@/components/landing';
 
 const Landing = () => {
@@ -19,6 +20,7 @@ const Landing = () => {
       <Marquee />
       <Mission />
       <Competion />
+      <Timeline />
       <Rules />
       <ContributionBanner />
       <Prizes />
