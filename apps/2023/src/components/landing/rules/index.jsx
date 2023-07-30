@@ -3,7 +3,7 @@ import { twMerge } from 'tailwind-merge';
 import { HighlightText, SectionBadge } from '@/components/common';
 import rules from './data.json';
 
-const Competition = () => {
+const Rules = () => {
   return (
     <div className="w-full flex flex-col py-6 px-10 lg:px-24 gap-y-10">
       <SectionBadge>The Rules & Regulations</SectionBadge>
@@ -27,4 +27,4 @@ const Competition = () => {
   );
 };
 
-export default Competition;
+export default Rules;

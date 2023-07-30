@@ -1,11 +1,11 @@
 import { cloneElement, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-const ComponentStack = ({ className, itemStyle, children }) => {
+const ComponentStack = ({ className, style = {}, itemStyle, children }) => {
   const [itemHovered, setItemHovered] = useState(false);
 
   return (
-    <div className={twMerge('w-full flex flex-row', className)}>
+    <div className={twMerge('w-full flex flex-row', className)} style={style}>
       {children.map((child, index) => (
         <div
           key={index}

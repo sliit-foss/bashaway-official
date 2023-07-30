@@ -1,10 +1,9 @@
 import { Fragment } from 'react';
 import { default as FastMarquee } from 'react-fast-marquee';
-import { Bashaway, Link } from '@/icons';
+import { Link } from 'react-router-dom';
+import { Bashaway, Link as LinkIcon } from '@/icons';
 
 const PastEvents = () => {
-  const handleClickYear = () => window.open(`/2022`, '_blank');
-
   return (
     <div className="pt-6 pb-16">
       <FastMarquee className="bg-black text-xl sm:text-[22px] text-white font-consolas absolute left-0 right-0">
@@ -13,12 +12,12 @@ const PastEvents = () => {
             .fill(0)
             .map((_, index) => (
               <Fragment key={index}>
-                <div className="flex items-baseline gap-2 cursor-pointer" onClick={handleClickYear}>
+                <Link className="flex items-baseline gap-2 cursor-pointer" to="/2022" target="_blank">
                   <span className="text-3xl sm:text-4xl font-light font-cabinet uppercase tracking-tight">
                     Bashaway 2022
                   </span>
-                  <Link className="h-6 sm:h-7" />
-                </div>
+                  <LinkIcon className="h-6 sm:h-7" />
+                </Link>
                 <Bashaway className="translate-y-0.5 mb-1 sm:mb-2 h-4 sm:h-5" dark />
               </Fragment>
             ))}
