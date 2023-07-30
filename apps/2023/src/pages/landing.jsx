@@ -1,6 +1,7 @@
 import {
   Competion,
   ContributionBanner,
+  Gallery,
   Hero,
   Marquee,
   Mission,
@@ -21,6 +22,7 @@ const Landing = () => {
       <Prizes />
       <Sponsors />
       <PastEvents />
+      <Gallery />
       <Partners />
     </>
   );
