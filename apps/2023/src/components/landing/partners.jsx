@@ -8,7 +8,7 @@ const Partners = () => {
         <img src="./assets/images/logos/wif.png" className="w-[144px] h-[60px] translate-y-0.5" />
         <img
           src="./assets/images/logos/mozilla.png"
-          className="w-[77.8px] h-[82px] transform -translate-x-0.5 translate-y-1"
+          className="w-[195px] h-[56px] transform -translate-x-0.5 translate-y-1"
         />
         <img src="./assets/images/logos/fcsc.png" className="w-[131px] h-[56px]" />
       </div>
