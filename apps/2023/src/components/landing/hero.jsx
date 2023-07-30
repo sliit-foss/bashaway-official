@@ -1,6 +1,6 @@
+import { BodyText, Button } from '@/components/common';
 import { eventPortalLink } from '@/constants';
 import { Bashaway } from '@/icons';
-import { BodyText, Button } from '../common';
 
 const Hero = () => {
   return (

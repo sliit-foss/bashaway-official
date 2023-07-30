@@ -1,23 +1,5 @@
-import { SectionBadge } from '../common/badges';
-
-const sponsors = [
-  {
-    name: 'Sponsor 1',
-    logo: 'https://via.placeholder.com/150'
-  },
-  {
-    name: 'Sponsor 2',
-    logo: 'https://via.placeholder.com/150'
-  },
-  {
-    name: 'Sponsor 3',
-    logo: 'https://via.placeholder.com/150'
-  },
-  {
-    name: 'Sponsor 4',
-    logo: 'https://via.placeholder.com/150'
-  }
-];
+import { SectionBadge } from '@/components/common/badges';
+import sponsors from './data.json';
 
 const Sponsors = () => {
   return (

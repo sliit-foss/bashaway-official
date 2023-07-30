@@ -1,20 +1,6 @@
 import { Fragment } from 'react';
-import { SectionBadge } from '../common/badges';
-
-const prizes = [
-  {
-    place: '1st',
-    text: 'The Winner LKR 40,000'
-  },
-  {
-    place: '2nd',
-    text: 'The Runner Up LKR 30,000'
-  },
-  {
-    place: '3rd',
-    text: 'The 2nd Runner up LKR 20,000'
-  }
-];
+import { SectionBadge } from '@/components/common/badges';
+import prizes from './data.json';
 
 const Prizes = () => {
   return (
