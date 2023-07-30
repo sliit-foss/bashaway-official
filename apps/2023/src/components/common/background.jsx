@@ -48,12 +48,11 @@ const Glow = () => {
   return (
     <div
       id="cursor"
-      className="block fixed z-[60] pointer-events-none rounded-full mix-blend-screen duration-0"
+      className="block fixed z-[60] pointer-events-none mix-blend-screen duration-500"
       style={{
         top: y,
         left: x,
-        boxShadow: '0 0 150px 30px rgba(255, 0, 0, 0.5)',
-        transform: `skew(-${40}deg, ${20 + 30 * (x / screen.width)}deg)`
+        boxShadow: '0 0 150px 30px rgba(255, 0, 0, 0.5)'
       }}
     />
   );
@@ -67,7 +66,7 @@ const Background = () => {
         .map((_, index) => (
           <div
             key={index}
-            className="border-[0.5px] border-background opacity-100 blur-[1px] transition-all duration-250 animated-grid-tile"
+            className="border-[0.25px] border-background opacity-100 transition-all duration-1000 animated-grid-tile"
             style={{
               height: tileSize,
               width: tileSize
