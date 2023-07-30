@@ -6,7 +6,7 @@ on:
       - main
 jobs:
   deploy-production:
-    name: Deploy to production 🚀
+    name: Deploy to production
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository 🛎️
