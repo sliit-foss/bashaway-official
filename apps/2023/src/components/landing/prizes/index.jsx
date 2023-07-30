@@ -14,7 +14,9 @@ const Prizes = () => {
                 <div className="min-w-[70px] sm:min-w-[100px] h-fit flex justify-center items-center py-3 bg-black rounded-full">
                   <span className="uppercase text-white text-xl sm:text-4xl">{prize.place}</span>
                 </div>
-                <span className="uppercase text-3xl sm:text-6xl font-medium">{prize.text}</span>
+                <span className="uppercase text-3xl sm:text-4xl md:text-5xl md:text-[40px] lg:text-[44px] xl:text-6xl font-medium">
+                  {prize.text}
+                </span>
               </div>
               {prizes.length !== index + 1 && <hr className="border-black" />}
             </Fragment>

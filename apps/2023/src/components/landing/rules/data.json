@@ -1,0 +1,13 @@
+[
+    "A competing team can consist of 1 to 4 members. A competing team can consist of 1 to 4 members.",
+    "The competition will be an online contest where teams compete within a given set of task-based challenges in a timed setting.",
+    "Each team must register through the competition platform by entering team details and necessary information about its members.",
+    "The challenges will be available on the competition platform once the competition begins.",
+    "All team members must login with the same credentials provided during team registration.",
+    "Points will be assigned according to challenges and sub-tasks of each challenge.",
+    "The highest scoring team will be considered the winner and a score board will be updated periodically (not in real time). The rate will depend on the registered team count and will be informed later.",
+    "Extra points will be awarded based on the number of lines of code and the level of optimization (this score will be calculated by a predefined formula).",
+    "A team can submit multiple submissions to a single challenge, but only the latest submission will be considered when marking.",
+    "When competition ended, we will publish a public repository under SLIIT FOSS Community github profile. We will include latest uploads of each teams, hope this will help to share your knowledge and show our transparency.",
+    "The judges’ decision will be final.*"
+]
