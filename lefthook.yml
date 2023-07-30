@@ -2,10 +2,10 @@ pre-commit:
   parallel: true
   commands:
     format:
-      glob: "*.{js,ts,jsx,tsx}"
+      glob: '*.{js,ts,jsx,tsx}'
       run: npm run format && git add .
     lint:
-      glob: "*.{js,ts,jsx,tsx}"
+      glob: '*.{js,ts,jsx,tsx}'
       run: npm run lint && git add .
 
 commit-msg:

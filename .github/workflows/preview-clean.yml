@@ -2,7 +2,7 @@ name: Clean PR preview
 
 on:
   workflow_run:
-    workflows: ["Close PR"]
+    workflows: ['Close PR']
     types:
       - completed
 
@@ -15,6 +15,6 @@ jobs:
     steps:
       - name: Checkout repository 🛎️
         uses: actions/checkout@v3
-        
+
       - name: Clean preview 🧹
         uses: sliit-foss/actions/preview-deployments/clean@main

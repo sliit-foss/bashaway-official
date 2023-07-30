@@ -1,4 +1,4 @@
-import { SectionBadge } from '../common/badges';
+import { SectionBadge } from '@/components/common/badges';
 
 const Partners = () => {
   return (
