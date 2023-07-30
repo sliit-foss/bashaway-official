@@ -18,7 +18,7 @@ const Competition = () => {
                 )}>
                 {rule}
               </HighlightText>
-              {index === rules.length - 1 ? null : <hr className="border-black/10 my-5" />}
+              {index === rules.length - 1 ? null : <hr className="w-full border-black/10 my-5" />}
             </Fragment>
           );
         })}
