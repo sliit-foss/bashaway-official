@@ -5,7 +5,7 @@ import rules from './data.json';
 
 const Rules = () => {
   return (
-    <div className="w-full flex flex-col py-6 px-10 lg:px-24 gap-y-10">
+    <div className="w-full flex flex-col mt-3 py-6 px-10 lg:px-24 gap-y-10">
       <SectionBadge id="rules">The Rules & Regulations</SectionBadge>
       <div className="bg-white p-8 py-10 rounded-3xl flex flex-col items-center lg:items-start">
         {rules.map((rule, index) => {

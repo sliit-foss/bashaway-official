@@ -1,8 +1,10 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { Background, Footer, Header } from '@/components/common';
+import { useScroll } from '@/hooks';
 import { Landing } from '@/pages';
 
 const App = () => {
+  useScroll();
   const location = useLocation();
   return (
     <div className="w-full bg-background">

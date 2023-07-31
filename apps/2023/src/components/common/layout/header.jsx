@@ -9,7 +9,7 @@ const sections = ['Competition', 'Timeline', 'Rules', 'Prizes', 'Sponsors'];
 const Header = ({ className }) => {
   const onNavItemClick = (path) => {
     window.scrollTo({
-      top: document.getElementById(path).offsetTop - 120,
+      top: document.getElementById(path).offsetTop - 138,
       behavior: 'smooth'
     });
   };
