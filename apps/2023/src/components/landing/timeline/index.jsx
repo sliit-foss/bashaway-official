@@ -12,7 +12,7 @@ const Timeline = () => {
 
   return (
     <div className="w-full flex flex-col py-6 px-10 lg:px-24 gap-y-10 ">
-      <SectionBadge>The Timeline</SectionBadge>
+      <SectionBadge id="timeline">The Timeline</SectionBadge>
       <div className={twMerge(timelineHeight, 'hidden lg:block')} />
       <ComponentStack
         className={`${timelineHeight} gap-1 flex-col lg:flex-row lg:absolute lg:right-0 lg:mt-24 lg:pl-[6rem] 2xl:pl-[6.4rem]`}

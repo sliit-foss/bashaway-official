@@ -8,7 +8,10 @@ const sections = ['Competition', 'Timeline', 'Rules', 'Prizes', 'Sponsors'];
 
 const Header = ({ className }) => {
   const onNavItemClick = (path) => {
-    document.getElementById(path).scrollIntoView({ behavior: 'smooth' });
+    window.scrollTo({
+      top: document.getElementById(path).offsetTop - 120,
+      behavior: 'smooth'
+    });
   };
 
   return (
@@ -16,7 +19,7 @@ const Header = ({ className }) => {
       className={twMerge(`w-full min-h-[70px] xs:min-h-[90px] bg-white/90 backdrop-blur-md fixed z-50`, className)}>
       <div className="w-full max-w-body mx-auto flex justify-between  py-6 px-8 lg:px-24">
         <div className="hidden xs:grid place-content-start grid-flow-col items-center space-x-[20px] sm:space-x-[30px]">
-          <Link to="/">
+          <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <Bashaway width={160} className="w-[160px] sm:w-[185px]" />
           </Link>
           <Times height="15px" width="15px" className="opacity-20" />
