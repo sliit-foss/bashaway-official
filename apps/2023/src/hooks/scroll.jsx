@@ -5,7 +5,7 @@ const useScroll = () => {
     const hash = window.location.hash?.slice(1);
     if (hash) {
       window.scrollTo({
-        top: (document.getElementById(hash)?.offsetTop ?? 0) - 120
+        top: (document.getElementById(hash)?.offsetTop ?? 0) - 138
       });
     }
   });
