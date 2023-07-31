@@ -8,7 +8,7 @@ on:
       - opened
       - reopened
       - synchronize
-      
+
 jobs:
   commitlint:
     name: Commitlint
