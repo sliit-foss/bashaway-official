@@ -13,7 +13,7 @@ const Rules = () => {
             <Fragment key={index}>
               <BodyText
                 className={twMerge(
-                  'tracking-[0.32px] leading-[103%] font-medium font-cabinet',
+                  'tracking-[0.32px] leading-[108%] font-medium font-cabinet',
                   index === rules.length - 1 ? 'text-black' : 'text-black/60'
                 )}>
                 {rule}
