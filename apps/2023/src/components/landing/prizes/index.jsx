@@ -5,7 +5,7 @@ import prizes from './data.json';
 const Prizes = () => {
   return (
     <div className="w-full flex flex-col py-6 px-10 lg:px-24 gap-y-10">
-      <SectionBadge>Prizes</SectionBadge>
+      <SectionBadge id="prizes">Prizes</SectionBadge>
       <div className="flex flex-col gap-5">
         {prizes.map((prize, index) => {
           return (

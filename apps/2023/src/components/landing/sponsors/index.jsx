@@ -4,7 +4,7 @@ import sponsors from './data.json';
 const Sponsors = () => {
   return (
     <div className="w-full flex flex-col py-6 px-10 lg:px-24 gap-y-10">
-      <SectionBadge>Sponsors</SectionBadge>
+      <SectionBadge id="sponsors">Sponsors</SectionBadge>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
         {sponsors.map((sponsor) => {
           return (

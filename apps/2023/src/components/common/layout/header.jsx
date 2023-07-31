@@ -8,7 +8,10 @@ const sections = ['Competition', 'Timeline', 'Rules', 'Prizes', 'Sponsors'];
 
 const Header = ({ className }) => {
   const onNavItemClick = (path) => {
-    document.getElementById(path).scrollIntoView({ behavior: 'smooth' });
+    window.scrollTo({
+      top: document.getElementById(path).offsetTop - 120,
+      behavior: 'smooth'
+    });
   };
 
   return (
