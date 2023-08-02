@@ -63,3 +63,11 @@ html {
   scrollbar-color: black var(--background);
   scrollbar-width: thin;
 }
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
