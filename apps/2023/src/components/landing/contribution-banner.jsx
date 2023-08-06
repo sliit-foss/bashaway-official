@@ -24,6 +24,7 @@ const ContributionBanner = () => {
             <Button
               to={sliitFossMainWebsite}
               target="_blank"
+              ariaLabel="Learn more about SLIIT FOSS"
               wrapperClassName="w-full sm:w-auto"
               className="w-full bg-white text-black">
               Learn More

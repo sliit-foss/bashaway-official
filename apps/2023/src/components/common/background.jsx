@@ -34,6 +34,7 @@ const Glow = () => {
       removeGlow();
 
       if (
+        tile &&
         insideHighlightArea &&
         e.clientX > tile.offsetLeft &&
         e.clientX < tile.offsetLeft + tile.offsetWidth &&

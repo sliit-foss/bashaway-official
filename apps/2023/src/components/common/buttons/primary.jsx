@@ -14,10 +14,10 @@ const Button = ({ children, className, ...props }) => {
   );
 };
 
-const ButtonWrapper = ({ to, wrapperClassName, target = '_self', ...props }) => {
+const ButtonWrapper = ({ to, wrapperClassName, target = '_self', ariaLabel, ...props }) => {
   if (to) {
     return (
-      <Link to={to} target={target} className={wrapperClassName}>
+      <Link to={to} target={target} className={wrapperClassName} aria-label={ariaLabel}>
         <Button {...props} />
       </Link>
     );
