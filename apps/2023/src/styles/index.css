@@ -9,26 +9,31 @@
   @font-face {
     font-family: 'Cabinet Grotesk Variable';
     src: url('../../public/assets/fonts/cabinet-grotesk-variable.ttf');
+    font-display: swap;
   }
   @font-face {
     font-family: 'Consolas';
     src: url('../../public/assets/fonts/consolas.ttf');
+    font-display: swap;
   }
   @font-face {
     font-family: 'Consolas';
     src: url('../../public/assets/fonts/consolas-bold.ttf');
     font-weight: 700;
+    font-display: swap;
   }
   @font-face {
     font-family: 'Consolas';
     src: url('../../public/assets/fonts/consolas-italic.ttf');
     font-style: italic;
+    font-display: swap;
   }
   @font-face {
     font-family: 'Consolas';
     src: url('../../public/assets/fonts/consolas-bold-italic.ttf');
     font-weight: 700;
     font-style: italic;
+    font-display: swap;
   }
   html {
     scroll-behavior: smooth;
