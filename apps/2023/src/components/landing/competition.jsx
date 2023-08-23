@@ -6,12 +6,12 @@ const Competition = () => {
       <SectionBadge id="competition">The Competition</SectionBadge>
       <HighlightText className="flex flex-col gap-y-10 max-w-full lg:max-w-[45vw]">
         <span>
-          A unique competition that keeps the coders around the island on their toes. Welcome to ./bashaway 2023, the
-          second edition of the first-ever scripting and automation competition!
+          Bashaway is unique in every sense. Any doubts? Do check our pages for cherished memories of the previous
+          competition. From organizing workshops to crowning the winning team, it was all unique.
         </span>
         <span>
-          Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing
-          layouts and visual mockups.
+          Hence why not join the battle this time? Seize the occasion to learn, create and grow! It&apos;s high time to
+          leave your trace behind.
         </span>
       </HighlightText>
     </div>

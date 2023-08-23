@@ -8,12 +8,13 @@ const Hero = () => {
       <Bashaway className="w-[280px] sm:w-[400px] h-[58px] sm:h-[78px]" />
       <BodyText className="lg:text-center max-w-5xl px-10 md:px-12">
         A unique competition that keeps the coders around the island on their toes. Welcome to ./bashaway 2023, the
-        second edition of the first-ever scripting and automation competition!
+        second edition of the first-ever scripting and automation competition in Sri Lanka!
       </BodyText>
       <Button
         to={eventPortalLink}
+        disabled
         target="_blank"
-        className="mt-2 sm:text-[22px] px-6 py-2 rounded-full tracking-[0.44px]">
+        className="mt-2 sm:text-[22px] px-6 py-2 rounded-full tracking-[0.44px] opacity-30 cursor-not-allowed">
         Register Now
       </Button>
     </div>

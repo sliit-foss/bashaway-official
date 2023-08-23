@@ -1,27 +1,44 @@
 [
     {
-        "date": "1 Aug",
-        "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+        "title": "Registration Opening",
+        "date": "10 Sep",
+        "description": "Bashaway 2023 registration opens. This is where your code will become a masterpiece. Get a team of capable members who are well-versed with Bash or any other Scripting Language so you are one step closer to victory. Make sure to register your team and secure your spot..",
         "time": "12:00 IST"
     },
     {
-        "date": "16 Aug",
-        "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-        "time": "12:00 IST"
-    },
-    {
-        "date": "31 Aug",
-        "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-        "time": "12:00 IST"
-    },
-    {
-        "date": "02 Sep",
-        "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-        "time": "12:00 IST"
-    },
-    {
+        "title": "Workshops",
         "date": "16 Sep",
-        "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+        "description": "Don’t miss out on the well-worth hands-on training session which can enhance your scripting skills. This assuredly is a great opportunity to polish your already existing skills or learn new ones.",
         "time": "12:00 IST"
+    },
+    {
+        "title": "Registration Closing",
+        "date": "22 Sep",
+        "description": "Registrations for SLIIT Bashaway 2023 closes soon. No registrations will be accepted after this date. Therefore, please make sure to register your team before the closing date.",
+        "time": "12:00 IST"
+    },
+    {
+        "title": "Practice Round",
+        "date": "01 Oct",
+        "description": "Your team can now attend the practice round session to sharpen your scripting skills and get a sneak peek into Bashaway 2023. This is great chance for you and your team to get a taste of the competition.",
+        "time": "10:00 IST"
+    },
+    {
+        "title": "1st Round",
+        "date": "07 Oct",
+        "description": "This is where the journey begins! You have to showcase your Scripting skills as you tackle various challenging tasks and pave your way to victory.",
+        "time": "10:00 IST"
+    },
+    {
+        "title": "2nd Round",
+        "date": "21 Oct",
+        "description": "This round is a bit more challenging compared to the first round. Therefore, make sure you and your team are prepared to face more complex problems and unleash your problem solving abilities.",
+        "time": "10:00 IST"
+    },
+    {
+        "title": "Award Ceremony",
+        "date": "21 Oct",
+        "description": "The winners are selected from the final round and are presented with awards at the award ceremony. Bashaway 2023 comes to an end with a grand finale, celebrating the champions of the game.",
+        "time": "17:00 IST"
     }
 ]

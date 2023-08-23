@@ -77,8 +77,9 @@ const Header = ({ className }) => {
             ))}
             <Button
               to={eventPortalLink}
+              disabled
               target="_blank"
-              className="mt-1.5 xl:mt-0 px-8 xl:px-[1.15rem] pb-2.5 xl:pb-[0.4rem]">
+              className="mt-1.5 xl:mt-0 px-8 xl:px-[1.15rem] pb-2.5 xl:pb-[0.4rem] opacity-30 cursor-not-allowed">
               Register
             </Button>
           </div>
