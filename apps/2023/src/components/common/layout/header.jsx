@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { RxCross1, RxHamburgerMenu } from 'react-icons/rx';
 import { Link } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
-import { eventPortalLink } from '@/constants';
 import { useBreakpoint } from '@/hooks';
 import { Bashaway, FOSS, Times } from '@/icons';
 import { Button } from '..';
@@ -76,9 +75,8 @@ const Header = ({ className }) => {
               </span>
             ))}
             <Button
-              to={eventPortalLink}
               target="_blank"
-              className="mt-1.5 xl:mt-0 px-8 xl:px-[1.15rem] pb-2.5 xl:pb-[0.4rem]">
+              className="mt-1.5 xl:mt-0 px-8 xl:px-[1.15rem] pb-2.5 xl:pb-[0.4rem] cursor-not-allowed">
               Register
             </Button>
           </div>

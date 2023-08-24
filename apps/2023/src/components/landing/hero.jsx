@@ -1,5 +1,4 @@
 import { BodyText, Button } from '@/components/common';
-import { eventPortalLink } from '@/constants';
 import { Bashaway } from '@/icons';
 
 const Hero = () => {
@@ -11,9 +10,8 @@ const Hero = () => {
         second edition of the first-ever scripting and automation competition!
       </BodyText>
       <Button
-        to={eventPortalLink}
         target="_blank"
-        className="mt-2 sm:text-[22px] px-6 py-2 rounded-full tracking-[0.44px]">
+        className="mt-2 sm:text-[22px] px-6 py-2 rounded-full tracking-[0.44px] cursor-not-allowed">
         Register Now
       </Button>
     </div>

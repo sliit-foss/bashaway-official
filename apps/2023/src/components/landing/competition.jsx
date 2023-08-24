@@ -10,8 +10,8 @@ const Competition = () => {
           second edition of the first-ever scripting and automation competition!
         </span>
         <span>
-          Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing
-          layouts and visual mockups.
+          Join the battle once again. Seize the occasion to learn, create and grow! It&apos;s high time to leave your
+          trace behind.
         </span>
       </HighlightText>
     </div>
