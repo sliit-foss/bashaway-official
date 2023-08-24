@@ -22,7 +22,7 @@ const Timeline = () => {
           }px)`
         }}
         itemStyle={({ index, itemHovered }) =>
-          `w-full hover:flex-[4_0_0%] xs:hover:flex-[3_0_0%] [&>div>div:nth-child(3)]:opacity-100 [&>div>div:nth-child(3)]:hover:opacity-0 [&>div>span:nth-child(4)]:opacity-0 [&>div>span:nth-child(4)]:hover:opacity-100 ${
+          `w-full hover:flex-[4_0_0%] xs:hover:flex-[3_0_0%] [&>div>div:nth-child(3)]:opacity-100 [&>div>div:nth-child(3)]:hover:opacity-0 [&>div>span:nth-child(4)]:opacity-0 md:[&>div>span:nth-child(4)]:opacity-100 [&>div>span:nth-child(4)]:hover:opacity-100 ${
             index === 0 && !itemHovered
               ? 'flex-[4_0_0%] xs:flex-[3_0_0%] [&>div>div:nth-child(2)]:opacity-100 [&>div>div:nth-child(3)]:opacity-0 [&>div>span:nth-child(4)]:opacity-100'
               : '[&>div>div:nth-child(2)]:opacity-0 [&>div>div:nth-child(2)]:hover:opacity-100'
