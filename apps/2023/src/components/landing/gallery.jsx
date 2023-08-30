@@ -14,8 +14,8 @@ const Gallery = () => {
         <img src="./assets/images/gallery/3.jpg" />
       </ComponentStack>
       <BodyText className="tracking-[-2px]">
-        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing
-        layouts and visual mockups. This should be about past content.
+        These pictures speak a thousand words. Make sure to leaf through the gallery of Bashaway 2022, the first edition
+        of our competition!!
       </BodyText>
     </div>
   );

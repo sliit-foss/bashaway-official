@@ -5,7 +5,7 @@ import { useWindowDimension } from '@/hooks';
 import tailwindConfig from '../../../../tailwind.config.js';
 import timeline from './data.json';
 
-const timelineHeight = 'h-[740px] xs:h-[670px] lg:h-[440px]';
+const timelineHeight = 'h-[780px] md:h-[620px] lg:h-[480px] xl:h-[450px]';
 
 const Timeline = () => {
   const { width: screenWidth } = useWindowDimension();
@@ -22,9 +22,9 @@ const Timeline = () => {
           }px)`
         }}
         itemStyle={({ index, itemHovered }) =>
-          `w-full hover:flex-[3_0_0%] ${
+          `w-full hover:flex-[4_0_0%] xs:hover:flex-[3_0_0%] [&>div>div:nth-child(3)]:opacity-100 [&>div>div:nth-child(3)]:hover:opacity-0 [&>div>span:nth-child(4)]:opacity-0 md:[&>div>span:nth-child(4)]:opacity-100 [&>div>span:nth-child(4)]:hover:opacity-100 ${
             index === 0 && !itemHovered
-              ? 'flex-[3_0_0%] [&>div>div:nth-child(2)]:opacity-100'
+              ? 'flex-[4_0_0%] xs:flex-[3_0_0%] [&>div>div:nth-child(2)]:opacity-100 [&>div>div:nth-child(3)]:opacity-0 [&>div>span:nth-child(4)]:opacity-100'
               : '[&>div>div:nth-child(2)]:opacity-0 [&>div>div:nth-child(2)]:hover:opacity-100'
           }`
         }>
@@ -38,16 +38,15 @@ const Timeline = () => {
                 </Fragment>
               ))}
             </span>
-            <div className="w-full h-full absolute p-8 top-0 left-0 z-10 flex flex-col justify-center transition-all duration-500">
-              <span className="text-lg sm:text-xl md:text-2xl text-start font-cabinet font-medium text-black/40 lg:mt-20">
-                {item.description}
+            <div className="w-full h-full absolute p-8 top-0 left-0 z-10 flex flex-col justify-center transition-all duration-700">
+              <span className="text-lg sm:text-xl md:text-xl lg:text-2xl text-start font-cabinet font-medium text-black/40 lg:mt-20">
+                <span className="text-black/80 font-extrabold">{item.title} - </span> {item.description}
               </span>
             </div>
-            <div className="w-full h-full absolute top-0 left-0 z-20 flex flex-col justify-between blur-lg lg:hidden">
-              <div className="w-full h-[70px] bg-white" />
-              <div className="w-full h-[60px] bg-white" />
+            <div className="w-full h-full absolute top-0 left-0 z-20 flex flex-col justify-between blur-xl transition-all duration-1000">
+              <div className="w-full h-full bg-white" />
             </div>
-            <span className="text-lg sm:text-xl md:text-2xl text-start font-cabinet font-medium text-black/40 z-30">
+            <span className="text-lg sm:text-xl md:text-2xl text-start font-cabinet font-medium text-black/40 z-30 transition-all duration-700">
               {item.time}
             </span>
           </div>
