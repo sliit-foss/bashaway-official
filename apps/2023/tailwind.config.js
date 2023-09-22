@@ -24,6 +24,7 @@ export default {
         long: '500ms'
       },
       screens: {
+        xxs: '350px',
         xs: '400px',
         xsm: '450px'
       }

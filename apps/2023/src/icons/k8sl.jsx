@@ -1,10 +1,10 @@
+import { twMerge } from 'tailwind-merge';
+
 export default function K8SL({ className }) {
   return (
     <svg
-      width="447"
-      height="108"
       viewBox="0 0 447 108"
-      className={className}
+      className={twMerge('w-[447px] h-[108px]', className)}
       fill="none"
       xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_2053_112)">
