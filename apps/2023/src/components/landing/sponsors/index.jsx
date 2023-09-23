@@ -11,7 +11,7 @@ const Sponsors = () => {
           return (
             <div
               key={sponsor.name}
-              className="bg-white w-full aspect-square flex flex-col items-center justify-center rounded-3xl p-6 text-white animated-border from-black to-white">
+              className="bg-white w-full aspect-square flex flex-col items-center justify-center rounded-2xl xxs:rounded-3xl after:rounded-2xl xxs:after:rounded-3xl p-6 text-white animated-border from-black to-white">
               <RxQuestionMark className="h-full w-10/12 md:w-7/12 text-black" strokeWidth={0} />
             </div>
           );

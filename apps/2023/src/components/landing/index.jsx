@@ -10,3 +10,4 @@ export { default as Prizes } from './prizes';
 export { default as Rules } from './rules';
 export { default as Sponsors } from './sponsors';
 export { default as Timeline } from './timeline';
+export { default as KnowledgePartners } from './knowledge-partners';
