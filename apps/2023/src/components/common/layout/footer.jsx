@@ -14,7 +14,7 @@ const Footer = ({ className }) => {
         <div className="flex flex-col items-center md:items-start gap-y-5 col-start-1">
           <FOSS />
           <p className="md:w-[320px] px-2 sm:px-0 text-sm text-center md:text-left text-gray-500 opacity-80 font-consolas">
-            Welcome to SLIIT FOSS community. We&apos;re a group of volunteers who believe in the usage of Free/Open
+            Welcome to the SLIIT FOSS Community. We&apos;re a group of volunteers who believe in the usage of Free and Open
             Source Software (FOSS)
           </p>
           <div className="font-semibold text-[20px] font-cabinet">CONNECT WITH US</div>
