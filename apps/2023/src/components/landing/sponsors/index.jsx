@@ -28,7 +28,7 @@ const Sponsors = () => {
               </div>
               <div
                 className={twMerge(
-                  'absolute bottom-6 xxs:bottom-5 xs:bottom-6 xl:bottom-10 mx-auto px-4 lg:px-6 xl:px-8 h-9 xxs:h-6 xs:h-7 min-[680px]:max-[768px]:h-8 lg:h-8 xl:h-10 2xl:h-11 rounded-full bg-black flex justify-center items-center text-[12px] xs:text-sm xsm:text-base md:text-lg font-semibold uppercase',
+                  'absolute bottom-6 xxs:bottom-5 xs:bottom-6 xl:bottom-10 mx-auto px-4 lg:px-5 xl:px-6 h-9 xxs:h-6 xs:h-7 min-[680px]:max-[768px]:h-8 lg:h-8 xl:h-10 2xl:h-11 rounded-full bg-black flex justify-center items-center text-[12px] xs:text-sm xsm:text-base md:text-lg font-semibold uppercase',
                   sponsor.styles?.category
                 )}>
                 {sponsor.category ?? '????'}
