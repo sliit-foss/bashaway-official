@@ -1,18 +1,23 @@
 [
   {
-    "name": "Sponsor 1",
-    "logo": "https://via.placeholder.com/150"
+    "name": "GitHub",
+    "logo": "/assets/images/sponsors/github.svg",
+    "category": "Gold",
+    "styles": {
+      "logo": "w-7/12 p-0.5 xs:p-1.5 lg:p-2 xs:-translate-y-1",
+      "wrapper": "from-black/50 to-yellow-400"
+    }
   },
   {
     "name": "Sponsor 2",
-    "logo": "https://via.placeholder.com/150"
+    "logo": ""
   },
   {
     "name": "Sponsor 3",
-    "logo": "https://via.placeholder.com/150"
+    "logo": ""
   },
   {
     "name": "Sponsor 4",
-    "logo": "https://via.placeholder.com/150"
+    "logo": ""
   }
 ]
