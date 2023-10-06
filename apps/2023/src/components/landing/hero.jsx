@@ -13,8 +13,9 @@ const Hero = () => {
       <Button
         to={`${registrationLink}`}
         target="_blank"
-        className="mt-2 sm:text-[22px] px-6 py-2 rounded-full tracking-[0.44px]">
-        Register Now
+        className="mt-2 sm:text-[22px] px-6 py-2 rounded-full tracking-[0.44px]"
+        disabled>
+        Registration Closed
       </Button>
     </div>
   );

@@ -78,8 +78,9 @@ const Header = ({ className }) => {
             <Button
               to={registrationLink}
               target="_blank"
-              className="mt-1.5 xl:mt-0 px-8 xl:px-[1.15rem] pb-2.5 xl:pb-[0.4rem]">
-              Register
+              className="mt-1.5 xl:mt-0 px-8 xl:px-[1.15rem] pb-2.5 xl:pb-[0.4rem]"
+              disabled>
+              Registration Closed
             </Button>
           </div>
         </div>
