@@ -21,7 +21,7 @@ const ButtonWrapper = ({ to, wrapperClassName, target = '_self', ariaLabel, ...p
       <Link
         to={to}
         target={target}
-        className={twMerge(wrapperClassName, props?.disabled ? 'opacity-60 cursor-not-allowed' : '')}
+        className={twMerge(wrapperClassName, props?.disabled ? 'opacity-80 cursor-not-allowed' : '')}
         aria-label={ariaLabel}>
         <Button {...props} />
       </Link>
