@@ -19,7 +19,7 @@ const Sponsors = () => {
                 sponsor.styles?.wrapper
               )}
               rel="noreferrer">
-              <div className="w-full h-full flex justify-center items-center transform -translate-y-6">
+              <div className="w-full flex justify-center items-center transform -translate-y-6">
                 {sponsor.logo ? (
                   <img src={sponsor.logo} className={sponsor.styles?.logo} />
                 ) : (
