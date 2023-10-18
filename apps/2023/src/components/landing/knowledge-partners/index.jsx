@@ -10,7 +10,7 @@ const KnowledgePartners = () => {
           <div
             key={name}
             className="bg-white w-full aspect-square flex flex-col items-center justify-center rounded-3xl p-8 xxs:p-4 xs:p-6 md:p-7 xl:p-12 text-white animated-border from-black to-white">
-            <Logo className="w-full h-full" />
+            <Logo className="w-full" />
           </div>
         ))}
       </div>
