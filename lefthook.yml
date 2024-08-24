@@ -3,10 +3,10 @@ pre-commit:
   commands:
     format:
       glob: '*.{js,ts,jsx,tsx}'
-      run: npm run format && git add .
+      run: npm run format {staged_files} && git add {staged_files}
     lint:
       glob: '*.{js,ts,jsx,tsx}'
-      run: npm run lint && git add .
+      run: npm run lint {staged_files} && git add {staged_files}
 
 commit-msg:
   commands:
