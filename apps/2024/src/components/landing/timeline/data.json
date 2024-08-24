@@ -1,0 +1,32 @@
+[
+  {
+    "date": "11 Sep",
+    "title": "Registration Opening",
+    "description": "This is where you submit to the hall of fame. Get a team of capable members who are well-versed with Bash or any other scripting language so that you are one step closer to victory.",
+    "time": "12:00 IST"
+  },
+  {
+    "date": "27 Sep",
+    "title": "Awareness + Support Session",
+    "description": "Don’t miss out on the well-worth training session with two industry experts. This assuredly is a great opportunity to polish your already existing skills or learn new ones.",
+    "time": "19:00 IST"
+  },
+  {
+    "date": "05 Oct",
+    "title": "Registration Closing + Practice Round",
+    "description": "No registrations will be accepted after this date. The portal will be opened to a practice round where you can get a sneak peek into Bashaway 2023.",
+    "time": "23:59 IST"
+  },
+  {
+    "date": "07 Oct",
+    "title": "1st Round",
+    "description": "This is where the journey begins! Showcase your scripting skills as you tackle various challenging tasks and pave your way towards the next round. Be sure that your eyes are on the clock.",
+    "time": "10:00 IST"
+  },
+  {
+    "date": "21 Oct",
+    "title": "Final Round + Award Ceremony",
+    "description": "The sun sets over an intense battleground marking the end of Bashaway 2023's most challenging round. A ceremony will be held to celebrate the champions of the game.",
+    "time": "09:00 IST"
+  }
+]
