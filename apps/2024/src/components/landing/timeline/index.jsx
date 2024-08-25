@@ -38,7 +38,7 @@ const Timeline = () => {
                 </Fragment>
               ))}
             </span>
-            <div className="w-full h-full absolute p-8 top-0 left-0 z-10 flex flex-col justify-center transition-all duration-700">
+            <div className="w-full h-full absolute p-8 top-1 left-0 z-10 flex flex-col justify-center transition-all duration-700">
               <span className="text-lg sm:text-xl md:text-xl lg:text-2xl text-start font-cabinet font-medium text-black/40 lg:mt-20">
                 <span className="text-black/80 font-extrabold">{item.title} - </span> {item.description}
               </span>
