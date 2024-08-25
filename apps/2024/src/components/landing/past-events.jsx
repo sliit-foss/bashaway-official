@@ -12,9 +12,9 @@ const PastEvents = () => {
             .fill(0)
             .map((_, index) => (
               <Fragment key={index}>
-                <Link className="flex items-baseline gap-2 cursor-pointer" to="/2022" target="_blank">
+                <Link className="flex items-baseline gap-2 cursor-pointer" to="/2023" target="_blank">
                   <span className="text-3xl sm:text-4xl font-light font-cabinet uppercase tracking-tight">
-                    Bashaway 2022
+                    Bashaway 2023
                   </span>
                   <LinkIcon className="h-6 sm:h-7" />
                 </Link>
