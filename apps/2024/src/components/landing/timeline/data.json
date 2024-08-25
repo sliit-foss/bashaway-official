@@ -2,13 +2,13 @@
   {
     "date": "26 Aug",
     "title": "Registration Opening",
-    "description": "This is where you submit to the hall of fame. Get a team of capable members who are well-versed with Bash or any other scripting language so that you are one step closer to victory.",
+    "description": "Assemble a team skilled in Bash or other scripting languages and take the first step toward victory.",
     "time": "10:00 IST"
   },
   {
     "date": "5 Sep",
     "title": "Awareness Session + Practise Round",
-    "description": "Learn rules of the bashaway and navigate through the competition platforms. Join the practise round to sharpen your swords for the real battle.",
+    "description": "Learn the rules of bashaway while navigating the platforms in a simulated battle",
     "time": "19:00 IST"
   },
   {
@@ -20,7 +20,7 @@
   {
     "date": "10 Sep",
     "title": "Practical Workshop",
-    "description": "Enhance your skills with industry experts at IFS and master essential concepts to excel in Bashaway. Get hands-on experience with the cutting-edge tech.",
+    "description": "Elevate your skills with industry experts at IFS. Master key concepts and gain hands-on experience with cutting-edge tech.",
     "time": "10:00 IST"
   },
   {
@@ -38,7 +38,7 @@
   {
     "date": "11 Oct",
     "title": "Award Ceremony",
-    "description": "Winners will be crowned, legends will be carved on stone, as Bashaway 2024 comes to a triumphant close.",
+    "description": "Winners will be crowned marking the end of Bashaway 2024.",
     "time": "09:00 IST"
   } 
 ]
