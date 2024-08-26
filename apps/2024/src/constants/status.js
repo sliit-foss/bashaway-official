@@ -1,2 +1,2 @@
-export const isRegistrationsOpen = false;
+export const isRegistrationsOpen = true;
 export const currentYear = 2024;
