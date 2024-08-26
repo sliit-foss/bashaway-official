@@ -8,9 +8,9 @@ const App = () => {
   const location = useLocation();
   return (
     <div className="w-full bg-background">
-      <main className="w-full flex flex-col items-center min-h-screen mx-auto">
+      <main className="w-full flex flex-col items-center min-h-[100dvh] mx-auto">
         <Header />
-        <div className="w-full max-w-body grow mt-[70px] xs:mt-[90px] cursor-default z-40">
+        <div className="w-full max-w-body grow cursor-default z-40">
           <Routes location={location}>
             <Route path="/" element={<Landing />} />
           </Routes>
