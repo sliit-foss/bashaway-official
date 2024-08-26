@@ -1,6 +1,5 @@
 import { Fragment } from 'react';
 import { default as FastMarquee } from 'react-fast-marquee';
-import { Link } from 'react-router-dom';
 import { Bashaway, Link as LinkIcon } from '@/icons';
 
 const PastEvents = () => {
@@ -12,12 +11,12 @@ const PastEvents = () => {
             .fill(0)
             .map((_, index) => (
               <Fragment key={index}>
-                <Link className="flex items-baseline gap-2 cursor-pointer" to="/2023" target="_blank">
+                <a className="flex items-baseline gap-2 cursor-pointer" href="/2023" target="_blank">
                   <span className="text-3xl sm:text-4xl font-light font-cabinet uppercase tracking-tight">
                     Bashaway 2023
                   </span>
                   <LinkIcon className="h-6 sm:h-7" />
-                </Link>
+                </a>
                 <Bashaway className="translate-y-0.5 mb-1 sm:mb-2 h-4 sm:h-5" dark />
               </Fragment>
             ))}
