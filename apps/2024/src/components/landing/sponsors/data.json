@@ -1,5 +1,15 @@
 [
   {
+    "name": "Perituza",
+    "logo": "./assets/images/sponsors/perituza.svg",
+    "category": "Title",
+    "styles": {
+      "logo": "w-9/12 p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
+      "wrapper": "from-black/50 to-cyan-600"
+    },
+    "link": "https://perituza.com/"
+  },
+  {
     "name": "Qlub",
     "logo": "./assets/images/sponsors/qlub.svg",
     "category": "Gold",
@@ -8,16 +18,6 @@
       "wrapper": "from-black/50 to-yellow-400"
     },
     "link": "https://qlub.io/en/"
-  },
-  {
-    "name": "Perituza",
-    "logo": "./assets/images/sponsors/perituza.svg",
-    "category": "Gold",
-    "styles": {
-      "logo": "w-9/12 p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
-      "wrapper": "from-black/50 to-yellow-400"
-    },
-    "link": "https://perituza.com/"
   },
   {
     "name": "Tetranyde",
