@@ -16,7 +16,7 @@ import {
 
 const Landing = () => {
   return (
-    <div className="flex flex-col">
+    <>
       <Hero />
       <Marquee />
       <Mission />
@@ -30,7 +30,7 @@ const Landing = () => {
       <PastEvents />
       <Gallery />
       <Partners />
-    </div>
+    </>
   );
 };
 

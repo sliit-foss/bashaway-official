@@ -5,7 +5,7 @@ import { Bashaway } from '@/icons';
 
 const Marquee = () => {
   return (
-    <FastMarquee className="bg-black h-[46px] text-xl sm:text-[22px] text-white font-consolas">
+    <FastMarquee className="bg-black h-[46px] text-xl sm:text-[22px] text-white font-consolas absolute bottom-0 left-0">
       <div className={twMerge('flex gap-x-12 items-center mr-12')}>
         {Array(3)
           .fill(0)
