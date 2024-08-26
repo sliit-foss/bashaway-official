@@ -14,8 +14,7 @@ const Gallery = () => {
         <img src="./assets/images/gallery/3.jpg" />
       </ComponentStack>
       <BodyText className="tracking-[-2px]">
-        These pictures speak a thousand words. Make sure to leaf through the gallery of Bashaway 2022, the first edition
-        of our competition!!
+        These pictures speak a thousand words. Make sure to leaf through the gallery of past Bashaway competitions!!
       </BodyText>
     </div>
   );
