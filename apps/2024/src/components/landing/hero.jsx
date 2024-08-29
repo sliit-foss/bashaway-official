@@ -2,6 +2,7 @@ import { BodyText, Button } from '@/components/common';
 import { registrationLink } from '@/constants';
 import { currentYear, isRegistrationsOpen } from '@/constants/status';
 import { Bashaway } from '@/icons';
+import { CountDown } from '.';
 
 const Hero = () => {
   return (
@@ -11,6 +12,7 @@ const Hero = () => {
         A unique competition that keeps the coders around the island on their toes. Welcome to Bashaway {currentYear},
         the third edition of the first-ever scripting and automation competition in Sri Lanka!
       </BodyText>
+      <CountDown />
       <Button
         to={`${registrationLink}`}
         target="_blank"
