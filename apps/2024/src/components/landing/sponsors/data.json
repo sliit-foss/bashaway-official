@@ -1,32 +1,42 @@
 [
   {
     "name": "Perituza",
-    "logo": "./assets/images/sponsors/perituza.svg",
+    "logo": "./assets/images/sponsors/perituza.png",
     "category": "Title",
+    "link": "https://perituza.com/",
     "styles": {
       "logo": "w-9/12 p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
       "wrapper": "from-black/50 to-cyan-600"
-    },
-    "link": "https://perituza.com/"
+    }
   },
   {
     "name": "Qlub",
     "logo": "./assets/images/sponsors/qlub.svg",
     "category": "Gold",
+    "link": "https://qlub.io/en/",
     "styles": {
       "logo": "w-8/12 p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
       "wrapper": "from-black/50 to-yellow-400"
-    },
-    "link": "https://qlub.io/en/"
+    }
   },
   {
     "name": "Tetranyde",
-    "logo": "",
-    "link": "https://www.tetranyde.com/"
+    "logo": "./assets/images/sponsors/tetranyde.png",
+    "category": "Gold",
+    "link": "https://www.tetranyde.com/",
+    "styles": {
+      "logo": "w-full p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1.5 2xl:-translate-y-[5px]",
+      "wrapper": "from-black/50 to-yellow-400"
+    }
   },
   {
-    "name": "Sponsor 4",
-    "logo": "",
-    "link": ""
+    "name": "Wonderae",
+    "logo": "./assets/images/sponsors/wonderae.png",
+    "link": "https://wonderae.com/",
+    "category": "Bronze",
+    "styles": {
+      "logo": "w-full p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
+      "wrapper": "from-black/30 to-red-200"
+    }
   }
 ]
