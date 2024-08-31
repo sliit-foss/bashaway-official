@@ -9,8 +9,8 @@ const Separator = React.forwardRef(({ className, orientation = 'vertical', decor
     orientation={orientation}
     className={twMerge(
       'shrink-0 bg-border',
-      'bg-zinc-400',
-      'mx-2',
+      'bg-black/10',
+      'mx-7',
       orientation === 'vertical' ? 'h-100px w-[1px] ' : 'h-[1px] w-full',
       className
     )}

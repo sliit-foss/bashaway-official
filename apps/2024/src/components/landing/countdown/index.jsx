@@ -10,11 +10,11 @@ const CountDown = () => {
   //   ];
 
   return (
-    <div className="bg-white text-center">
-      <span>Registration Ends In ...</span>
-      <div className="flex">
+    <div className="bg-white text-center rounded-[15px] ">
+      <div className="pt-5 font-consolas text-black/70">Registration Ends In...</div>
+      <div className="flex px-8 pb-5 pt-3.5 font-inter">
         <DateItem key={'DAYS'} value="25" unit="DAYS" />
-        <Separator className="mx-2" />
+        <Separator />
         <DateItem key={'HOURS'} value="25" unit="HOURS" />
         <Separator />
         <DateItem key={'MINUTES'} value="25" unit="MINUTES" />
