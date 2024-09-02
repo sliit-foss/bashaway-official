@@ -5,7 +5,7 @@ import { Bashaway } from '@/icons';
 
 const Hero = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-y-8 py-4 min-h-[calc(100dvh-70px)]">
+    <div className="flex flex-col justify-center items-center gap-y-8 py-4 min-h-[calc(100lvh-70px)]">
       <Bashaway className="w-[280px] sm:w-[400px] h-[58px] sm:h-[78px]" />
       <BodyText className="lg:text-center max-w-5xl px-8">
         A unique competition that keeps the coders around the island on their toes. Welcome to Bashaway {currentYear},
