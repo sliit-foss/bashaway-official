@@ -6,8 +6,8 @@ import { CountDown } from '.';
 
 const Hero = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-y-8 py-4 min-h-[calc(100dvh-70px)]">
-      <Bashaway className="w-[280px] sm:w-[400px] h-[58px] sm:h-[78px]" />
+    <div className="flex flex-col justify-center items-center gap-y-6 py-4 min-h-[calc(100dvh-70px)]">
+      <Bashaway className="w-[280px] sm:w-[400px] h-[40px] sm:h-[68px]" />
       <BodyText className="lg:text-center max-w-5xl px-8">
         A unique competition that keeps the coders around the island on their toes. Welcome to Bashaway {currentYear},
         the third edition of the first-ever scripting and automation competition in Sri Lanka!
@@ -16,7 +16,7 @@ const Hero = () => {
       <Button
         to={`${registrationLink}`}
         target="_blank"
-        className="mt-2 sm:text-[22px] px-6 py-2 rounded-full tracking-[0.44px]"
+        className="mt-1 sm:text-[22px] px-6 py-2 rounded-full tracking-[0.44px]"
         disabled={!isRegistrationsOpen}>
         {isRegistrationsOpen ? 'Register Now' : 'Registration Closed'}
       </Button>
