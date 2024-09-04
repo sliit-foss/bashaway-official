@@ -30,6 +30,16 @@
     }
   },
   {
+    "name": "Sampath Bank",
+    "logo": "./assets/images/sponsors/sampath-bank.svg",
+    "link": "https://www.sampath.lk/",
+    "category": "Silver",
+    "styles": {
+      "logo": "w-7/12 p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
+      "wrapper": "from-black/10 to-slate-200"
+    }
+  },
+  {
     "name": "Wonderae",
     "logo": "./assets/images/sponsors/wonderae.png",
     "link": "https://wonderae.com/",
@@ -38,5 +48,17 @@
       "logo": "w-full p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
       "wrapper": "from-black/30 to-red-200"
     }
+  },
+  {
+    "name": "",
+    "logo": ""
+  },
+  {
+    "name": "",
+    "logo": ""
+  },
+  {
+    "name": "",
+    "logo": ""
   }
 ]
