@@ -6,7 +6,7 @@
     "link": "https://perituza.com/",
     "styles": {
       "logo": "w-9/12 p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
-      "wrapper": "from-black/50 to-cyan-600"
+      "wrapper": "from-black/50 to-violet-500"
     }
   },
   {
@@ -36,7 +36,7 @@
     "category": "Silver",
     "styles": {
       "logo": "w-7/12 p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
-      "wrapper": "from-black/10 to-slate-200"
+      "wrapper": "from-black/10 to-slate-400"
     }
   },
   {
