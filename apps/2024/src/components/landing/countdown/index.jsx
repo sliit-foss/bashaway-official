@@ -3,7 +3,7 @@ import useCountdown from '@/hooks/countdown';
 import TimeItem from './time-item';
 
 const CountDown = () => {
-  const { days, hours, minutes, seconds } = useCountdown({ targetDate: new Date('September 7, 2024 00:00:00') });
+  const { days, hours, minutes, seconds } = useCountdown({ targetDate: new Date('September 8, 2024 00:00:00') });
 
   return (
     <div className="bg-white text-center rounded-[15px] ">
