@@ -1,4 +1,4 @@
-import { IFS } from '@/icons';
+import { CNCF, IFS } from '@/icons';
 
 export const partners = [
   {
@@ -6,7 +6,7 @@ export const partners = [
     logo: IFS
   },
   {
-    name: '',
-    logo: ''
+    name: 'CNCF',
+    logo: CNCF
   }
 ];
