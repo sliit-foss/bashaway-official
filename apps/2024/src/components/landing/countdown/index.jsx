@@ -4,7 +4,7 @@ import useCountdown from '@/hooks/countdown';
 import TimeItem from './time-item';
 
 const CountDown = () => {
-  const { days, hours, minutes, seconds } = useCountdown({ targetDate: new Date(TIME_REGISTRATION_CLOSING) });
+  const { days, hours, minutes, seconds } = useCountdown({ targetDate: TIME_REGISTRATION_CLOSING });
 
   return (
     <div className="bg-white text-center rounded-[15px] ">

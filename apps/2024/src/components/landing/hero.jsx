@@ -6,7 +6,7 @@ import { Bashaway } from '@/icons';
 import { CountDown } from '.';
 
 const Hero = () => {
-  const { didCountDownComplete } = useCountdown({ targetDate: new Date(TIME_REGISTRATION_CLOSING) });
+  const { didCountDownComplete } = useCountdown({ targetDate: TIME_REGISTRATION_CLOSING });
 
   return (
     <div className="flex flex-col justify-center items-center gap-y-5 lg:gap-y-4 2xl:gap-y-8 min-h-[calc(100lvh-160px)] lg:min-h-[calc(100lvh-70px)]">

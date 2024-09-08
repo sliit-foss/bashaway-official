@@ -17,7 +17,7 @@ const mobileNavIconStyles =
 const Header = ({ className }) => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
-  const { didCountDownComplete } = useCountdown({ targetDate: new Date(TIME_REGISTRATION_CLOSING) });
+  const { didCountDownComplete } = useCountdown({ targetDate: TIME_REGISTRATION_CLOSING });
   const breakpoints = useBreakpoint();
 
   const onNavItemClick = (path) => {

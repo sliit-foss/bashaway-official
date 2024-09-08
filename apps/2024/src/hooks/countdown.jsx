@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 function useCountdown({ targetDate }) {
-  const countDownDate = targetDate.getTime();
+  const countDownDate = new Date(targetDate).getTime();
   const getRemainingTime = () => Math.max(0, countDownDate - Date.now());
 
   const [remainingTime, setRemainingTime] = useState(getRemainingTime());
@@ -20,7 +20,7 @@ function useCountdown({ targetDate }) {
   const extractUnitVals = (time) => ({
     days: Math.floor(time / (1000 * 60 * 60 * 24)),
     hours: Math.floor((time / (1000 * 60 * 60)) % 24),
-    minutes: Math.floor((time / 1000 / 60) % 60),
+    minutes: Math.floor((time / (1000 * 60)) % 60),
     seconds: Math.floor((time / 1000) % 60)
   });
 
