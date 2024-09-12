@@ -1,9 +1,10 @@
 import { Separator } from '@/components/common/separator/index';
-import useCountdown from '@/hooks/countdown';
+import { TIME_REGISTRATION_CLOSING } from '@/constants/dates';
+import { useCountdown } from '@/hooks';
 import TimeItem from './time-item';
 
 const CountDown = () => {
-  const { days, hours, minutes, seconds } = useCountdown({ targetDate: new Date('September 12, 2024 23:59:00') });
+  const { days, hours, minutes, seconds } = useCountdown({ targetDate: TIME_REGISTRATION_CLOSING });
 
   return (
     <div className="bg-white text-center rounded-[15px] ">

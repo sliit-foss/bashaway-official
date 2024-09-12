@@ -1,39 +1,35 @@
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function useCountdown({ targetDate }) {
-  const countDownDate = targetDate.getTime();
-  const [remainingTime, setRemainingTime] = useState(countDownDate - new Date().getTime());
+  const countDownDate = new Date(targetDate).getTime();
+  const getRemainingTime = () => Math.max(0, countDownDate - Date.now());
+
+  const [remainingTime, setRemainingTime] = useState(getRemainingTime());
+  const [didCountDownComplete, setDidCountDownComplete] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setRemainingTime(countDownDate - new Date().getTime());
+      const timeLeft = getRemainingTime();
+      setRemainingTime(timeLeft);
+      setDidCountDownComplete(timeLeft === 0);
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [targetDate]);
+  }, [countDownDate]);
 
-  const formatTimeUnit = (val) =>
-    Number(val).toLocaleString('en-US', {
-      minimumIntegerDigits: 2
-    });
+  const extractUnitVals = (time) => ({
+    days: Math.floor(time / (1000 * 60 * 60 * 24)),
+    hours: Math.floor((time / (1000 * 60 * 60)) % 24),
+    minutes: Math.floor((time / (1000 * 60)) % 60),
+    seconds: Math.floor((time / 1000) % 60)
+  });
 
-  const extractUnitVals = (remainingTime) => {
-    const days = formatTimeUnit(Math.floor(remainingTime / (1000 * 60 * 60 * 24)));
-    const hours = formatTimeUnit(Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
-    const minutes = formatTimeUnit(Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60)));
-    const seconds = formatTimeUnit(Math.floor((remainingTime % (1000 * 60)) / 1000));
+  const formatUnitTime = (val) => val.toLocaleString('en-US', { minimumIntegerDigits: 2 });
 
-    return {
-      days,
-      hours,
-      minutes,
-      seconds,
-      milliSeconds: remainingTime
-    };
-  };
+  const transformTime = (time) =>
+    Object.entries(extractUnitVals(time)).reduce((acc, [key, value]) => ({ ...acc, [key]: formatUnitTime(value) }), {});
 
-  return extractUnitVals(remainingTime);
+  return { ...transformTime(remainingTime), didCountDownComplete };
 }
 
 export default useCountdown;

@@ -1,5 +1,5 @@
 import { HighlightText, SectionBadge } from '@/components/common';
-import { currentYear } from '@/constants/status';
+import { CURRENT_YEAR } from '@/constants/dates';
 
 const Competition = () => {
   return (
@@ -8,7 +8,7 @@ const Competition = () => {
       <HighlightText className="flex flex-col gap-y-10 max-w-full lg:max-w-[45vw]">
         <span>
           A unique competition that keeps the coders around the island on their toes. Welcome to ./bashaway&nbsp;
-          {currentYear}, the third edition of the first-ever scripting and automation competition!
+          {CURRENT_YEAR}, the third edition of the first-ever scripting and automation competition!
         </span>
         <span>
           Join the battle once again. Seize the occasion to learn, create and grow! It&apos;s high time to leave your
