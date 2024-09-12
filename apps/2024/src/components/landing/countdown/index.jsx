@@ -1,6 +1,6 @@
 import { Separator } from '@/components/common/separator/index';
 import { TIME_REGISTRATION_CLOSING } from '@/constants/dates';
-import useCountdown from '@/hooks/countdown';
+import { useCountdown } from '@/hooks';
 import TimeItem from './time-item';
 
 const CountDown = () => {

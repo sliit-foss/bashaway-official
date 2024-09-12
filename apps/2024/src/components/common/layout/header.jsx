@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
 import { registrationLink } from '@/constants';
 import { TIME_REGISTRATION_CLOSING } from '@/constants/dates';
-import { useBreakpoint } from '@/hooks';
-import useCountdown from '@/hooks/countdown';
+import { useBreakpoint, useCountdown } from '@/hooks';
 import { Bashaway, FOSS, Times } from '@/icons';
 import { Button } from '..';
 

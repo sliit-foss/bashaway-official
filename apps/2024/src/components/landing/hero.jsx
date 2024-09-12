@@ -1,7 +1,7 @@
 import { BodyText, Button } from '@/components/common';
 import { registrationLink } from '@/constants';
 import { CURRENT_YEAR, TIME_REGISTRATION_CLOSING } from '@/constants/dates';
-import useCountdown from '@/hooks/countdown';
+import { useCountdown } from '@/hooks';
 import { Bashaway } from '@/icons';
 import { CountDown } from '.';
 
