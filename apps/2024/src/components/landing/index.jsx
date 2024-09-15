@@ -9,6 +9,7 @@ export { default as Partners } from './partners';
 export { default as Prizes } from './prizes';
 export { default as Rules } from './rules';
 export { default as Sponsors } from './sponsors';
+export { default as Testimonials } from './testimonials';
 export { default as Timeline } from './timeline';
 export { default as KnowledgePartners } from './knowledge-partners';
 export { default as CountDown } from './countdown';
