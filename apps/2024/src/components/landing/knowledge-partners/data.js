@@ -9,6 +9,7 @@ export const partners = [
   {
     name: 'CNCF',
     logo: CNCF,
-    link: 'https://www.cncf.io/'
+    link: 'https://www.cncf.io/',
+    classNames: 'scale-y-110'
   }
 ];
