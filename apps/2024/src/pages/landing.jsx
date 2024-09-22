@@ -12,6 +12,7 @@ import {
   Prizes,
   Rules,
   Sponsors,
+  Testimonials,
   Timeline
 } from '@/components/landing';
 
@@ -27,6 +28,7 @@ const Landing = () => {
       <ContributionBanner />
       <Prizes />
       <Sponsors />
+      <Testimonials />
       <KnowledgePartners />
       <InKindPartners />
       <PastEvents />
