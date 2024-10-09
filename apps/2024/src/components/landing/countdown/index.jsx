@@ -1,10 +1,10 @@
 import { Separator } from '@/components/common/separator/index';
-import { TIME_FIRST_ROUND_START } from '@/constants/dates';
+import { TIME_FINAL_ROUND_START } from '@/constants/dates';
 import { useCountdown } from '@/hooks';
 import TimeItem from './time-item';
 
 const CountDown = () => {
-  const { days, hours, minutes, seconds } = useCountdown({ targetDate: TIME_FIRST_ROUND_START });
+  const { days, hours, minutes, seconds } = useCountdown({ targetDate: TIME_FINAL_ROUND_START });
 
   return (
     <div className="bg-white text-center rounded-[15px] ">
