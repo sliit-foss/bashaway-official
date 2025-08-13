@@ -1,0 +1,38 @@
+[
+  {
+    "date": "26 Aug",
+    "title": "Registration Opening",
+    "description": "Assemble a team skilled in Bash or other scripting languages and take the first step toward victory.",
+    "time": "19:00 IST"
+  },
+  {
+    "date": "13 Sep",
+    "title": "Awareness Session + Practise Round",
+    "description": "Learn the rules of bashaway while navigating the platforms in a simulated battle",
+    "time": "19:00 IST"
+  },
+  {
+    "date": "18 Sep",
+    "title": "Practical Workshop",
+    "description": "Elevate your skills with guidance from industry experts. Master key concepts and gain hands-on experience with cutting-edge tech.",
+    "time": "15:00 IST"
+  },
+  {
+    "date": "6 Oct",
+    "title": "1st Round",
+    "description": "The real battle begins today! Showcase your scripting skills and secure a spot in the next round.",
+    "time": "09:30 IST"
+  },
+  {
+    "date": "10 Oct",
+    "title": "Final Round",
+    "description": "The sun rises over an intense battleground marking the begining of Bashaway 2024's most challenging round.",
+    "time": "09:00 IST"
+  },
+  {
+    "date": "11 Oct",
+    "title": "Award Ceremony",
+    "description": "Winners will be crowned marking the end of Bashaway 2024.",
+    "time": "09:00 IST"
+  } 
+]
