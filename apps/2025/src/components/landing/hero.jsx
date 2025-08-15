@@ -13,7 +13,7 @@ const Hero = () => {
       <Bashaway className="w-[280px] sm:w-[400px] h-[40px] sm:h-[68px] lg:h-[60px] 2xl:h-[70px]" />
       <BodyText className="lg:text-center max-w-5xl px-8">
         A unique competition that keeps the coders around the island on their toes. Welcome to Bashaway {CURRENT_YEAR},
-        the third edition of the first-ever scripting and automation competition in Sri Lanka!
+        the fourth edition of the first-ever scripting and automation competition in Sri Lanka!
       </BodyText>
       <CountDown />
       <Button
