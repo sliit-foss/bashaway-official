@@ -8,7 +8,7 @@ const CountDown = () => {
 
   return (
     <div className="bg-white text-center rounded-[15px] ">
-      <div className="pt-3 lg:pt-5 font-consolas text-black/70">registration closing ..</div>
+      <div className="pt-3 lg:pt-5 font-consolas text-black/70">Registrations closing in</div>
       <div className="flex px-6 lg:px-8 pb-4 lg:pb-5 pt-2 font-inter">
         <TimeItem key={'d'} value={days} unit="DD" />
         <Separator />
