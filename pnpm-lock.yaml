@@ -195,6 +195,58 @@ importers:
         specifier: 4.3.9
         version: 4.3.9(@types/node@20.5.1)
 
+  apps/2025:
+    dependencies:
+      '@app/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
+      '@radix-ui/react-separator':
+        specifier: 1.1.0
+        version: 1.1.0(@types/react-dom@18.0.11)(@types/react@18.0.28)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      lodash:
+        specifier: 4.17.21
+        version: 4.17.21
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: 18.2.0
+        version: 18.2.0(react@18.2.0)
+      react-fast-marquee:
+        specifier: 1.6.0
+        version: 1.6.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-icons:
+        specifier: 4.10.1
+        version: 4.10.1(react@18.2.0)
+      react-router-dom:
+        specifier: 6.14.0
+        version: 6.14.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      tailwind-merge:
+        specifier: 1.13.2
+        version: 1.13.2
+    devDependencies:
+      '@types/react':
+        specifier: 18.0.28
+        version: 18.0.28
+      '@types/react-dom':
+        specifier: 18.0.11
+        version: 18.0.11
+      '@vitejs/plugin-react':
+        specifier: 4.0.0
+        version: 4.0.0(vite@4.3.9(@types/node@20.5.1))
+      autoprefixer:
+        specifier: 10.4.14
+        version: 10.4.14(postcss@8.4.23)
+      postcss:
+        specifier: 8.4.23
+        version: 8.4.23
+      tailwindcss:
+        specifier: 3.3.2
+        version: 3.3.2(ts-node@10.9.2(@types/node@20.5.1)(typescript@5.5.4))
+      vite:
+        specifier: 4.3.9
+        version: 4.3.9(@types/node@20.5.1)
+
   packages/utils: {}
 
 packages:

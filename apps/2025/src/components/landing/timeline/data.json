@@ -1,0 +1,44 @@
+[
+  {
+    "date": "26 Sep",
+    "title": "Registration Opening",
+    "description": "Assemble a team skilled in Bash or other scripting languages and take the first step toward victory.",
+    "time": "19:00 IST"
+  },
+  {
+    "date": "TBD",
+    "title": "Awareness Session",
+    "description": "Learn the rules of bashaway while navigating the platforms in a simulated battle",
+    "time": "TBD"
+  },
+  {
+    "date": "TBD",
+    "title": "Bashlab 1",
+    "description": "Elevate your skills with guidance from industry experts. Master key concepts and gain hands-on experience with cutting-edge tech.",
+    "time": "TBD"
+  },
+  {
+    "date": "TBD",
+    "title": "Bashlab 2",
+    "description": "Continue building your expertise through advanced workshops and practical sessions.",
+    "time": "TBD"
+  },
+  {
+    "date": "24 Oct",
+    "title": "Registration Closing",
+    "description": "Last chance to register for Bashaway 2025! Make sure your team is ready for the challenge ahead.",
+    "time": "23:59 IST"
+  },
+  {
+    "date": "26 Oct",
+    "title": "1st Round",
+    "description": "The real battle begins today! Showcase your scripting skills and secure a spot in the next round.",
+    "time": "09:30 IST"
+  },
+  {
+    "date": "9 Nov",
+    "title": "Final Round",
+    "description": "The sun rises over an intense battleground marking the beginning of Bashaway 2025's most challenging round.",
+    "time": "09:30 IST"
+  }
+]
