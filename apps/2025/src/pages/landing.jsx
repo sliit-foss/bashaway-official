@@ -1,5 +1,5 @@
 import {
-  Competion,
+  Competition,
   ContributionBanner,
   Gallery,
   Hero,
@@ -21,7 +21,7 @@ const Landing = () => {
       <Hero />
       <Marquee />
       <Mission />
-      <Competion />
+      <Competition />
       <Timeline />
       <Rules />
       <ContributionBanner />

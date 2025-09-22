@@ -1,4 +1,4 @@
-export { default as Competion } from './competition';
+export { default as Competition } from './competition';
 export { default as ContributionBanner } from './contribution-banner';
 export { default as Gallery } from './gallery';
 export { default as Hero } from './hero';

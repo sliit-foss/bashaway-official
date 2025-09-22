@@ -5,4 +5,4 @@ export { default as Link } from './link';
 export { default as IFS } from './ifs';
 export { default as CNCF } from './cncf';
 export { default as HackSL } from './hacksl';
-export { default as MicroRewads } from './micro-rewards';
+export { default as MicroRewards } from './micro-rewards';
