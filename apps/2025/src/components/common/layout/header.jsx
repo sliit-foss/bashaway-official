@@ -37,14 +37,15 @@ const Header = ({ className }) => {
       <div className="w-full max-w-body mx-auto flex justify-between py-3.5 px-8 lg:px-24">
         <div
           className={twMerge(
-            'grid place-content-start grid-flow-col items-center space-x-[20px] transition-all duration-medium',
-            mobileNavOpen && !breakpoints['xl'] ? 'opacity-0' : 'opacity-100 pointer-events-none'
+            'grid place-content-start grid-flow-col items-center space-x-[20px] transition-all duration-medium z-[201]',
+            mobileNavOpen && !breakpoints['xl'] ? 'opacity-0 pointer-events-none' : 'opacity-100'
           )}>
           <Link
             to="/"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             aria-label="Home"
-            className="hidden xsm:block ">
+            className="hidden xsm:block"
+            reloadDocument={window.scrollY === 0}>
             <Bashaway width={160} className="w-[140px] sm:w-[160px]" />
           </Link>
           <Times height="12px" width="12px" className="hidden xsm:block opacity-20" />
