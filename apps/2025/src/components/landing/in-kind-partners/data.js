@@ -1,7 +1,7 @@
 export const partners = [
   {
     name: '',
-    link: '#',
+    link: '',
     category: '?',
     styles: {
       logo: 'w-7/12',
@@ -10,7 +10,7 @@ export const partners = [
   },
   {
     name: '',
-    link: '#',
+    link: '',
     category: '?',
     styles: {
       logo: 'w-10/12 -translate-y-2',

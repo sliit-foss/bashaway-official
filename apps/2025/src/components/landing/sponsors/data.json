@@ -2,7 +2,7 @@
   {
     "name": "",
     "category": "?",
-    "link": "#",
+    "link": "",
     "styles": {
       "logo": "w-9/12 p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
       "wrapper": "from-black/50 to-cyan-600"
@@ -11,7 +11,7 @@
   {
     "name": "",
     "category": "?",
-    "link": "#",
+    "link": "",
     "styles": {
       "logo": "w-8/12 p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
       "wrapper": "from-black/50 to-yellow-400"
@@ -19,7 +19,7 @@
   },
   {
     "name": "",
-    "link": "#",
+    "link": "",
     "category": "?",
     "styles": {
       "logo": "w-7/12 p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
