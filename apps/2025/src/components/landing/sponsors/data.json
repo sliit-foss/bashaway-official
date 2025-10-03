@@ -1,25 +1,25 @@
 [
   {
-    "name": "Perituza",
+    "name": "",
     "category": "?",
-    "link": "https://perituza.com/",
+    "link": "#",
     "styles": {
       "logo": "w-9/12 p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
       "wrapper": "from-black/50 to-cyan-600"
     }
   },
   {
-    "name": "Qlub",
+    "name": "",
     "category": "?",
-    "link": "https://qlub.io/en/",
+    "link": "#",
     "styles": {
       "logo": "w-8/12 p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
       "wrapper": "from-black/50 to-yellow-400"
     }
   },
   {
-    "name": "Sampath Bank",
-    "link": "https://www.sampath.lk/",
+    "name": "",
+    "link": "#",
     "category": "?",
     "styles": {
       "logo": "w-7/12 p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
@@ -27,8 +27,8 @@
     }
   },
   {
-    "name": "Wonderae",
-    "link": "https://wonderae.com/",
+    "name": "",
+    "link": "#",
     "category": "?",
     "styles": {
       "logo": "w-full p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
