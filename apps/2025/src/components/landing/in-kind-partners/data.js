@@ -1,7 +1,7 @@
 export const partners = [
   {
-    name: 'HackSL',
-    link: 'https://facebook.com/hacksl.tech',
+    name: '',
+    link: '',
     category: '?',
     styles: {
       logo: 'w-7/12',
@@ -9,8 +9,8 @@ export const partners = [
     }
   },
   {
-    name: 'MicroRewards',
-    link: 'https://www.microrewards.zedeid.com',
+    name: '',
+    link: '',
     category: '?',
     styles: {
       logo: 'w-10/12 -translate-y-2',
