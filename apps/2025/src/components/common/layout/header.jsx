@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { RxCross1, RxHamburgerMenu } from 'react-icons/rx';
 import { Link } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
@@ -15,20 +15,24 @@ const mobileNavIconStyles =
 
 const Header = ({ className }) => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const headerRef = useRef(null);
 
   const { didCountDownComplete } = useCountdown({ targetDate: TIME_REGISTRATION_CLOSING });
   const breakpoints = useBreakpoint();
 
   const onNavItemClick = (path) => {
     if (!breakpoints['xl']) setMobileNavOpen(false);
-    window.scrollTo({
-      top: document.getElementById(path).offsetTop - 138,
-      behavior: 'smooth'
-    });
+    setTimeout(() => {
+      const element = document.getElementById(path);
+      if (element && headerRef.current) {
+        window.scrollTo({ top: element.offsetTop - headerRef.current.offsetHeight, behavior: 'smooth' });
+      }
+    }, 0);
   };
 
   return (
     <header
+      ref={headerRef}
       className={twMerge(
         `w-full min-h-[70px] backdrop-blur-md sticky top-0 z-[200] transition-all duration-long`,
         className,
