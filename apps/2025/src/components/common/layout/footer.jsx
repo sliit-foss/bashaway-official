@@ -1,6 +1,13 @@
-import { AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillYoutube, AiOutlineTwitter } from 'react-icons/ai';
+import {
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiFillTikTok,
+  AiFillYoutube,
+  AiOutlineTwitter
+} from 'react-icons/ai';
 import { twMerge } from 'tailwind-merge';
-import { facebook, instagram, linkedIn, twitter, youTube } from '@/constants';
+import { facebook, instagram, linkedIn, tiktok, twitter, youTube } from '@/constants';
 import { Bashaway, FOSS } from '@/icons';
 
 const Footer = ({ className }) => {
@@ -33,6 +40,9 @@ const Footer = ({ className }) => {
             </a>
             <a href={youTube} target="_blank" className="icon-hover" rel="noreferrer" aria-label="YouTube">
               <AiFillYoutube className="h-[1.36rem] w-[1.36rem] -translate-y-[0.06rem]" />
+            </a>
+            <a href={tiktok} target="_blank" className="icon-hover" rel="noreferrer" aria-label="TikTok">
+              <AiFillTikTok className="h-5 w-5" />
             </a>
           </div>
         </div>
