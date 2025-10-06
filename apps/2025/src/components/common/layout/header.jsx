@@ -25,7 +25,7 @@ const Header = ({ className }) => {
     setTimeout(() => {
       const element = document.getElementById(path);
       if (element && headerRef.current) {
-        window.scrollTo({ top: element.offsetTop - headerRef.current.offsetHeight, behavior: 'smooth' });
+        window.scrollTo({ top: element.offsetTop - headerRef.current.offsetHeight - 10, behavior: 'smooth' });
       }
     }, 0);
   };
