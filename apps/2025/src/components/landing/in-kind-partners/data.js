@@ -1,7 +1,7 @@
 export const partners = [
   {
     name: 'HackSL',
-    logo: '../assets/images/in-kind-partners/hackSL.png',
+    logo: '/assets/images/in-kind-partners/hackSL.png',
     link: 'https://www.instagram.com/hack.sl/',
     category: 'Digital Media',
     styles: {
@@ -11,7 +11,7 @@ export const partners = [
   },
   {
     name: 'Media Unit',
-    logo: '../assets/images/in-kind-partners/mediaunit.png',
+    logo: '/assets/images/in-kind-partners/mediaunit.png',
     link: 'https://www.facebook.com/sliit.fcmu',
     category: 'Media',
     styles: {
