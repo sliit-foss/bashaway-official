@@ -1,38 +1,52 @@
 [
   {
-    "name": "",
-    "category": "?",
-    "link": "",
+    "name": "CC&C",
+    "category": "Platinum",
+    "logo": "../assets/images/partners/CC&C.png",
+    "link": "https://ccandcsolutions.com/",
     "styles": {
-      "logo": "w-9/12 p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
-      "wrapper": "from-black/50 to-cyan-600"
+      "logo": "w-full p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1",
+      "wrapper": "from-black/60 to-slate-300"
     }
   },
   {
-    "name": "",
-    "category": "?",
-    "link": "",
+    "name": "Payzy",
+    "category": "Gold",
+    "logo": "../assets/images/partners/Payzy.png",
+    "link": "https://payzy.lk/",
     "styles": {
-      "logo": "w-8/12 p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
+      "logo": "w-full p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1",
       "wrapper": "from-black/50 to-yellow-400"
     }
   },
   {
-    "name": "",
-    "link": "",
-    "category": "?",
+    "name": "Sampath Bank",
+    "category": "Gold",
+    "logo": "../assets/images/partners/sampathbank.png",
+    "link": "https://www.sampath.lk/",
     "styles": {
-      "logo": "w-7/12 p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
+      "logo": "w-full p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1",
+      "wrapper": "from-black/50 to-yellow-400"
+    }
+  },
+  {
+    "name": "WSO2",
+    "category": "Silver",
+    "logo": "../assets/images/partners/wso2-logo.png",
+    "link": "https://wso2.com/",
+    "styles": {
+      "logo": "w-full p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1",
       "wrapper": "from-black/10 to-slate-200"
     }
   },
   {
-    "name": "",
-    "link": "#",
-    "category": "?",
+    "name": "Perplexity",
+    "category": "Community",
+    "logo": "../assets/images/partners/perplexity.png",
+    "link": "https://www.perplexity.ai/",
     "styles": {
-      "logo": "w-full p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1 2xl:-translate-y-[5px]",
-      "wrapper": "from-black/30 to-red-200"
+      "logo": "w-full p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1",
+      "wrapper": "from-black/30 to-cyan-400"
     }
   }
 ]

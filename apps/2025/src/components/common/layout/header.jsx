@@ -8,7 +8,7 @@ import { useBreakpoint, useCountdown } from '@/hooks';
 import { Bashaway, FOSS, Times } from '@/icons';
 import { Button } from '..';
 
-const sections = ['Competition', 'Timeline', 'Rules', 'Prizes', 'Sponsors'];
+const sections = ['Competition', 'Timeline', 'Rules', 'Prizes', 'Partners'];
 
 const mobileNavIconStyles =
   'block xl:hidden absolute right-8 lg:right-24 h-[1.65rem] w-[1.65rem] cursor-pointer hover:text-black/70 transition-all duration-medium';
