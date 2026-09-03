@@ -12,10 +12,13 @@ each piece work.
 
 | Change | ADR | Notes |
 |---|---|---|
+| Remove `x-api-key` bypass from `protect`/`roleProtect`; accept scoped `SCOREKEEPER_API_KEY` + HMAC only on the grade route | doc 07 F3 | three lines in `middleware/auth.js`, one route condition |
+| `POST /api/storage/upload-url` (per-team delegated SAS) + blob ETag pinning in `createSubmission`/dispatch | doc 07 F4 | portal switches from bundled SAS to this |
+| Per-team grading concurrency cap (1) + dispatch queue | doc 07 F6 | beside the cooldown |
 | Question: `track`, `rubric[]`, `variant_url`, `golf{}` | 0002/0004/0009 | additive; pre-save hook keeps `max_score = Σ rubric.weight` |
 | Submission: `raw_score`, `attempt_seq`, `void`, `runtime_ms`, `tokens_used`, `test_report`, `final_pass` | 0002/0006/0009 | additive; `attempt_seq` set in `createSubmission` (same place as the deadline & blob-prefix checks) |
 | Setting: `tracks[]`, `agent_submission_deadline`, `resubmission_penalty`, `llm_budgets[]` | 0009 | singleton update |
-| Grade route accepts numeric `score` + `test_report` from scorekeeper key | 0002 | keep the `0 ≤ score ≤ max_score` clamp already used for manual grading; keep `x-api-key` |
+| Grade route accepts `raw_score`, `test_report`, `runtime_ms`, `tokens_used`, `void`, `final_pass` (doc 10 §1.1) | 0002 | keep the `0 ≤ score ≤ max_score` clamp already used for manual grading; caller is the scoped identity from the F3 row |
 | Submission cooldown (10 min per question) in `createSubmission` | 0006 | one guard clause beside the deadline check |
 | Leaderboard aggregation: penalty stage, track weights, per-track boards, interview join | 0006/0007/0009 | pure aggregation change; freeze/round/elimination stages untouched |
 | New routes: `POST /api/llm/keys` (admin), `GET /api/llm/usage/self` | 0003 | thin passthrough to proxy control API |
@@ -43,6 +46,9 @@ Migrations (migrate-mongo, following the existing pattern):
 
 | Change | ADR | Notes |
 |---|---|---|
+| Isolated execution step (container, `--rm`, no network, hard timeout) | doc 07 F1/F5 | **first**; one step + one runner image |
+| `update-score` moved to a separate `report` job; scoped `SCOREKEEPER_API_KEY` + HMAC | doc 07 F2/F3 | see doc 10 §3 |
+| Opaque `run-name` (`submission_id` only); drop `name`/`email` from payload | doc 07 F7 | |
 | jest step: `--json --testLocationInResults`, `continue-on-error: true` | 0002 | |
 | New step `compute-score`: rubric matching + gates + multipliers → numeric PATCH | 0002/0004 | extends `src/services/score.js`, which today only sends the boolean |
 | New workflow `prompt-test.yml` (dispatch `run-{env}-prompt-tests`) | 0004 | proxy call + code-block extraction, then reuses `test.yml`'s tail via a composite action |
@@ -101,6 +107,7 @@ gantt
     axisFormat  %b %Y
     title Phased rollout against the annual cycle
     section Phase 0 — Foundations
+    Runner hardening F1–F7 (doc 07 §5)               :crit, p0s, 2026-09, 1M
     Backend schema + migrations (behavior-neutral)   :p0a, 2026-09, 2M
     Scorekeeper weighted scoring (default rubric)    :p0b, 2026-09, 2M
     Challenge CI lint + archive manifests            :p0c, 2026-10, 2M
@@ -126,7 +133,7 @@ gantt
 
 | Gate | Criterion |
 |---|---|
-| P0 → P1 | invariant 8.4 holds: replaying a sample of 2024 submissions through the weighted pipeline with default rubrics reproduces their historical scores exactly |
+| P0 → P1 | doc 07 §5 items 1–4 landed and re-tested with the F1/F2 proof-of-concept submissions (daemon + `node_modules` patch) now scoring 0 and leaking nothing; **and** invariant 8.4 holds: replaying a sample of 2024 submissions through the weighted pipeline with default rubrics reproduces their historical scores exactly |
 | P1 → P2 | proxy survives load test at contest-spike volume; golf canary stable for 2 weeks; similarity shadow run reviewed by committee |
 | P2 → P3 | dress rehearsal (awareness session, already traditionally "a simulated battle") completes all three job types end-to-end with real student traffic |
 | exhibition → ranked agents | variance measured across repeated agent runs is within committee-accepted bounds; no unresolved disputes from exhibition |

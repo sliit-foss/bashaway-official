@@ -216,10 +216,21 @@ flowchart LR
 | Artifact hygiene | clean action strips `.git`, lockfiles, `out`, dotfiles | scorekeeper |
 | Resource abuse | 5-minute job timeout | scorekeeper |
 | Language/dep escape | `shellFiles`, `dependencyCount`, `restrictJavascript/Python`, `prohibitedCommands` | per-question jest |
-| Grading channel | `x-api-key`; scorekeeper can only set a boolean, never a score; grade route otherwise admin-only | backend |
+| Grading channel | `x-api-key` shared secret; the scorekeeper sends only `automatically_graded: true`, but the route accepts a numeric `score` too, and the key bypasses **all** auth and role checks platform-wide — see doc 07 F3 | backend |
 | Information hiding | non-admins can only read their own submissions; leaderboard freeze | backend |
 
-## 8. Known weaknesses this evolution addresses
+## 8. Security posture
+
+The anti-cheat inventory above defends the *grading logic*; it does not
+isolate the *runner*. Team-authored code runs as the same user, on the
+same filesystem, with the same network as the scorekeeper's own
+credentialed steps. Doc 07 records seven verified findings (background
+processes surviving between steps, writable runner dependencies, the
+global-bypass API key, browser-bundled SAS tokens, unrestricted egress,
+dispatch-driven DoS, and public run titles) with an ordered fix list that
+is independent of, and prerequisite to, the evolution work.
+
+## 9. Known weaknesses this evolution addresses
 
 1. Binary scoring + speed tiebreak + free resubmission — see ADR-0002/0006.
 2. Unenforceable AI prohibition online — ADR-0001/0003.

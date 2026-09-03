@@ -54,6 +54,17 @@ system works, with diagrams.
 | [04 — LLM proxy design](architecture/04-llm-proxy.md) | The metering proxy: API surface, budget accounting, security |
 | [05 — Agent sandbox design](architecture/05-agent-sandbox.md) | BYO-Agent runner: isolation model, limits, scoring hooks |
 | [06 — Migration plan](architecture/06-migration-plan.md) | Repo-by-repo change list, DB migrations, phased rollout timeline |
+| [07 — Security deep-dive](architecture/07-security-deepdive.md) | Threat model of the current runner with seven verified findings, attack chain, STRIDE table, ordered fixes |
+| [08 — Archive analysis](architecture/08-archive-analysis.md) | Quantitative AI-vulnerability assessment of all 82 challenges and 638 archived solutions |
+| [09 — Challenge design guide](architecture/09-challenge-design-guide.md) | Authoring principles, patterns, manifest schema, five worked example challenges |
+| [10 — API contracts](architecture/10-api-contracts.md) | Route/payload deltas, workflow YAML diffs, reference `compute-score` and leaderboard pipeline code |
+| [11 — Cost & capacity model](architecture/11-cost-capacity-model.md) | Parametric Actions-minutes, token-spend, storage and people model with committee dials |
+
+### Rules
+
+| Doc | Contents |
+|---|---|
+| [Draft rules](rules-draft.md) | Contestant-facing rules text for the AI-native edition, per track and round |
 
 ## Diagram conventions
 
@@ -61,6 +72,13 @@ All diagrams are [Mermaid](https://mermaid.js.org/) and render natively on
 GitHub. Component diagrams follow a loose C4 style (context → container →
 sequence). Existing components are drawn plain; **new components are marked
 with `*`** in target-state diagrams.
+
+## Read this first if you only read one thing
+
+Doc 07's findings F1–F3 describe a verified path from a single submission
+to full platform compromise on the **current** pipeline. Its §5 fix list
+is small, independent of the redesign, and should land before the next
+event of any format.
 
 ## Summary of the proposal
 

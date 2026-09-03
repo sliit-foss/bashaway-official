@@ -12,8 +12,11 @@ only if **every** test passes, executes
 `PATCH /api/submissions/{id}` with `{ automatically_graded: true }`. The
 backend's `gradeSubmission` then applies `score ??= question.max_score`. If
 any test fails, the workflow aborts and the submission stays at 0. The
-scorekeeper cannot transmit a numeric score at all; the `x-api-key`-guarded
-route deliberately accepts only the flag.
+scorekeeper never transmits a number — although the route's validation
+(`submissionUpdateSchema`) already accepts an optional numeric `score`
+under the `x-api-key`, so the backend side of this change is smaller than
+it first appears (see doc 07 F3 for why that key must nevertheless be
+replaced by a scoped identity).
 
 Consequences of this design in an AI-permitted round:
 
@@ -108,10 +111,11 @@ promise.
 **Negative** — challenge authoring now includes rubric authoring (mitigated:
 a default rubric of "every visible test weight 1, every dependency-check
 test `constraint`" can be generated from the existing suites, making
-migration of the 2023–2024 archive mechanical); the backend PATCH route's
-attack surface grows from a boolean to a number (mitigated: clamp +
-`x-api-key` + the existing rule that only the scorekeeper identity and
-admins may grade).
+migration of the 2023–2024 archive mechanical); the grading callback
+becomes a numeric, higher-value target (mitigated: the existing clamp,
+plus the scoped scorekeeper identity and HMAC-signed callback specified
+in doc 07 F3 and doc 10 §1.1 — required regardless, since the current
+key is a global auth bypass).
 
 **Neutral** — jest, the pinned-runner pattern, and the clean/restore
 anti-cheat steps are unchanged.
