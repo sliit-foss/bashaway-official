@@ -9,9 +9,9 @@ const Gallery = () => {
         itemStyle={({ index, itemHovered }) =>
           index === 0 && !itemHovered ? 'grayscale-0' : 'grayscale hover:grayscale-0'
         }>
-        <img src="./assets/images/gallery/1.jpg" className="saturate-[.85]" />
+        <img src="./assets/images/gallery/1.jpeg" className="saturate-[.85]" />
         <img src="./assets/images/gallery/2.jpg" />
-        <img src="./assets/images/gallery/3.jpg" />
+        <img src="./assets/images/gallery/3.jpeg" />
       </ComponentStack>
       <BodyText className="tracking-[-2px]">
         These pictures speak a thousand words. Make sure to leaf through the gallery of past Bashaway competitions!!
