@@ -1,0 +1,44 @@
+[
+  {
+    "date": "5 Oct",
+    "title": "Registration Opening",
+    "description": "Assemble a team skilled in Bash or other scripting languages and take the first step toward victory.",
+    "time": "19:00 IST"
+  },
+  {
+    "date": "15 Oct",
+    "title": "Bashlab 1",
+    "description": "In collaboration with IFS Sri Lanka, we bring you Linux 101 - The practical Workshop. The session is perfect for newbies getting into development and pros looking to polish their skills.",
+    "time": "09:30 IST"
+  },
+  {
+    "date": "TBD",
+    "title": "Bashlab 2",
+    "description": "TBD.",
+    "time": "10:00 IST"
+  },
+  {
+    "date": "TBD",
+    "title": "Awareness Session",
+    "description": "Learn the rules of bashaway while navigating the platforms in a simulated battle",
+    "time": "19:00 IST"
+  },
+  {
+    "date": "15 Nov",
+    "title": "Registration Closing",
+    "description": "Last chance to register for Bashaway 2026! Make sure your team is ready for the challenge ahead.",
+    "time": "23:59 IST"
+  },
+  {
+    "date": "TBD",
+    "title": "1st Round",
+    "description": "The real battle begins today! Showcase your scripting skills and secure a spot in the next round.",
+    "time": "09:30 IST"
+  },
+  {
+    "date": "TBD",
+    "title": "Final Round",
+    "description": "The sun rises over an intense battleground marking the beginning of Bashaway 2026's most challenging round.",
+    "time": "09:30 IST"
+  }
+]
