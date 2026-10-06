@@ -18,6 +18,8 @@ Replace `<year>` with the new edition and `<prev>` with the previous one.
 | Mail                                          | Gmail SMTP as `infosliitfoss@gmail.com` (app password)                         | Google                                                                                                                                |
 | Past questions and solutions                  | `sliit-foss/bashaway-challenges`, one folder per year                          | GitHub                                                                                                                                |
 
+`bashaway-backend`, `bashaway-event-portal` and `bashaway-admin-portal` take pull requests into `development`, which is then merged into `main`. The other repositories take pull requests straight into `main`. If a change goes straight to `main` in a repository that has `development`, merge `main` back into `development` afterwards.
+
 Ask the previous organisers for access to the GCP project, the Atlas organisation, the Vercel account that owns the portals, and the Gmail app password before starting.
 
 ## 1. Accounts and billing
