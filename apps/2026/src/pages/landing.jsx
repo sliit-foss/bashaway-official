@@ -5,6 +5,7 @@ import {
   Hero,
   KnowledgePartners,
   Marquee,
+  MediaPartners,
   Mission,
   Partners,
   PastEvents,
@@ -27,6 +28,7 @@ const Landing = () => {
       <Prizes />
       <Sponsors />
       <KnowledgePartners />
+      <MediaPartners />
       <PastEvents />
       <Gallery />
       <Partners />

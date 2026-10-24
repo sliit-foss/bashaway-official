@@ -3,3 +3,4 @@ export { default as FOSS } from './foss';
 export { default as Times } from './times';
 export { default as Link } from './link';
 export { default as IFSKnowledge } from './ifsknowledge';
+export { default as MediaUnit } from './mediaunit';
