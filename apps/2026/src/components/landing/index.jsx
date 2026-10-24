@@ -11,4 +11,5 @@ export { default as Rules } from './rules';
 export { default as Sponsors } from './sponsors';
 export { default as Timeline } from './timeline';
 export { default as KnowledgePartners } from './knowledge-partners';
+export { default as InKindPartners } from './in-kind-partners';
 export { default as CountDown } from './countdown';
