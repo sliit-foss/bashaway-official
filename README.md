@@ -38,7 +38,11 @@ The project has been bootstraped with [Turborepo](https://turbo.build) which mak
 
 - Previous years will be available under https://bashaway.sliitfoss.org/{{year}}
 
-  - Example - https://bashaway.sliitfoss.org/2022
+## Running a new edition
+
+Follow the [new edition runbook](docs/new-edition-runbook.md) to set up the website, portals, backend and database for a new year.
+
+- Example - https://bashaway.sliitfoss.org/2022
 
 - The deployment process has been fully automated and will work even for future website deployments
 
