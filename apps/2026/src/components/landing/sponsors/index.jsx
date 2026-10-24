@@ -7,14 +7,14 @@ const Sponsors = () => {
   return (
     <div className="w-full flex flex-col py-6 px-10 lg:px-24 gap-y-10">
       <SectionBadge id="partners">Partners</SectionBadge>
-      <div className="grid grid-cols-1 xxs:grid-cols-2 md:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {sponsors.map((sponsor) => {
           const Logo = sponsor.logo;
           return (
             <div
               key={sponsor.name}
               className={twMerge(
-                'relative bg-white w-full aspect-square flex flex-col items-center justify-center rounded-2xl xxs:rounded-3xl after:rounded-2xl xxs:after:rounded-3xl p-6 text-white animated-border from-black to-white',
+                'relative bg-white w-full aspect-[3/2] sm:aspect-square flex flex-col items-center justify-center rounded-2xl xxs:rounded-3xl after:rounded-2xl xxs:after:rounded-3xl p-6 text-white animated-border from-black to-white',
                 sponsor.styles?.wrapper
               )}>
               {sponsor.link && (

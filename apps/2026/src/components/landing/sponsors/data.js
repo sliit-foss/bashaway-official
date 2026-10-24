@@ -1,30 +1,18 @@
-import { CCandC, Payzy, Perplexity, SampathBank, WSO2 } from '@/icons';
-
 export const sponsors = [
   {
-    name: 'CC&C',
+    name: 'Mitra AI',
     category: 'Platinum',
-    logo: CCandC,
-    link: 'https://ccandcsolutions.com/',
+    logo: './assets/images/partners/mitra-ai.svg',
+    link: 'https://mitrai.com/',
     styles: {
       logo: 'w-full p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1',
       wrapper: 'from-black/60 to-slate-300'
     }
   },
   {
-    name: 'Payzy',
-    category: 'Gold',
-    logo: Payzy,
-    link: 'https://payzy.lk/',
-    styles: {
-      logo: 'w-full p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1',
-      wrapper: 'from-black/50 to-yellow-400'
-    }
-  },
-  {
     name: 'Sampath Bank',
     category: 'Gold',
-    logo: SampathBank,
+    logo: './assets/images/partners/sampath-bank.png',
     link: 'https://www.sampath.lk/',
     styles: {
       logo: 'w-full p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1',
@@ -32,23 +20,13 @@ export const sponsors = [
     }
   },
   {
-    name: 'WSO2',
+    name: 'Circles',
     category: 'Silver',
-    logo: WSO2,
-    link: 'https://wso2.com/',
+    logo: './assets/images/partners/circles.png',
+    link: 'https://circles.co/',
     styles: {
-      logo: 'w-full p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1',
+      logo: 'w-10/12 p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1',
       wrapper: 'from-black/10 to-slate-200'
-    }
-  },
-  {
-    name: 'Perplexity',
-    category: 'Community',
-    logo: Perplexity,
-    link: 'https://www.perplexity.ai/',
-    styles: {
-      logo: 'w-full p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1',
-      wrapper: 'from-black/30 to-cyan-400'
     }
   }
 ];
