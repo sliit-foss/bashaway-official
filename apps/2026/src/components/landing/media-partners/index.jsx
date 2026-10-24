@@ -3,10 +3,10 @@ import { twMerge } from 'tailwind-merge';
 import { SectionBadge } from '@/components/common/badges';
 import { partners } from './data';
 
-const InKindPartners = () => {
+const MediaPartners = () => {
   return (
     <div className="w-full flex flex-col py-6 px-10 lg:px-24 gap-y-10">
-      <SectionBadge id="in-kind-partners">In-kind Partners</SectionBadge>
+      <SectionBadge id="media-partners">Media Partners</SectionBadge>
       <div className="grid grid-cols-1 xxs:grid-cols-2 sm:grid-cols-4 gap-8">
         {partners.map((partner) => {
           const Logo = partner.logo;
@@ -52,4 +52,4 @@ const InKindPartners = () => {
   );
 };
 
-export default InKindPartners;
+export default MediaPartners;
