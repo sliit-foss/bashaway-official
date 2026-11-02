@@ -28,5 +28,15 @@ export const sponsors = [
       logo: 'w-10/12 p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1',
       wrapper: 'from-black/10 to-slate-200'
     }
+  },
+  {
+    name: 'IM~pact-A',
+    category: 'Bronze',
+    logo: './assets/images/partners/impact-a.png',
+    link: 'https://www.im-pact-a.com',
+    styles: {
+      logo: 'w-full p-0.5 xs:p-1.5 lg:p-2 2xl:p-[11px] lg:-translate-y-1',
+      wrapper: 'from-black/40 to-orange-300'
+    }
   }
 ];
