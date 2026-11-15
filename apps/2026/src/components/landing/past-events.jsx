@@ -5,8 +5,8 @@ import { Bashaway, Link as LinkIcon } from '@/icons';
 const PastEvents = () => {
   return (
     <div className="pt-6 pb-16">
-      <FastMarquee className="bg-black text-xl sm:text-[22px] text-white font-consolas absolute left-0 right-0">
-        <div className="flex gap-x-7 items-center mt-3 mb-2 mr-7">
+      <FastMarquee className="bg-black h-[60px] text-xl sm:text-[22px] text-white font-consolas absolute left-0 right-0">
+        <div className="flex gap-x-7 items-center mr-7">
           {Array(10)
             .fill(0)
             .map((_, index) => (
