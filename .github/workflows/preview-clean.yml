@@ -15,7 +15,7 @@ jobs:
       github.event.workflow_run.conclusion == 'success'
     steps:
       - name: Checkout repository 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
 
       - name: Clean preview 🧹
         uses: sliit-foss/actions/preview-deployments/clean@main
