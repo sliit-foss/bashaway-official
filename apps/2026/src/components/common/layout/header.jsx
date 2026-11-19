@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { RxCross1, RxHamburgerMenu } from 'react-icons/rx';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { twMerge } from 'tailwind-merge';
 import { registrationLink } from '@/constants';
 import { TIME_REGISTRATION_CLOSING } from '@/constants/dates';
@@ -41,7 +41,7 @@ const Header = ({ className }) => {
       <div className="w-full max-w-body mx-auto flex justify-between py-3.5 px-8 lg:px-24">
         <div
           className={twMerge(
-            'grid place-content-start grid-flow-col items-center space-x-[20px] transition-all duration-medium z-[201]',
+            'grid place-content-start grid-flow-col items-center [&>*+*]:ml-[20px] transition-all duration-medium z-[201]',
             mobileNavOpen && !breakpoints['xl'] ? 'opacity-0 pointer-events-none' : 'opacity-100'
           )}>
           <Link

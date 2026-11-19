@@ -1,9 +1,11 @@
-@import 'colors.css';
-@import 'animations/index.css';
+@import 'tailwindcss';
+@import './colors.css';
+@import './animations/index.css';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@config '../../tailwind.config.js';
+
+/* Tailwind 4 limits hover: to (hover: hover); the timeline and gallery rely on tap-to-hover on touch screens */
+@custom-variant hover (&:hover);
 
 @layer base {
   @font-face {

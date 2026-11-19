@@ -25,7 +25,7 @@ const Footer = ({ className }) => {
             Open Source Software (FOSS)
           </p>
           <div className="font-semibold text-[20px] font-cabinet">CONNECT WITH US</div>
-          <div className="flex space-x-3 flex-shrink-0 -ml-0.5">
+          <div className="flex space-x-3 shrink-0 -ml-0.5">
             <a href={facebook} target="_blank" className="icon-hover" rel="noreferrer" aria-label="Facebook">
               <AiFillFacebook className="h-5 w-5" />
             </a>
