@@ -1,11 +1,14 @@
 import { Fragment } from 'react';
-import { default as FastMarquee } from 'react-fast-marquee';
+import { default as FastMarqueeModule } from 'react-fast-marquee';
 import { Bashaway, Link as LinkIcon } from '@/icons';
+
+// react-fast-marquee ships CommonJS only; Vite 8 hands an ES module its whole exports object as the default import
+const FastMarquee = FastMarqueeModule.default ?? FastMarqueeModule;
 
 const PastEvents = () => {
   return (
     <div className="pt-6 pb-16">
-      <FastMarquee className="bg-black h-[60px] text-xl sm:text-[22px] text-white font-consolas absolute left-0 right-0">
+      <FastMarquee className="bg-black h-[60px] text-xl sm:text-[22px] leading-7 text-white font-consolas absolute left-0 right-0">
         <div className="flex gap-x-7 items-center mr-7">
           {Array(10)
             .fill(0)

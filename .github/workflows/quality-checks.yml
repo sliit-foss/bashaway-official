@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
 
       - name: Run commitlint 🟩
         uses: sliit-foss/actions/quality-checks/commitlint@main
@@ -25,17 +25,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
 
       - name: Run linter 📢
         uses: sliit-foss/actions/quality-checks/linter@main
+        with:
+          node-version: '24'
+          pnpm-version: 10.34.9
 
   format:
     name: Format code
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
 
       - name: Run formatter 🧹
         uses: sliit-foss/actions/quality-checks/formatter@main
+        with:
+          node-version: '24'
+          pnpm-version: 10.34.9

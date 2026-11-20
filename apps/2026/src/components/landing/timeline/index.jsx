@@ -22,15 +22,15 @@ const Timeline = () => {
           }px)`
         }}
         itemStyle={({ index, itemHovered }) =>
-          `w-full hover:flex-[4_0_0%] xs:hover:flex-[3_0_0%] [&>div>div:nth-child(3)]:opacity-100 [&>div>div:nth-child(3)]:hover:opacity-0 [&>div>span:nth-child(4)]:opacity-0 md:[&>div>span:nth-child(4)]:opacity-100 [&>div>span:nth-child(4)]:hover:opacity-100 ${
+          `w-full hover:flex-[4_0_0%] xs:hover:flex-[3_0_0%] [&>div>div:nth-child(3)]:opacity-100 hover:[&>div>div:nth-child(3)]:opacity-0 [&>div>span:nth-child(4)]:opacity-0 md:[&>div>span:nth-child(4)]:opacity-100 hover:[&>div>span:nth-child(4)]:opacity-100 ${
             index === 0 && !itemHovered
               ? 'flex-[4_0_0%] xs:flex-[3_0_0%] [&>div>div:nth-child(2)]:opacity-100 [&>div>div:nth-child(3)]:opacity-0 [&>div>span:nth-child(4)]:opacity-100'
-              : '[&>div>div:nth-child(2)]:opacity-0 [&>div>div:nth-child(2)]:hover:opacity-100'
+              : '[&>div>div:nth-child(2)]:opacity-0 hover:[&>div>div:nth-child(2)]:opacity-100'
           }`
         }>
         {timeline.map((item, index) => (
           <div key={index} className="bg-white flex flex-col justify-between items-start p-8 gap-y-12 relative">
-            <span className="text-2xl sm:text-3xl md:text-[32px] lg:text-6xl 2xl:text-7xl text-start font-cabinet font-extrabold max-w-full lg:max-w-[75vw] block tracking-[1.28px] z-30">
+            <span className="text-2xl sm:text-3xl md:text-[32px] md:max-lg:leading-9 lg:text-6xl 2xl:text-7xl text-start font-cabinet font-extrabold max-w-full lg:max-w-[75vw] block tracking-[1.28px] z-30">
               {item.date.split(' ').map((word, index) => (
                 <Fragment key={index}>
                   {word}&nbsp;

@@ -12,6 +12,23 @@ export default {
         background: 'var(--background)'
       },
       fontFamily: {
+        // Tailwind 3 default; 4.3.3 dropped system-ui, which changes the fallback font on Linux
+        sans: [
+          'ui-sans-serif',
+          'system-ui',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          '"Segoe UI"',
+          'Roboto',
+          '"Helvetica Neue"',
+          'Arial',
+          '"Noto Sans"',
+          'sans-serif',
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+          '"Noto Color Emoji"'
+        ],
         cabinet: ['Cabinet Grotesk Variable', 'sans'],
         consolas: ['Consolas', 'monospace'],
         inter: ['Inter', 'sans']
@@ -24,9 +41,9 @@ export default {
         long: '500ms'
       },
       screens: {
-        xxs: '350px',
-        xs: '400px',
-        xsm: '450px'
+        xxs: '21.875rem',
+        xs: '25rem',
+        xsm: '28.125rem'
       }
     }
   },

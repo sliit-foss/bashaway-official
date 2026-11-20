@@ -1,13 +1,19 @@
-@import "keyframes.css";
+@import "./keyframes.css";
 
 @layer utilities {
   .splash {
     @apply relative overflow-hidden;
     &:after {
-      @apply content-[''] absolute block bg-white w-0 h-0 hover:w-[100%] hover:h-[100%] top-1/2 left-1/2 opacity-[0.2] rounded-full -translate-x-1/2 -translate-y-1/2 transition-all duration-medium;
+      @apply content-[''] absolute block bg-white w-0 h-0 top-1/2 left-1/2 opacity-[0.2] rounded-full -translate-x-1/2 -translate-y-1/2 transition-all duration-medium;
+    }
+    &:hover:after {
+      @apply w-[100%] h-[100%];
     }
   }
   .animated-border {
+    /* Tailwind 4 registers its gradient variables as non-inheriting; these pass the from-* and to-* colours to :after */
+    --border-from: var(--tw-gradient-from);
+    --border-to: var(--tw-gradient-to);
     @apply relative;
     &:before,
     &:after {
@@ -17,8 +23,11 @@
       @apply content-[''] absolute inset-0 rounded-3xl border-2 border-transparent filter contrast-[6] bg-current pointer-events-none transition-all duration-1000;
     }
     &:after {
-      background: linear-gradient(var(--angle, 225deg), var(--tw-gradient-stops)) border-box;
-      @apply animate-[rotate_4s_linear_infinite] opacity-0 hover:opacity-100;
+      background: linear-gradient(var(--angle, 225deg), var(--border-from), var(--border-to)) border-box;
+      @apply animate-[rotate_4s_linear_infinite] opacity-0;
+    }
+    &:hover:after {
+      @apply opacity-100;
     }
   }
 }

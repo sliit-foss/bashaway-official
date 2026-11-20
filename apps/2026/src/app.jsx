@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router';
 import { Background, Footer, Header } from '@/components/common';
 import { useScroll } from '@/hooks';
 import { Landing } from '@/pages';

@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { twMerge } from 'tailwind-merge';
 
 const Button = ({ children, className, ...props }) => {
   return (
     <button
       className={twMerge(
-        'group flex justify-center items-center rounded-3xl px-[1.15rem] py-[0.4rem] bg-black text-white font-semibold outline-none transition-all duration-medium',
+        'group flex justify-center items-center rounded-3xl px-[1.15rem] py-[0.4rem] bg-black text-white font-semibold outline-hidden transition-all duration-medium',
         className,
         props?.disabled ? 'cursor-not-allowed' : 'cursor-pointer  splash'
       )}
