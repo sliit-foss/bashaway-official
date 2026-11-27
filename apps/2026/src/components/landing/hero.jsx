@@ -1,5 +1,5 @@
 import { BodyText, Button } from '@/components/common';
-import { registrationLink } from '@/constants';
+import { eventPortalLink, registrationLink } from '@/constants';
 import { CURRENT_YEAR, TIME_REGISTRATION_CLOSING } from '@/constants/dates';
 import { useCountdown } from '@/hooks';
 import { Bashaway } from '@/icons';
@@ -17,11 +17,10 @@ const Hero = () => {
       </BodyText>
       <CountDown />
       <Button
-        to={`${registrationLink}`}
+        to={didCountDownComplete ? eventPortalLink : registrationLink}
         target="_blank"
-        className="mt-1 sm:text-[22px] px-6 py-2 rounded-full tracking-[0.44px] z-30"
-        disabled={didCountDownComplete}>
-        {!didCountDownComplete ? 'Register Now' : 'Registration Closed'}
+        className="mt-1 sm:text-[22px] px-6 py-2 rounded-full tracking-[0.44px] z-30">
+        {!didCountDownComplete ? 'Register Now' : 'Go to Portal'}
       </Button>
     </div>
   );

@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import { RxCross1, RxHamburgerMenu } from 'react-icons/rx';
 import { Link } from 'react-router';
 import { twMerge } from 'tailwind-merge';
-import { registrationLink } from '@/constants';
+import { eventPortalLink, registrationLink } from '@/constants';
 import { TIME_REGISTRATION_CLOSING } from '@/constants/dates';
 import { useBreakpoint, useCountdown } from '@/hooks';
 import { Bashaway, FOSS, Times } from '@/icons';
@@ -82,8 +82,8 @@ const Header = ({ className }) => {
                 {section}
               </span>
             ))}
-            <Button to={registrationLink} target="_blank" disabled={didCountDownComplete}>
-              {!didCountDownComplete ? 'Register' : 'Registration Closed'}
+            <Button to={didCountDownComplete ? eventPortalLink : registrationLink} target="_blank">
+              {!didCountDownComplete ? 'Register' : 'Go to Portal'}
             </Button>
           </div>
         </div>

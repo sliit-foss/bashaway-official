@@ -5,7 +5,7 @@ function useCountdown({ targetDate }) {
   const getRemainingTime = () => Math.max(0, countDownDate - Date.now());
 
   const [remainingTime, setRemainingTime] = useState(getRemainingTime());
-  const [didCountDownComplete, setDidCountDownComplete] = useState(false);
+  const [didCountDownComplete, setDidCountDownComplete] = useState(getRemainingTime() === 0);
 
   useEffect(() => {
     const interval = setInterval(() => {
